@@ -1,0 +1,171 @@
+{
+    "metadata": {
+      "file_type": "personal_information",
+      "last_updated": "2025-01-20T00:00:00Z",
+      "version": "1.1"
+    },
+  
+    "basic_info": [
+      {
+        "id": "basic_001",
+        "name": "Priyansh Raj",
+        "current_position": "Student at MSU - pursuing Master's in Computer Science",
+        "location": "Vadodara, Gujarat, India",
+        "content": "Priyansh Raj is a developer currently pursuing a Master's degree in Computer Science at Maharaja Sayajirao University. He is a creative and passionate individual with a strong interest in computer science. Priyansh aspires to build his career in the AI/ML industry. Priyansh is currently serving his notice period at payguru as Junior Software Developer",
+        "tags": ["student", "developer", "AI/ML", "computer science", "India"]
+      },
+      {
+        "id": "basic_contact",
+        "contact": {
+          "email": "priyanshraj.dev@gmail.com",
+          "linkedin": "https://www.linkedin.com/in/priyansh-raj/",
+          "github": "https://github.com/PriyanshRaj30"
+        },
+        "availability": {
+          "status": "open_to_opportunities",
+          "preferred_roles": "Junior Software Engineer"
+        },
+        "tags": ["contact", "linkedin", "github", "availability"]
+      }
+    ],
+  
+    "professional_summary": [
+      {
+        "id": "summary_001",
+        "THIS IS WHAT I WANT TO EXAMINE ": "Priyansh Raj is a passionate computer science student, currently pursuing his Master’s degree, with hands-on experience in web development, AI/ML, and computer vision.",
+        "tags": ["web development", "AI/ML", "computer vision"]
+      },
+      {
+        "id": "summary_002",
+        "content": "He enjoys building applications, experimenting with new technologies, and is aiming for a career in software development with a strong focus on AI.",
+        "tags": ["applications", "AI", "career development"]
+      },
+      {
+        "id": "summary_003",
+        "content": "Beyond academics, he is an avid reader with a deep appreciation for cinema, often described as both a geek and a nerd.",
+        "tags": ["books", "cinema", "geek culture", "nerd"]
+      },
+      {
+        "id": "summary_004",
+        "content": "Priyansh is steadily shaping himself into a creative, skilled, and confident developer.",
+        "tags": ["creative", "skilled", "confident", "developer"]
+      }
+    ],
+  
+    "unique_value_proposition": [
+      {
+        "id": "uvp_001",
+        "content": "Blends academic knowledge with hands-on projects in web development, AI/ML, and mobile applications development.",
+        "tags": ["academic", "practical projects", "web development", "AI/ML"]
+      },
+      {
+        "id": "uvp_002",
+        "content": "Experienced in building practical applications.",
+        "tags": ["applications", "experience"]
+      },
+      {
+        "id": "uvp_003",
+        "content": "Comfortable working across multiple stacks — Python, C++, React, Express.js, MongoDB, and Flutter.",
+        "tags": ["Python", "C++", "React", "Express.js", "MongoDB", "Flutter", "full-stack"]
+      },
+      {
+        "id": "uvp_004",
+        "content": "Passionate about experimenting with cutting-edge technologies like RAG, LangChain, and LLM fine-tuning.",
+        "tags": ["RAG", "LangChain", "LLM", "AI experimentation"]
+      },
+      {
+        "id": "uvp_005",
+        "content": "Creative problem solver who makes complex concepts look simple and approachable.",
+        "tags": ["problem-solving", "creativity"]
+      },
+      {
+        "id": "uvp_006",
+        "content": "Strong admiration for innovators like Elon Musk and fictional geniuses like Tony Stark, channeling their drive into tech projects.",
+        "tags": ["Elon Musk", "Tony Stark", "innovation", "tech inspiration"]
+      },
+      {
+        "id": "uvp_007",
+        "content": "Balances technical depth with personal interests in books, cinema, and geek culture.",
+        "tags": ["balance", "books", "cinema", "geek culture"]
+      },
+      {
+        "id": "uvp_008",
+        "content": "Shaping into a confident and skilled developer with a vision for a career centered on AI and software development.",
+        "tags": ["confidence", "AI career", "software development"]
+      }
+    ],
+  
+    "career_goals": [
+      {
+        "id": "goal_short",
+        "type": "short_term",
+        "content": "Strengthen expertise in software development and AI by working on real-world projects, contributing to open-source, and building a strong portfolio.",
+        "tags": ["short-term", "software development", "AI", "open-source", "portfolio"]
+      },
+      {
+        "id": "goal_long",
+        "type": "long_term",
+        "content": "Build and lead a world-class engineering team at a high-growth company, focusing on products that have positive social impact.",
+        "tags": ["long-term", "leadership", "engineering team", "social impact"]
+      },
+      {
+        "id": "goal_content",
+        "content": "Career trajectory is focused on growing from an individual contributor to a technical leader who can balance hands-on development with strategic thinking. In the next 2-3 years, Priyansh wants to take on more responsibility in system design, team building, and product strategy.",
+        "tags": ["system design", "team building", "product strategy", "leadership growth"]
+      },
+      {
+        "id": "goal_industries",
+        "content": "Particularly interested in companies working on developer tools and infrastructure, educational technology, sustainable technology solutions, healthcare innovation, and financial inclusion.",
+        "tags": ["edtech", "sustainable tech", "healthcare", "fintech", "developer tools"]
+      },
+      {
+        "id": "goal_future",
+        "content": "Envisions becoming a VP of Engineering or CTO at a mission-driven company, leveraging technical expertise to build products that solve real-world problems while fostering an inclusive and innovative engineering culture.",
+        "tags": ["CTO", "VP of Engineering", "mission-driven", "inclusive culture"]
+      }
+    ],
+  
+    "personal_interests": [
+      {
+        "id": "interest_books",
+        "name": "Reading",
+        "level": "Advanced",
+        "description": "Explores books across technology, science, and philosophy, alongside fiction.",
+        "skills_gained": ["Critical thinking", "Curiosity", "Broad perspective", "Imagination"],
+        "tags": ["reading", "books", "knowledge"]
+      },
+      {
+        "id": "interest_cinema",
+        "name": "Cinema",
+        "level": "Intermediate",
+        "description": "Deep knowledge of cinema, from classics to modern films, with strong interest in storytelling and character development.",
+        "skills_gained": ["Creativity", "Narrative understanding", "Visual composition", "Analytical thinking"],
+        "tags": ["cinema", "storytelling", "movies"]
+      },
+      {
+        "id": "interest_chess",
+        "name": "Chess",
+        "level": "Intermediate",
+        "description": "Plays chess regularly as a mental exercise and strategic challenge.",
+        "skills_gained": ["Problem-solving", "Strategic planning", "Patience", "Pattern recognition"],
+        "tags": ["chess", "strategy", "problem-solving"]
+      },
+      {
+        "id": "interest_geek",
+        "name": "Geek Culture & Technology",
+        "level": "Advanced",
+        "description": "Passionate about technology, innovation, and pop culture, especially inspired by Tony Stark and Elon Musk.",
+        "skills_gained": ["Innovation mindset", "Creative confidence", "Tech enthusiasm", "Vision-oriented thinking"],
+        "tags": ["geek culture", "technology", "Tony Stark", "Elon Musk"]
+      },
+      {
+        "id": "interest_coffee",
+        "name": "Coffee Enthusiast",
+        "level": "Casual",
+        "description": "Enjoys black coffee as a source of focus, energy, and creative inspiration during coding sessions.",
+        "skills_gained": ["Focus", "Consistency", "Mindful rituals"],
+        "tags": ["coffee", "focus", "productivity"]
+      }
+    ]
+  }
+  

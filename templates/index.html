@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio | Ask Me Anything</title>
+    <meta name="description" content="Interactive developer portfolio with AI-like chat interface">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css"> 
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="particles" id="particles"></div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="container">
+            <div class="chat-section">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="terminal-btn"></div>
+                            <div class="terminal-btn"></div>
+                            <div class="terminal-btn"></div>
+                        </div>
+                        <div class="terminal-title">ASK_ME_ANYTHING.exe</div>
+                    </div>
+                    <div class="chat-container" id="chat-container">
+                        <div class="scanlines"></div>
+                        <div class="message ai">
+                            <span class="message-prefix">[SYSTEM]</span> Welcome to my portfolio interface...<br>
+                            <span class="message-prefix">[AI]</span> Hello! I'm an interactive assistant that knows everything about this developer.<br>
+                            <span class="message-prefix">[AI]</span> Ask me anything about skills, projects, experience, or just say hi!<br>
+                            <span class="message-prefix">[AI]</span> Try: "What technologies do you work with?" or "Tell me about your projects"
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <span class="input-prefix">user@portfolio:~$</span>
+                        <input type="text" id="chat-input" placeholder="Type your question..." autocomplete="off">
+                        <span class="cursor"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-section">
+                <h1 class="hero-title glitch">DEVELOPER</h1>
+                <p class="hero-subtitle">Crafting extraordinary digital experiences</p>
+                <a href="#projects" class="cta-button">Explore My Work</a>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Full-stack e-commerce solution with real-time inventory management, 
+                            payment processing, and advanced analytics dashboard.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">AI Task Manager</h3>
+                        <p class="project-description">
+                            Intelligent task management system with natural language processing 
+                            and predictive scheduling using machine learning algorithms.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">Real-time Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Interactive data visualization platform with WebSocket connections, 
+                            custom charting components, and automated report generation.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <ul class="skill-list">
+                            <li>React & Next.js</li>
+                            <li>Vue.js & Nuxt.js</li>
+                            <li>TypeScript & JavaScript</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>Tailwind CSS & SCSS</li>
+                            <li>Three.js & WebGL</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <ul class="skill-list">
+                            <li>Node.js & Express</li>
+                            <li>Python & Django/FastAPI</li>
+                            <li>PostgreSQL & MongoDB</li>
+                            <li>Redis & ElasticSearch</li>
+                            <li>RESTful APIs & GraphQL</li>
+                            <li>Microservices Architecture</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>DevOps & Tools</h3>
+                        <ul class="skill-list">
+                            <li>Docker & Kubernetes</li>
+                            <li>AWS & Google Cloud</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>Git & GitHub Actions</li>
+                            <li>Nginx & Load Balancing</li>
+                            <li>Monitoring & Analytics</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Specializations</h3>
+                        <ul class="skill-list">
+                            <li>UI/UX Design</li>
+                            <li>Performance Optimization</li>
+                            <li>Machine Learning</li>
+                            <li>Blockchain Development</li>
+                            <li>Mobile Development</li>
+                            <li>System Architecture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-content">
+                <div class="contact-container">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 40px;">
+                        Ready to build something extraordinary together?
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank">Connect with me</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/yourusername" target="_blank">View my code</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

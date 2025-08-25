@@ -1,0 +1,1306 @@
+{
+  "template_info": {
+    "description": "Complete data templates for personal RAG system",
+    "version": "1.0",
+    "created": "2025-01-20",
+    "usage": "Replace placeholder values with your actual information"
+  }
+}
+
+// =============================================================================
+// FILE 1: data/personal_info.json
+// =============================================================================
+
+{
+  "metadata": {
+    "file_type": "personal_information",
+    "last_updated": "2025-01-20",
+    "version": "1.0"
+  },
+  "basic_info": {
+    "id": "basic_001",
+    "name": "John Smith",
+    "professional_title": "Senior Full-Stack Developer",
+    "current_position": "Lead Software Engineer at TechCorp",
+    "location": "San Francisco, CA, USA",
+    "timezone": "PST",
+    "content": "I am a passionate full-stack developer with 6+ years of experience building scalable web applications and leading cross-functional teams. I specialize in JavaScript technologies, cloud infrastructure, and have a strong background in machine learning applications. I thrive in collaborative environments and enjoy mentoring junior developers while solving complex technical challenges.",
+    "contact": {
+      "email": "john.smith@email.com",
+      "linkedin": "linkedin.com/in/johnsmith",
+      "github": "github.com/johnsmith",
+      "portfolio": "johnsmith.dev",
+      "phone": "+1-555-0123"
+    },
+    "availability": {
+      "status": "open_to_opportunities",
+      "preferred_roles": ["Senior Software Engineer", "Tech Lead", "Engineering Manager"],
+      "location_preference": "Remote/San Francisco Bay Area",
+      "notice_period": "2 weeks"
+    },
+    "keywords": ["full-stack developer", "software engineer", "team lead", "javascript", "react", "node.js", "python", "aws"],
+    "category": "basic_information",
+    "importance": "high"
+  },
+  "professional_summary": {
+    "id": "summary_001",
+    "elevator_pitch": "I'm a senior full-stack developer who transforms complex business requirements into elegant, scalable solutions. With 6+ years of experience, I've led teams of up to 8 developers and delivered products used by millions of users.",
+    "content": "My journey in software development began during college when I built my first web application for local businesses. Since then, I've evolved into a seasoned engineer with expertise spanning front-end frameworks like React and Vue.js, back-end technologies including Node.js and Python, and cloud platforms such as AWS and Google Cloud.\n\nWhat sets me apart is my ability to bridge the gap between technical complexity and business value. I've successfully led the development of e-commerce platforms that generated $5M+ in revenue, implemented ML-powered recommendation systems that increased user engagement by 40%, and mentored 12+ junior developers who have since been promoted to senior roles.\n\nI'm particularly passionate about building developer tools, optimizing system performance, and creating inclusive engineering cultures. My approach combines technical excellence with strong communication skills, enabling me to work effectively with stakeholders across all levels of an organization.",
+    "unique_value_proposition": [
+      "Proven track record of delivering high-impact products on time and under budget",
+      "Strong leadership skills with experience managing cross-functional teams",
+      "Deep expertise in both frontend and backend technologies",
+      "Passionate about code quality, testing, and maintainable architecture"
+    ],
+    "keywords": ["leadership", "full-stack", "scalable systems", "team management", "product development"],
+    "category": "professional_summary",
+    "importance": "high"
+  },
+  "career_goals": {
+    "id": "goals_001",
+    "short_term": "Transition into a technical leadership role where I can guide architectural decisions while continuing to contribute code to meaningful projects.",
+    "long_term": "Build and lead a world-class engineering team at a high-growth company, focusing on products that have positive social impact.",
+    "content": "My career trajectory is focused on growing from an individual contributor to a technical leader who can balance hands-on development with strategic thinking. In the next 2-3 years, I want to take on more responsibility in system design, team building, and product strategy.\n\nI'm particularly interested in companies working on:\n- Developer tools and infrastructure\n- Educational technology\n- Sustainable technology solutions\n- Healthcare innovation\n- Financial inclusion\n\nLong-term, I envision myself as a VP of Engineering or CTO at a mission-driven company, where I can leverage my technical expertise to build products that solve real-world problems while fostering an inclusive and innovative engineering culture.",
+    "interests": ["technical leadership", "product strategy", "team building", "social impact", "developer experience"],
+    "keywords": ["career growth", "leadership", "technical strategy", "social impact"],
+    "category": "career_goals",
+    "importance": "medium"
+  },
+  "personal_interests": {
+    "id": "interests_001",
+    "content": "Outside of work, I'm an avid rock climber and photographer. Rock climbing has taught me patience, problem-solving, and the importance of calculated risk-taking - skills that directly translate to software engineering. I often find that my best technical insights come during long climbing sessions or while hiking in nature.\n\nI'm also passionate about photography, particularly landscape and street photography. This hobby has sharpened my attention to detail and composition, skills that influence how I approach UI/UX design and code organization.\n\nI regularly contribute to open-source projects and maintain a technical blog where I share insights about software architecture, team leadership, and emerging technologies. I've spoken at 3 local meetups and am always eager to share knowledge with the developer community.\n\nVolunteering is important to me - I spend 4 hours monthly teaching coding basics to underserved youth through a local nonprofit. This experience has improved my communication skills and reinforced my belief in the power of technology to create opportunities.",
+    "hobbies": [
+      {
+        "name": "Rock Climbing",
+        "level": "Advanced",
+        "description": "Outdoor climbing for 8+ years, leads to 5.11 grade routes",
+        "skills_gained": ["Problem-solving", "Risk assessment", "Persistence", "Focus under pressure"]
+      },
+      {
+        "name": "Photography",
+        "level": "Intermediate", 
+        "description": "Landscape and street photography, some commercial work",
+        "skills_gained": ["Attention to detail", "Composition", "Patience", "Creative thinking"]
+      },
+      {
+        "name": "Technical Writing",
+        "level": "Advanced",
+        "description": "Technical blog with 10,000+ monthly readers",
+        "skills_gained": ["Communication", "Teaching", "Documentation", "Thought leadership"]
+      }
+    ],
+    "volunteer_work": [
+      {
+        "organization": "Code for Kids",
+        "role": "Volunteer Instructor",
+        "duration": "2+ years",
+        "commitment": "4 hours/month",
+        "description": "Teaching Python and web development basics to middle school students from underserved communities"
+      }
+    ],
+    "keywords": ["rock climbing", "photography", "technical writing", "volunteering", "teaching", "open source"],
+    "category": "personal_interests",
+    "importance": "low"
+  }
+}
+
+// =============================================================================
+// FILE 2: data/experience.json
+// =============================================================================
+
+{
+  "metadata": {
+    "file_type": "work_experience",
+    "last_updated": "2025-01-20",
+    "version": "1.0"
+  },
+  "positions": [
+    {
+      "id": "exp_001",
+      "company": "TechCorp Solutions",
+      "company_description": "Series B startup providing AI-powered business analytics tools to enterprise clients",
+      "company_size": "150+ employees",
+      "position": "Lead Software Engineer",
+      "level": "Senior",
+      "duration": "March 2022 - Present",
+      "duration_months": 22,
+      "location": "San Francisco, CA (Remote)",
+      "employment_type": "Full-time",
+      "content": "Leading a cross-functional team of 8 engineers to build and scale TechCorp's core analytics platform. The platform processes 50TB+ of data daily and serves 200+ enterprise clients including Fortune 500 companies.\n\nAs Lead Engineer, I'm responsible for technical architecture decisions, code reviews, sprint planning, and mentoring team members. I work closely with Product, Design, and Customer Success teams to translate business requirements into scalable technical solutions.\n\nKey Achievements:\n\n**Technical Leadership:**\n- Architected microservices migration that reduced system latency by 60% and improved scalability to handle 10x traffic growth\n- Implemented comprehensive testing strategy that increased code coverage from 45% to 85% and reduced production bugs by 70%\n- Led adoption of TypeScript across the frontend codebase, improving developer productivity and reducing runtime errors by 40%\n\n**Team Development:**\n- Mentored 5 junior engineers, with 3 receiving promotions to mid-level roles within 12 months\n- Established code review standards and engineering best practices that improved team velocity by 35%\n- Created technical onboarding program that reduced new hire ramp-up time from 6 weeks to 3 weeks\n\n**Business Impact:**\n- Delivered new analytics dashboard that became the #1 requested feature, used by 95% of clients\n- Optimized data processing pipeline, reducing infrastructure costs by $200K annually\n- Led emergency response for critical production issues, achieving 99.9% uptime SLA",
+      "responsibilities": [
+        "Lead technical architecture and design decisions for core platform",
+        "Manage and mentor team of 8 full-stack engineers",
+        "Collaborate with cross-functional teams on product roadmap and feature development",
+        "Drive engineering best practices including code reviews, testing, and documentation",
+        "Participate in hiring and interview process for engineering candidates",
+        "Present technical updates to executive team and key stakeholders"
+      ],
+      "achievements": [
+        {
+          "metric": "60% reduction in system latency",
+          "description": "Through microservices architecture redesign",
+          "business_impact": "Improved user experience and enabled handling 10x traffic growth"
+        },
+        {
+          "metric": "70% reduction in production bugs",
+          "description": "Implemented comprehensive testing strategy",
+          "business_impact": "Reduced customer support tickets and improved product reliability"
+        },
+        {
+          "metric": "$200K annual cost savings",
+          "description": "Optimized data processing pipeline",
+          "business_impact": "Improved profit margins and reduced operational overhead"
+        }
+      ],
+      "technologies": ["React", "TypeScript", "Node.js", "Python", "PostgreSQL", "Redis", "Docker", "Kubernetes", "AWS", "GraphQL", "Jest", "Cypress"],
+      "team_size": 8,
+      "reporting_structure": "Reports to VP of Engineering",
+      "keywords": ["technical leadership", "microservices", "scalable systems", "team management", "react", "node.js", "aws"],
+      "category": "work_experience",
+      "importance": "high"
+    },
+    {
+      "id": "exp_002", 
+      "company": "StartupXYZ",
+      "company_description": "Early-stage fintech startup focused on financial literacy tools for Gen Z",
+      "company_size": "25 employees",
+      "position": "Senior Full-Stack Developer",
+      "level": "Senior",
+      "duration": "June 2020 - February 2022",
+      "duration_months": 20,
+      "location": "San Francisco, CA",
+      "employment_type": "Full-time",
+      "content": "Joined as the 3rd engineering hire to build StartupXYZ's mobile-first financial education platform from the ground up. Worked directly with founders to establish technical foundation, development processes, and engineering culture.\n\nThe platform I helped build reached 100K+ active users within 18 months and secured $5M in Series A funding. My contributions spanned the entire stack, from React Native mobile app to Node.js backend APIs and AWS infrastructure.\n\nKey Contributions:\n\n**Product Development:**\n- Built core gamification features that increased daily active user engagement by 150%\n- Developed real-time notification system handling 1M+ daily messages\n- Created responsive web dashboard for financial advisors, used by 500+ professionals\n\n**Technical Foundation:**\n- Established CI/CD pipeline using GitHub Actions, reducing deployment time from 2 hours to 10 minutes\n- Implemented secure authentication system with OAuth2 and JWT tokens\n- Built automated testing suite with 90% code coverage across frontend and backend\n\n**Growth & Scale:**\n- Optimized database queries and implemented caching, reducing API response times by 75%\n- Scaled system architecture to handle 100K+ concurrent users\n- Integrated with 5+ third-party APIs including Plaid, Stripe, and SendGrid",
+      "responsibilities": [
+        "Design and implement full-stack features from conception to deployment",
+        "Build and maintain React Native mobile application",
+        "Develop RESTful APIs and backend services using Node.js",
+        "Collaborate with design team to implement pixel-perfect UI components",
+        "Establish development workflows and CI/CD processes",
+        "Participate in product strategy and technical roadmap planning"
+      ],
+      "achievements": [
+        {
+          "metric": "150% increase in user engagement",
+          "description": "Through gamification features development",
+          "business_impact": "Improved user retention and supported Series A fundraising"
+        },
+        {
+          "metric": "75% reduction in API response times", 
+          "description": "Database optimization and caching implementation",
+          "business_impact": "Better user experience and reduced server costs"
+        },
+        {
+          "metric": "100K+ active users",
+          "description": "Platform scaled to support large user base",
+          "business_impact": "Enabled company growth and investor confidence"
+        }
+      ],
+      "technologies": ["React Native", "React", "Node.js", "Express", "MongoDB", "Redis", "AWS Lambda", "AWS S3", "Stripe API", "Plaid API", "GitHub Actions"],
+      "team_size": 4,
+      "reporting_structure": "Reports to CTO",
+      "keywords": ["startup", "fintech", "react native", "full-stack", "scalable systems", "mobile development"],
+      "category": "work_experience", 
+      "importance": "high"
+    },
+    {
+      "id": "exp_003",
+      "company": "Digital Agency Co",
+      "company_description": "Full-service digital agency serving mid-market companies",
+      "company_size": "75 employees",
+      "position": "Full-Stack Developer",
+      "level": "Mid",
+      "duration": "August 2019 - May 2020",
+      "duration_months": 9,
+      "location": "San Jose, CA",
+      "employment_type": "Full-time",
+      "content": "Worked as a full-stack developer building custom web applications and e-commerce solutions for agency clients. Managed 4-6 concurrent client projects while collaborating with design, marketing, and account management teams.\n\nThis role developed my ability to work with diverse clients, manage multiple priorities, and deliver high-quality solutions under tight deadlines. I gained valuable experience with various technologies and learned to quickly adapt to different project requirements.\n\nKey Projects:\n\n**E-commerce Platform (Major Retail Client):**\n- Built custom Shopify Plus integration handling 10K+ daily orders\n- Implemented inventory management system reducing manual work by 80%\n- Optimized site performance, improving page load times by 45%\n\n**Healthcare Portal:**\n- Developed patient management system for medical practice with 2K+ patients\n- Built secure messaging system compliant with HIPAA requirements\n- Created automated appointment scheduling reducing administrative overhead\n\n**Corporate Website Redesigns:**\n- Led development of 8+ responsive website redesigns\n- Implemented headless CMS solutions using Contentful and Strapi\n- Achieved 95+ Lighthouse performance scores across all projects",
+      "responsibilities": [
+        "Develop custom web applications using React, Vue.js, and vanilla JavaScript",
+        "Build and maintain e-commerce solutions on Shopify and WooCommerce platforms",
+        "Create responsive websites and landing pages based on design mockups",
+        "Integrate third-party APIs and services",
+        "Collaborate with cross-functional teams to deliver client projects",
+        "Provide technical consultation and recommendations to clients"
+      ],
+      "achievements": [
+        {
+          "metric": "45% improvement in page load times",
+          "description": "Performance optimization across client websites",
+          "business_impact": "Improved SEO rankings and user experience for clients"
+        },
+        {
+          "metric": "80% reduction in manual work",
+          "description": "Automated inventory management system",
+          "business_impact": "Significant cost savings for retail client"
+        },
+        {
+          "metric": "8+ successful project deliveries",
+          "description": "Website redesigns completed on time and budget",
+          "business_impact": "High client satisfaction and repeat business"
+        }
+      ],
+      "technologies": ["React", "Vue.js", "PHP", "WordPress", "Shopify", "MySQL", "jQuery", "Sass", "Webpack", "Contentful", "Strapi"],
+      "team_size": 3,
+      "reporting_structure": "Reports to Development Manager",
+      "keywords": ["agency", "client work", "e-commerce", "wordpress", "shopify", "multiple projects"],
+      "category": "work_experience",
+      "importance": "medium"
+    }
+  ],
+  "career_progression": {
+    "total_experience": "6+ years",
+    "progression_summary": "Progressed from agency developer handling multiple client projects to senior individual contributor at startup, and currently leading engineering teams at a high-growth company.",
+    "key_growth_areas": [
+      "Technical leadership and team management",
+      "System architecture and scalability",
+      "Cross-functional collaboration", 
+      "Mentoring and knowledge sharing"
+    ],
+    "keywords": ["career progression", "leadership growth", "technical advancement"]
+  }
+}
+
+// =============================================================================
+// FILE 3: data/projects.json  
+// =============================================================================
+
+{
+  "metadata": {
+    "file_type": "projects",
+    "last_updated": "2025-01-20",
+    "version": "1.0"
+  },
+  "projects": [
+    {
+      "id": "proj_001",
+      "name": "DevTools Dashboard",
+      "type": "personal",
+      "status": "active",
+      "featured": true,
+      "duration": "6 months",
+      "start_date": "2024-07",
+      "end_date": "ongoing",
+      "content": "A comprehensive developer productivity dashboard that aggregates data from GitHub, Jira, CircleCI, and other development tools. The project emerged from my frustration with context switching between multiple tools to track team productivity and project health.\n\n**Problem Statement:**\nDevelopment teams often struggle with visibility into their productivity metrics, code quality trends, and project health. Existing solutions are either too expensive for small teams or don't provide the customization needed for different workflows.\n\n**Solution:**\nBuilt a real-time dashboard that connects to popular development tools via their APIs and presents unified metrics and insights. The dashboard includes customizable widgets, automated reports, and intelligent alerts for potential issues.\n\n**Technical Implementation:**\n- **Frontend:** React with TypeScript, using Recharts for data visualization and Tailwind for styling\n- **Backend:** Node.js with Express, implementing rate-limited API integrations\n- **Database:** PostgreSQL for structured data, Redis for caching API responses\n- **Infrastructure:** Deployed on AWS using Docker containers, with automated CI/CD via GitHub Actions\n- **Authentication:** OAuth2 integration with GitHub, Google, and custom JWT tokens\n\n**Key Features:**\n- Real-time sync with 10+ development tools (GitHub, Jira, Slack, CircleCI, etc.)\n- Customizable dashboard with drag-and-drop widget arrangement\n- Automated daily/weekly team reports via email and Slack\n- Code quality metrics tracking including technical debt estimation\n- Sprint analysis with velocity tracking and burndown charts\n- Team collaboration insights and communication patterns\n\n**Results & Impact:**\n- Used by 150+ developers across 20+ teams\n- Reduced time spent on status reporting by 70%\n- Featured in 3 developer newsletters with 5,000+ combined readers\n- Generated $2K in revenue through premium features\n- 200+ GitHub stars and growing community",
+      "technologies": ["React", "TypeScript", "Node.js", "PostgreSQL", "Redis", "AWS", "Docker", "GitHub Actions", "OAuth2", "REST APIs"],
+      "github_url": "https://github.com/johnsmith/devtools-dashboard",
+      "live_demo": "https://devtools.johnsmith.dev",
+      "documentation": "https://docs.devtools.johnsmith.dev",
+      "blog_post": "https://johnsmith.dev/blog/building-devtools-dashboard",
+      "metrics": {
+        "users": "150+",
+        "github_stars": 200,
+        "revenue": "$2K",
+        "uptime": "99.9%"
+      },
+      "keywords": ["developer tools", "dashboard", "productivity", "react", "typescript", "real-time", "api integration"],
+      "category": "personal_projects",
+      "importance": "high"
+    },
+    {
+      "id": "proj_002", 
+      "name": "ML-Powered Recipe Optimizer",
+      "type": "hackathon",
+      "status": "completed",
+      "featured": true,
+      "duration": "48 hours",
+      "start_date": "2024-03",
+      "end_date": "2024-03",
+      "content": "Winner of TechCrunch Disrupt Hackathon 2024 - an AI-powered application that optimizes recipes based on dietary restrictions, available ingredients, and nutritional goals. Built during a 48-hour hackathon with a team of 4 developers.\n\n**Challenge:**\nHome cooks struggle to adapt recipes to their dietary needs, ingredient availability, and health goals. Existing recipe apps don't provide intelligent substitutions or nutritional optimization.\n\n**Our Solution:**\nDeveloped a web application that uses machine learning to analyze recipes and suggest intelligent modifications. The system considers ingredient substitutions, cooking techniques, and nutritional requirements to create personalized recipe variations.\n\n**My Contributions:**\n- Led the technical architecture and backend development\n- Implemented the ML model for ingredient similarity and substitution logic\n- Built the REST API connecting frontend to ML processing pipeline\n- Deployed the complete application to AWS within the hackathon timeframe\n\n**Technical Architecture:**\n- **ML Pipeline:** Python with scikit-learn for ingredient clustering and substitution recommendations\n- **Backend:** Flask API with recipe parsing and nutritional calculation\n- **Frontend:** React SPA with intuitive recipe modification interface\n- **Database:** SQLite for rapid prototyping, recipe storage, and user preferences\n- **Deployment:** AWS Lambda for serverless ML inference, S3 for static assets\n\n**Innovation Highlights:**\n- Custom ingredient similarity algorithm based on nutritional profiles and cooking properties\n- Real-time recipe modification with instant nutritional recalculation\n- Smart shopping list generation based on available ingredients\n- User preference learning that improves recommendations over time\n\n**Hackathon Results:**\n- **1st Place Winner** out of 120+ teams\n- **Best Use of AI** special category award\n- Featured in TechCrunch article about hackathon innovations\n- Received interest from 3 VCs for potential commercialization\n- Demo video reached 10K+ views on social media\n\n**Post-Hackathon Impact:**\n- Extended the prototype into a full MVP over 2 months\n- Conducted user interviews with 50+ home cooks to validate product-market fit\n- Built waiting list of 500+ potential users\n- Currently exploring options for commercialization or open-source release",
+      "technologies": ["Python", "scikit-learn", "Flask", "React", "AWS Lambda", "SQLite", "Pandas", "NumPy"],
+      "github_url": "https://github.com/johnsmith/recipe-optimizer",
+      "demo_video": "https://youtube.com/watch?v=recipe-demo",
+      "press_coverage": "https://techcrunch.com/hackathon-winners-2024",
+      "team_size": 4,
+      "awards": ["1st Place - TechCrunch Disrupt Hackathon", "Best Use of AI Award"],
+      "keywords": ["machine learning", "hackathon", "python", "flask", "react", "aws", "food tech", "winner"],
+      "category": "hackathon_projects",
+      "importance": "high"
+    },
+    {
+      "id": "proj_003",
+      "name": "Open Source React Component Library",
+      "type": "open_source",
+      "status": "maintained",
+      "featured": false,
+      "duration": "2+ years",
+      "start_date": "2022-01",
+      "end_date": "ongoing",
+      "content": "A production-ready React component library focused on accessibility and developer experience. Started as an internal tool at my previous company and evolved into a popular open-source project used by 50+ companies.\n\n**Motivation:**\nWhile working on multiple React projects, I noticed our team was constantly rebuilding similar components with inconsistent styling and accessibility implementations. I decided to create a comprehensive, well-documented component library that could be shared across projects and teams.\n\n**Library Features:**\n- 40+ fully accessible React components following WCAG 2.1 guidelines\n- TypeScript-first with comprehensive type definitions\n- Customizable theming system with CSS-in-JS and CSS custom properties\n- Storybook documentation with interactive examples\n- Comprehensive unit and integration test coverage (95%+)\n- Tree-shaking support for optimal bundle sizes\n- Dark mode support for all components\n- Consistent API design with intuitive prop naming\n\n**Technical Highlights:**\n- Built with TypeScript, Styled Components, and React Hooks\n- Automated testing with Jest, React Testing Library, and visual regression tests\n- Component development workflow using Storybook and Chromatic\n- Automated releases and semantic versioning with GitHub Actions\n- Bundle analysis and performance monitoring\n- Extensive documentation website built with Docusaurus\n\n**Community Impact:**\n- **1,200+ GitHub stars** and growing\n- **500K+ weekly npm downloads**\n- Used by 50+ companies including 2 Fortune 500 organizations\n- 25+ external contributors from around the world\n- Featured in 5+ developer newsletters and blogs\n- Presented at React Meetup to 200+ developers\n\n**Maintenance & Leadership:**\n- Maintain consistent release schedule with monthly updates\n- Review and merge community pull requests\n- Provide support in GitHub issues and Discord community\n- Created contributor guidelines and mentoring program\n- Established roadmap process with community input\n\n**Skills Demonstrated:**\n- Open source project leadership and community management\n- Component API design and developer experience optimization\n- Accessibility implementation and testing\n- Documentation writing and technical communication\n- Long-term project maintenance and evolution",
+      "technologies": ["React", "TypeScript", "Styled Components", "Storybook", "Jest", "GitHub Actions", "npm", "Webpack"],
+      "github_url": "https://github.com/johnsmith/react-ui-components",
+      "npm_url": "https://npmjs.com/package/@johnsmith/ui-components",
+      "documentation": "https://ui-components.johnsmith.dev",
+      "storybook": "https://storybook.ui-components.johnsmith.dev",
+      "metrics": {
+        "github_stars": "1,200+",
+        "npm_downloads": "500K+/week",
+        "contributors": 25,
+        "companies_using": "50+"
+      },
+      "keywords": ["react", "component library", "open source", "typescript", "accessibility", "storybook"],
+      "category": "open_source_projects",
+      "importance": "medium"
+    },
+    {
+      "id": "proj_004",
+      "name": "Personal Finance Tracker PWA",
+      "type": "personal",
+      "status": "completed",
+      "featured": false,
+      "duration": "4 months",
+      "start_date": "2023-08",
+      "end_date": "2023-11",
+      "content": "A Progressive Web App for personal finance management with offline functionality and bank account integration. Built to solve my own need for a privacy-focused, customizable budgeting tool that works across all devices.\n\n**Project Goals:**\n- Create a fully offline-capable finance app that doesn't share data with third parties\n- Learn PWA development and advanced browser APIs\n- Implement secure client-side encryption for sensitive financial data\n- Build intuitive data visualization for spending patterns and budget tracking\n\n**Key Features:**\n- Offline-first architecture with automatic sync when online\n- Bank account integration using Plaid API (optional, user-controlled)\n- Client-side encryption for all financial data\n- Advanced budget tracking with category-based spending analysis\n- Interactive charts and spending trend visualization\n- Receipt photo capture and OCR for expense tracking\n- Customizable financial goals and progress tracking\n- Export data in multiple formats (CSV, PDF reports)\n\n**Technical Implementation:**\n- **Frontend:** Vue.js 3 with Composition API and TypeScript\n- **PWA Features:** Service Workers, IndexedDB, Web App Manifest\n- **Encryption:** Web Crypto API for client-side data encryption\n- **Visualization:** Chart.js for financial data visualization\n- **OCR:** Tesseract.js for receipt text extraction\n- **Build:** Vite for fast development and optimized production builds\n- **Testing:** Vitest for unit tests, Playwright for E2E testing\n\n**Learning Outcomes:**\n- Mastered PWA development patterns and browser storage APIs\n- Gained experience with financial data handling and security best practices\n- Learned client-side encryption implementation\n- Improved skills in data visualization and user experience design\n- Practiced solo project management and feature prioritization\n\n**Results:**\n- Successfully replaced my previous budgeting app with this custom solution\n- Achieved 100% Lighthouse PWA score\n- Shared code and learnings through detailed blog post series\n- Received positive feedback from 20+ beta testers\n- Considering open-source release after adding more documentation",
+      "technologies": ["Vue.js", "TypeScript", "PWA", "Service Workers", "IndexedDB", "Plaid API", "Chart.js", "Tesseract.js", "Vite"],
+      "github_url": "https://github.com/johnsmith/finance-tracker-pwa",
+      "blog_series": "https://johnsmith.dev/blog/building-finance-pwa",
+      "keywords": ["pwa", "vue.js", "personal finance", "offline-first", "encryption", "data visualization"],
+      "category": "personal_projects",
+      "importance": "medium"
+    }
+  ],
+  "project_summary": {
+    "total_projects": 15,
+    "featured_projects": 2,
+    "open_source_contributions": 8,
+    "hackathon_wins": 3,
+    "technologies_explored": ["React", "Vue.js", "TypeScript", "Python", "Node.js", "AWS", "Machine Learning", "PWA"],
+    "project_focus_areas": ["Developer Tools", "Open Source", "Machine Learning", "Web Performance", "Accessibility"]
+  }
+}
+
+// =============================================================================  
+// FILE 4: data/skills.json
+// =============================================================================
+
+{
+  "metadata": {
+    "file_type": "technical_skills",
+    "last_updated": "2025-01-20", 
+    "version": "1.0"
+  },
+  "programming_languages": [
+    {
+      "id": "lang_001",
+      "name": "JavaScript",
+      "level": "expert",
+      "years_experience": 6,
+      "proficiency_score": 9,
+      "content": "Expert-level JavaScript developer with 6+ years of professional experience across frontend, backend, and tooling. Deep understanding of ES6+ features, async programming patterns, and performance optimization techniques.\n\nExperience spans vanilla JavaScript, modern frameworks, and Node.js backend development. Comfortable with functional and object-oriented programming paradigms, closures, prototypes, and advanced concepts like generators and proxies.\n\nRecent focus areas include TypeScript adoption, performance optimization, and modern build tooling. Have mentored 10+ developers in JavaScript best practices and code review processes.",
+      "frameworks": ["React", "Vue.js", "Express.js", "Node.js", "Next.js", "Nuxt.js"],
+      "libraries": ["Lodash", "Moment.js", "Axios", "Jest", "Webpack", "Vite"],
+      "environments": ["Browser", "Node.js", "Web Workers", "Service Workers"],
+      "use_cases": [
+        "Frontend application development",
+        "Backend API development", 
+        "Build tooling and automation",
+        "Testing and quality assurance",
+        "Performance optimization"
+      ],
+      "recent_projects": ["DevTools Dashboard frontend", "React Component Library", "PWA Finance Tracker"],
+      "keywords": ["javascript", "es6", "async", "frontend", "backend", "react", "node.js", "performance"],
+      "category": "programming_languages",
+      "importance": "high"
+    },
+    {
+      "id": "lang_002",
+      "name": "TypeScript",
+      "level": "advanced",
+      "years_experience": 4,
+      "proficiency_score": 8,
+      "content": "Advanced TypeScript developer with 4+ years of experience building type-safe applications. Led TypeScript adoption initiatives at two companies, improving code quality and developer productivity.\n\nStrong understanding of advanced type system features including generics, conditional types, mapped types, and utility types. Experience with strict TypeScript configurations and gradual migration strategies from JavaScript codebases.\n\nRegularly use TypeScript for both frontend React applications and backend Node.js services. Advocate for type-driven development and have created custom type definitions for multiple third-party libraries.",
+      "frameworks": ["React with TypeScript", "Express with TypeScript", "Next.js"],
+      "tools": ["TSC", "ts-node", "ESLint TypeScript rules", "Prettier"],
+      "advanced_features": [
+        "Generic types and constraints",
+        "Conditional and mapped types",
+        "Declaration merging",
+        "Module augmentation",
+        "Strict mode configuration"
+      ],
+      "use_cases": [
+        "Large-scale application development",
+        "API type safety",
+        "Library and tool development",
+        "Legacy JavaScript migration"
+      ],
+      "keywords": ["typescript", "type safety", "generics", "strict mode", "migration"],
+      "category": "programming_languages", 
+      "importance": "high"
+    },
+    {
+      "id": "lang_003",
+      "name": "Python",
+      "level": "intermediate",
+      "years_experience": 3,
+      "proficiency_score": 7,
+      "content": "Intermediate Python developer with 3+ years of experience primarily in data science, machine learning, and backend development. Comfortable with both procedural and object-oriented programming styles.\n\nExperience includes data analysis with Pandas and NumPy, machine learning with scikit-learn and TensorFlow, and web development with Flask and Django. Strong understanding of Python's data structures, comprehensions, decorators, and context managers.\n\nRecently used Python for hackathon ML project and various automation scripts. Continuously improving skills through personal projects and online courses.",
+      "frameworks": ["Flask", "Django", "FastAPI"],
+      "libraries": ["Pandas", "NumPy", "scikit-learn", "TensorFlow", "Requests", "BeautifulSoup"],
+      "use_cases": [
+        "Data analysis and visualization",
+        "Machine learning model development",
+        "Web API development",
+        "Automation and scripting",
+        "Data processing pipelines"
+      ],
+      "recent_projects": ["ML Recipe Optimizer", "Data analysis scripts", "API prototypes"],
+      "keywords": ["python", "data science", "machine learning", "flask", "pandas", "automation"],
+      "category": "programming_languages",
+      "importance": "medium"
+    }
+  ],
+  "frameworks_libraries": [
+    {
+      "id": "fw_001",
+      "name": "React",
+      "category": "frontend_framework",
+      "level": "expert",
+      "years_experience": 5,
+      "proficiency_score": 9,
+      "content": "Expert React developer with 5+ years of professional experience building complex, scalable applications. Deep understanding of React ecosystem including hooks, context, performance optimization, and testing strategies.\n\nExperience ranges from small component libraries to large enterprise applications serving millions of users. Strong advocate for React best practices including component composition, proper state management, and accessibility.\n\nHave mentored multiple developers in React development and established React coding standards at previous companies. Stay current with React ecosystem evolution and contribute to open-source React projects.",
+      "expertise_areas": [
+        "Functional components and hooks",
+        "State management (Context, Redux, Zustand)",
+        "Performance optimization (memoization, lazy loading)",
+        "Testing (Jest, React Testing Library)",
+        "Accessibility implementation",
+        "Server-side rendering (Next.js)"
+      ],
+      "related_technologies": ["Redux", "React Router", "Styled Components", "Emotion", "Next.js", "Gatsby"],
+      "recent_projects": ["TechCorp Analytics Platform", "React Component Library", "DevTools Dashboard"],
+      "keywords": ["react", "hooks", "jsx", "component", "state management", "performance"],
+      "category": "frontend_frameworks",
+      "importance": "high"
+    },
+    {
+      "id": "fw_002", 
+      "name": "Node.js",
+      "category": "backend_framework",
+      "level": "advanced",
+      "years_experience": 4,
+      "proficiency_score": 8,
+      "content": "Advanced Node.js developer with 4+ years of experience building scalable backend services and APIs. Strong understanding of asynchronous programming, event loop, and Node.js architecture principles.\n\nExperience includes RESTful API development, real-time applications with WebSockets, microservices architecture, and database integration. Comfortable with Express.js, Fastify, and serverless Node.js deployments.\n\nFocus on writing performant, maintainable server-side code with proper error handling, logging, and monitoring. Experience with Node.js in production environments handling high traffic loads.",
+      "expertise_areas": [
+        "RESTful API development",
+        "Express.js and middleware",
+        "Database integration (SQL and NoSQL)",
+        "Authentication and authorization",
+        "Real-time features (WebSockets, Socket.io)",
+        "Microservices architecture",
+        "Serverless deployment (AWS Lambda)"
+      ],
+      "related_technologies": ["Express.js", "Fastify", "Socket.io", "Passport.js", "Mongoose", "Sequelize"],
+      "recent_projects": ["TechCorp Backend Services", "StartupXYZ API", "DevTools Dashboard Backend"],
+      "keywords": ["node.js", "express", "api", "backend", "microservices", "websockets"],
+      "category": "backend_frameworks",
+      "importance": "high"
+    },
+    {
+      "id": "fw_003",
+      "name": "Vue.js",
+      "category": "frontend_framework", 
+      "level": "intermediate",
+      "years_experience": 2,
+      "proficiency_score": 7,
+      "content": "Intermediate Vue.js developer with 2+ years of experience building responsive web applications. Comfortable with Vue 2 and Vue 3, including Composition API and script setup syntax.\n\nExperience includes component development, state management with Vuex/Pinia, routing with Vue Router, and build tooling with Vite. Used Vue.js for personal projects and client work at digital agency.\n\nAppreciate Vue's progressive adoption approach and developer-friendly API design. Currently expanding Vue.js skills through advanced patterns and performance optimization techniques.",
+      "expertise_areas": [
+        "Component development and communication",
+        "Vue Router for SPA navigation", 
+        "State management (Vuex, Pinia)",
+        "Composition API and reactivity",
+        "Build tooling (Vite, Vue CLI)",
+        "Testing (Vue Test Utils, Vitest)"
+      ],
+      "related_technologies": ["Vuex", "Pinia", "Vue Router", "Vite", "Nuxt.js", "Quasar"],
+      "recent_projects": ["Personal Finance PWA", "Client websites at Digital Agency"],
+      "keywords": ["vue.js", "composition api", "vuex", "pinia", "spa", "vite"],
+      "category": "frontend_frameworks",
+      "importance": "medium"
+    }
+  ],
+  "databases": [
+    {
+      "id": "db_001",
+      "name": "PostgreSQL",
+      "category": "relational_database",
+      "level": "advanced",
+      "years_experience": 4,
+      "proficiency_score": 8,
+      "content": "Advanced PostgreSQL user with 4+ years of experience designing and optimizing relational databases for web applications. Strong understanding of SQL, indexing strategies, query optimization, and database design principles.\n\nExperience includes schema design for complex applications, performance tuning for high-traffic systems, and advanced PostgreSQL features like JSON columns, full-text search, and window functions.\n\nComfortable with database administration tasks including backup strategies, replication setup, and monitoring. Have optimized queries handling millions of records and designed schemas supporting complex business logic.",
+      "expertise_areas": [
+        "Database schema design and normalization",
+        "Query optimization and indexing",
+        "Advanced SQL and window functions",
+        "JSON/JSONB data types",
+        "Full-text search implementation",
+        "Database performance monitoring",
+        "Backup and recovery strategies"
+      ],
+      "tools": ["pgAdmin", "DataGrip", "psql", "pg_stat_statements", "EXPLAIN ANALYZE"],
+      "use_cases": [
+        "Web application primary database",
+        "Analytics and reporting",
+        "Complex business logic implementation",
+        "High-traffic application optimization"
+      ],
+      "recent_projects": ["TechCorp Analytics Platform", "StartupXYZ User Data"],
+      "keywords": ["postgresql", "sql", "database design", "query optimization", "indexing"],
+      "category": "databases",
+      "importance": "high"
+    },
+    {
+      "id": "db_002",
+      "name": "MongoDB",
+      "category": "nosql_database",
+      "level": "intermediate",
+      "years_experience": 3,
+      "proficiency_score": 7,
+      "content": "Intermediate MongoDB developer with 3+ years of experience using document databases for flexible data storage. Comfortable with MongoDB query language, aggregation pipelines, and schema design for document-oriented applications.\n\nExperience includes designing collections for content management systems, user-generated content, and real-time applications. Understanding of MongoDB performance considerations, indexing strategies, and replication.\n\nUsed MongoDB in production applications with proper connection pooling, error handling, and monitoring. Appreciate MongoDB's flexibility for rapidly evolving application requirements.",
+      "expertise_areas": [
+        "Document schema design",
+        "Aggregation pipeline development",
+        "Indexing for performance",
+        "MongoDB Atlas cloud deployment",
+        "Mongoose ODM usage",
+        "Replica set configuration"
+      ],
+      "tools": ["MongoDB Compass", "MongoDB Atlas", "Mongoose", "mongo shell"],
+      "use_cases": [
+        "Content management systems",
+        "User-generated content storage",
+        "Real-time application data",
+        "Rapid prototyping"
+      ],
+      "recent_projects": ["StartupXYZ Content Storage", "Personal project databases"],
+      "keywords": ["mongodb", "nosql", "document database", "mongoose", "aggregation"],
+      "category": "databases",
+      "importance": "medium"
+    },
+    {
+      "id": "db_003",
+      "name": "Redis",
+      "category": "cache_database",
+      "level": "intermediate",
+      "years_experience": 2,
+      "proficiency_score": 6,
+      "content": "Intermediate Redis user with 2+ years of experience implementing caching solutions and session storage. Understanding of Redis data structures, persistence options, and use cases for high-performance applications.\n\nExperience includes implementing application caching, session management, real-time features with pub/sub, and rate limiting. Comfortable with Redis deployment and basic administration tasks.\n\nUsed Redis to significantly improve application performance and reduce database load in production environments. Currently expanding knowledge of advanced Redis features and clustering.",
+      "expertise_areas": [
+        "Application caching strategies",
+        "Session storage implementation",
+        "Pub/Sub for real-time features",
+        "Rate limiting and throttling",
+        "Redis data structures usage",
+        "Performance monitoring"
+      ],
+      "tools": ["Redis CLI", "RedisInsight", "Redis Cloud"],
+      "use_cases": [
+        "Application response caching",
+        "User session management", 
+        "Real-time notifications",
+        "API rate limiting",
+        "Temporary data storage"
+      ],
+      "recent_projects": ["TechCorp Caching Layer", "DevTools Dashboard Cache"],
+      "keywords": ["redis", "caching", "session storage", "pub/sub", "performance"],
+      "category": "databases",
+      "importance": "medium"
+    }
+  ],
+  "cloud_platforms": [
+    {
+      "id": "cloud_001",
+      "name": "Amazon Web Services (AWS)",
+      "category": "cloud_platform",
+      "level": "advanced",
+      "years_experience": 4,
+      "proficiency_score": 8,
+      "content": "Advanced AWS user with 4+ years of experience architecting and deploying scalable cloud applications. Strong understanding of core AWS services, security best practices, and cost optimization strategies.\n\nExperience spans compute services (EC2, Lambda), storage solutions (S3, EBS), databases (RDS, DynamoDB), networking (VPC, CloudFront), and DevOps tools (CodePipeline, CloudFormation). Have designed and implemented production architectures serving millions of users.\n\nFocus on serverless architectures, containerized deployments, and infrastructure as code. Continuously learning advanced AWS services and pursuing AWS certifications.",
+      "services_used": [
+        "EC2 (Elastic Compute Cloud)",
+        "Lambda (Serverless Functions)",
+        "S3 (Simple Storage Service)",
+        "RDS (Relational Database Service)",
+        "CloudFront (CDN)",
+        "API Gateway",
+        "ECS (Elastic Container Service)", 
+        "CloudFormation",
+        "CodePipeline",
+        "CloudWatch"
+      ],
+      "expertise_areas": [
+        "Serverless architecture design",
+        "Container orchestration with ECS",
+        "Infrastructure as Code (CloudFormation)",
+        "CI/CD pipeline implementation",
+        "Security and IAM management",
+        "Cost optimization strategies",
+        "Performance monitoring and logging"
+      ],
+      "certifications": ["AWS Certified Solutions Architect - Associate (In Progress)"],
+      "recent_projects": ["TechCorp Infrastructure", "DevTools Dashboard Deployment", "ML Recipe Optimizer Hosting"],
+      "keywords": ["aws", "cloud", "serverless", "lambda", "s3", "ec2", "infrastructure"],
+      "category": "cloud_platforms",
+      "importance": "high"
+    },
+    {
+      "id": "cloud_002",
+      "name": "Google Cloud Platform (GCP)",
+      "category": "cloud_platform",
+      "level": "beginner",
+      "years_experience": 1,
+      "proficiency_score": 4,
+      "content": "Beginner-level experience with Google Cloud Platform, primarily through personal projects and experimentation. Familiar with core services including Compute Engine, Cloud Storage, and Firebase.\n\nHave deployed simple applications using App Engine and used Firebase for real-time database features in personal projects. Currently learning GCP through online courses and hands-on practice.\n\nInterested in exploring GCP's machine learning and data analytics services for future projects. Plan to gain more production experience with GCP in upcoming projects.",
+      "services_used": [
+        "Compute Engine",
+        "Cloud Storage",
+        "App Engine",
+        "Firebase (Firestore, Authentication)",
+        "Cloud Functions"
+      ],
+      "learning_areas": [
+        "BigQuery for data analytics",
+        "AI/ML services (Vertex AI)",
+        "Kubernetes Engine (GKE)",
+        "Cloud Build for CI/CD"
+      ],
+      "recent_projects": ["Personal project deployments", "Firebase integration experiments"],
+      "keywords": ["gcp", "google cloud", "firebase", "app engine", "learning"],
+      "category": "cloud_platforms",
+      "importance": "low"
+    }
+  ],
+  "tools_technologies": [
+    {
+      "id": "tool_001",
+      "name": "Git & Version Control",
+      "category": "development_tools",
+      "level": "expert",
+      "years_experience": 6,
+      "proficiency_score": 9,
+      "content": "Expert-level Git user with 6+ years of experience managing code repositories, branching strategies, and collaborative development workflows. Deep understanding of Git internals, advanced commands, and best practices for team collaboration.\n\nExperience includes implementing Git workflows for teams of various sizes, code review processes, and repository management. Comfortable with complex merge scenarios, rebasing, cherry-picking, and repository maintenance tasks.\n\nHave trained multiple developers in Git best practices and established branching strategies that improved team productivity and code quality.",
+      "expertise_areas": [
+        "Advanced Git commands and workflows",
+        "Branching strategies (Git Flow, GitHub Flow)",
+        "Code review processes and tools",
+        "Repository management and maintenance",
+        "Conflict resolution and merge strategies",
+        "Git hooks and automation",
+        "Team collaboration workflows"
+      ],
+      "tools": ["Git CLI", "GitHub", "GitLab", "Bitbucket", "SourceTree", "VSCode Git integration"],
+      "use_cases": [
+        "Team collaboration and code sharing",
+        "Feature branch development",
+        "Release management",
+        "Code review and quality control",
+        "Open source project contribution"
+      ],
+      "keywords": ["git", "version control", "github", "branching", "collaboration", "code review"],
+      "category": "development_tools",
+      "importance": "high"
+    },
+    {
+      "id": "tool_002",
+      "name": "Docker & Containerization",
+      "category": "devops_tools",
+      "level": "advanced", 
+      "years_experience": 3,
+      "proficiency_score": 7,
+      "content": "Advanced Docker user with 3+ years of experience containerizing applications and implementing container-based deployment strategies. Strong understanding of Docker concepts, image optimization, and container orchestration basics.\n\nExperience includes creating efficient Dockerfiles, multi-stage builds, docker-compose for local development, and container deployment to cloud platforms. Have containerized both frontend and backend applications for consistent deployment across environments.\n\nFocus on Docker best practices including security scanning, image optimization, and proper resource management. Currently expanding knowledge of Kubernetes for container orchestration.",
+      "expertise_areas": [
+        "Dockerfile creation and optimization",
+        "Multi-stage builds for smaller images",
+        "Docker Compose for local development",
+        "Container networking and volumes",
+        "Security best practices",
+        "Registry management (Docker Hub, ECR)",
+        "CI/CD integration"
+      ],
+      "tools": ["Docker CLI", "Docker Desktop", "Docker Compose", "Docker Hub", "AWS ECR"],
+      "use_cases": [
+        "Application containerization",
+        "Development environment consistency",
+        "Microservices deployment",
+        "CI/CD pipeline integration",
+        "Cloud platform deployment"
+      ],
+      "recent_projects": ["TechCorp Application Containers", "DevTools Dashboard Deployment"],
+      "keywords": ["docker", "containers", "containerization", "deployment", "devops"],
+      "category": "devops_tools",
+      "importance": "high"
+    },
+    {
+      "id": "tool_003",
+      "name": "Testing Frameworks",
+      "category": "quality_assurance",
+      "level": "advanced",
+      "years_experience": 4,
+      "proficiency_score": 8,
+      "content": "Advanced experience with testing frameworks and methodologies across frontend and backend applications. Strong advocate for test-driven development and comprehensive test coverage.\n\nExperience includes unit testing with Jest and Vitest, integration testing with React Testing Library, end-to-end testing with Cypress and Playwright, and API testing with Supertest. Have implemented testing strategies that improved code quality and reduced production bugs.\n\nFocus on writing maintainable tests that provide confidence in code changes without being overly brittle. Experience with test automation in CI/CD pipelines and performance testing strategies.",
+      "frameworks_used": [
+        "Jest (JavaScript unit testing)",
+        "React Testing Library (React component testing)",
+        "Vitest (Vite-native testing)",
+        "Cypress (E2E testing)",
+        "Playwright (Cross-browser E2E)",
+        "Supertest (API testing)",
+        "pytest (Python testing)"
+      ],
+      "testing_types": [
+        "Unit testing",
+        "Integration testing",
+        "End-to-end testing",
+        "Component testing",
+        "API testing",
+        "Visual regression testing",
+        "Performance testing"
+      ],
+      "best_practices": [
+        "Test-driven development (TDD)",
+        "Behavior-driven development (BDD)",
+        "Test pyramid implementation",
+        "Continuous testing in CI/CD",
+        "Test data management",
+        "Mock and stub strategies"
+      ],
+      "keywords": ["testing", "jest", "cypress", "playwright", "tdd", "test automation", "quality assurance"],
+      "category": "quality_assurance",
+      "importance": "high"
+    }
+  ],
+  "soft_skills": [
+    {
+      "id": "soft_001",
+      "name": "Technical Leadership",
+      "level": "advanced",
+      "content": "Advanced technical leadership skills developed through leading engineering teams and driving technical initiatives. Experience managing teams of up to 8 developers while maintaining hands-on involvement in architecture and code review.\n\nStrengths include technical decision-making, architectural planning, and balancing technical debt with feature delivery. Comfortable presenting technical concepts to both engineering teams and non-technical stakeholders.\n\nHave successfully led multiple technical initiatives including microservices migrations, technology stack upgrades, and engineering process improvements that resulted in measurable productivity gains.",
+      "examples": [
+        "Led team of 8 engineers at TechCorp with 35% productivity improvement",
+        "Architected microservices migration reducing system latency by 60%",
+        "Established code review standards adopted across entire engineering organization",
+        "Mentored 5 junior engineers with 3 receiving promotions within 12 months"
+      ],
+      "skills_demonstrated": [
+        "Technical architecture and system design",
+        "Team coordination and project management", 
+        "Code review and quality standards",
+        "Technology evaluation and adoption",
+        "Cross-functional collaboration",
+        "Stakeholder communication"
+      ],
+      "keywords": ["leadership", "team management", "architecture", "mentoring", "communication"],
+      "category": "leadership_skills",
+      "importance": "high"
+    },
+    {
+      "id": "soft_002",
+      "name": "Problem Solving & Debugging",
+      "level": "expert",
+      "content": "Expert-level problem-solving skills with systematic approach to debugging complex technical issues. Proven ability to analyze problems, identify root causes, and implement effective solutions under pressure.\n\nExperience includes troubleshooting production issues affecting millions of users, optimizing performance bottlenecks, and solving complex integration challenges. Strong analytical thinking combined with creative problem-solving approaches.\n\nKnown for staying calm under pressure and methodically working through complex problems. Have solved critical production issues that saved companies significant revenue and customer trust.",
+      "examples": [
+        "Debugged critical production issue saving company $50K in potential lost revenue",
+        "Optimized database queries reducing API response time from 2s to 200ms",
+        "Solved complex authentication integration affecting 100K+ users",
+        "Identified and fixed memory leak causing server crashes under high load"
+      ],
+      "problem_solving_approach": [
+        "Systematic debugging methodology",
+        "Root cause analysis",
+        "Performance profiling and optimization",
+        "Load testing and capacity planning",
+        "Cross-system integration troubleshooting",
+        "Documentation of solutions for future reference"
+      ],
+      "keywords": ["problem solving", "debugging", "optimization", "root cause analysis", "critical thinking"],
+      "category": "technical_skills",
+      "importance": "high"
+    },
+    {
+      "id": "soft_003",
+      "name": "Communication & Collaboration",
+      "level": "advanced",
+      "content": "Advanced communication skills with experience presenting technical concepts to diverse audiences including engineers, product managers, executives, and clients. Strong written and verbal communication abilities.\n\nExperience includes technical documentation writing, leading engineering meetings, presenting to executive stakeholders, and collaborating with cross-functional teams. Comfortable explaining complex technical concepts in accessible terms.\n\nHave built strong working relationships across organizations and contributed to positive team culture through clear communication, active listening, and constructive feedback.",
+      "examples": [
+        "Presented technical roadmap to C-level executives for $2M infrastructure investment",
+        "Created technical documentation reducing new developer onboarding time by 50%",
+        "Led weekly engineering meetings for 15+ person development team",
+        "Collaborated with product and design teams on user experience improvements"
+      ],
+      "communication_types": [
+        "Technical presentation to executives",
+        "Documentation and knowledge sharing",
+        "Code review feedback and mentoring",
+        "Cross-functional project coordination",
+        "Client communication and requirement gathering",
+        "Public speaking at meetups and conferences"
+      ],
+      "keywords": ["communication", "presentation", "documentation", "collaboration", "stakeholder management"],
+      "category": "communication_skills", 
+      "importance": "high"
+    }
+  ],
+  "learning_development": {
+    "current_learning": [
+      {
+        "topic": "Advanced System Design",
+        "description": "Studying distributed systems patterns, microservices architecture, and scalability strategies",
+        "resources": ["System Design Interview books", "AWS Architecture Center", "High Scalability blog"],
+        "timeline": "6 months",
+        "motivation": "Preparing for senior technical leadership roles"
+      },
+      {
+        "topic": "Machine Learning Operations (MLOps)",
+        "description": "Learning ML model deployment, monitoring, and lifecycle management",
+        "resources": ["MLOps Coursera specialization", "Kubeflow tutorials", "MLflow documentation"],
+        "timeline": "4 months", 
+        "motivation": "Expanding skills to bridge engineering and data science teams"
+      },
+      {
+        "topic": "Kubernetes & Container Orchestration",
+        "description": "Deep dive into Kubernetes for container orchestration and cloud-native applications",
+        "resources": ["Kubernetes in Action book", "CKA certification prep", "Hands-on lab practice"],
+        "timeline": "3 months",
+        "motivation": "Essential for modern cloud infrastructure management"
+      }
+    ],
+    "planned_learning": [
+      {
+        "topic": "Go Programming Language",
+        "priority": "high",
+        "rationale": "Expanding backend development skills for high-performance systems"
+      },
+      {
+        "topic": "Advanced AWS Services",
+        "priority": "medium",
+        "rationale": "Pursuing AWS Solutions Architect Professional certification"
+      },
+      {
+        "topic": "Technical Writing & Developer Relations",
+        "priority": "medium",
+        "rationale": "Interested in contributing more to developer community"
+      }
+    ],
+    "learning_approach": "Combination of hands-on projects, online courses, reading technical books, and contributing to open source projects. Prefer learning through building real applications rather than just theoretical study.",
+    "knowledge_sharing": [
+      "Technical blog with 10,000+ monthly readers",
+      "Regular contributions to open source projects",
+      "Mentoring junior developers at work",
+      "Speaking at local meetups and conferences"
+    ]
+  }
+}
+
+// =============================================================================
+// FILE 5: data/education.json
+// =============================================================================
+
+{
+  "metadata": {
+    "file_type": "education_background",
+    "last_updated": "2025-01-20",
+    "version": "1.0"
+  },
+  "formal_education": [
+    {
+      "id": "edu_001",
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of California, Berkeley",
+      "location": "Berkeley, CA",
+      "graduation_year": 2019,
+      "graduation_month": "May",
+      "gpa": 3.7,
+      "gpa_scale": "4.0",
+      "honors": ["Dean's List (Fall 2018, Spring 2019)", "Magna Cum Laude"],
+      "content": "Comprehensive Computer Science education with focus on software engineering, algorithms, and system design. Strong foundation in computer science fundamentals including data structures, algorithms, database systems, and software architecture.\n\nCoursework emphasized both theoretical understanding and practical application through extensive programming projects and team collaborations. Developed strong problem-solving skills and learned multiple programming paradigms.\n\nActive in computer science community through participation in hackathons, coding competitions, and study groups. Built several significant projects during academic career that demonstrated real-world application of classroom concepts.",
+      "relevant_coursework": [
+        {
+          "course": "Data Structures and Algorithms (CS 61B)",
+          "grade": "A",
+          "description": "Comprehensive study of fundamental data structures and algorithms with Java implementation"
+        },
+        {
+          "course": "Computer Systems (CS 61C)",
+          "grade": "A-", 
+          "description": "Computer architecture, assembly language, and system-level programming in C"
+        },
+        {
+          "course": "Database Systems (CS 186)",
+          "grade": "A",
+          "description": "Relational database design, SQL, indexing, and transaction processing"
+        },
+        {
+          "course": "Software Engineering (CS 169)",
+          "grade": "A",
+          "description": "Agile development, testing, deployment, and team collaboration on real projects"
+        },
+        {
+          "course": "Machine Learning (CS 189)",
+          "grade": "B+",
+          "description": "Supervised and unsupervised learning algorithms with mathematical foundations"
+        },
+        {
+          "course": "Web Development (CS 160)",
+          "grade": "A",
+          "description": "Frontend and backend web development with modern frameworks and tools"
+        }
+      ],
+      "academic_projects": [
+        {
+          "name": "Distributed Database System",
+          "course": "CS 186",
+          "description": "Implemented a distributed database with ACID properties, replication, and fault tolerance using Java",
+          "technologies": ["Java", "Networking", "Concurrent Programming", "Database Design"],
+          "outcome": "Achieved 98% test coverage and handled 1000+ concurrent transactions"
+        },
+        {
+          "name": "Compiler for Custom Programming Language", 
+          "course": "CS 164",
+          "description": "Built a complete compiler including lexer, parser, semantic analyzer, and code generator",
+          "technologies": ["Python", "ANTLR", "LLVM", "Language Design"],
+          "outcome": "Successfully compiled and executed recursive algorithms and complex data structures"
+        },
+        {
+          "name": "Social Media Analytics Platform",
+          "course": "CS 169",
+          "description": "Full-stack web application analyzing social media trends with team of 4 students",
+          "technologies": ["Ruby on Rails", "PostgreSQL", "React", "Twitter API", "Heroku"],
+          "outcome": "Deployed application processing 10,000+ tweets daily with real-time visualization"
+        }
+      ],
+      "extracurricular": [
+        {
+          "activity": "Association for Computing Machinery (ACM)",
+          "role": "Vice President",
+          "duration": "2018-2019",
+          "description": "Organized technical workshops, hackathons, and industry networking events for 200+ members"
+        },
+        {
+          "activity": "Computer Science Tutoring",
+          "role": "Peer Tutor", 
+          "duration": "2017-2019",
+          "description": "Tutored underclassmen in data structures, algorithms, and programming fundamentals"
+        },
+        {
+          "activity": "HackBerkeley",
+          "role": "Participant & Mentor",
+          "duration": "2017-2019", 
+          "description": "Participated in 5+ hackathons, won 2 awards, later mentored new participants"
+        }
+      ],
+      "keywords": ["computer science", "berkeley", "algorithms", "software engineering", "database systems"],
+      "category": "formal_education",
+      "importance": "high"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert_001",
+      "name": "AWS Certified Solutions Architect - Associate",
+      "issuing_organization": "Amazon Web Services",
+      "issue_date": "2024-03",
+      "expiry_date": "2027-03",
+      "credential_id": "AWS-SA-2024-JS-001",
+      "verification_url": "https://aws.amazon.com/verification/",
+      "content": "Comprehensive AWS certification validating ability to design and deploy scalable, highly available systems on AWS. Covers compute, networking, storage, and database AWS services along with deployment and management best practices.\n\nPrepared through 3 months of hands-on practice with AWS services, completing multiple architecture projects, and studying AWS Well-Architected Framework principles. The certification validates skills in cost optimization, security implementation, and operational excellence.\n\nThis certification enhances my ability to design cloud-native applications and lead infrastructure decisions in cloud-first organizations.",
+      "skills_validated": [
+        "AWS core services (EC2, S3, RDS, VPC)",
+        "Scalable architecture design",
+        "Security and compliance implementation",
+        "Cost optimization strategies",
+        "High availability and disaster recovery",
+        "Migration strategies and best practices"
+      ],
+      "preparation_time": "3 months",
+      "exam_score": "850/1000",
+      "keywords": ["aws", "cloud architecture", "solutions architect", "certification", "scalability"],
+      "category": "cloud_certifications",
+      "importance": "high"
+    },
+    {
+      "id": "cert_002",
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuing_organization": "Cloud Native Computing Foundation",
+      "issue_date": "2023-11",
+      "expiry_date": "2026-11",
+      "credential_id": "CKA-2023-JS-445",
+      "verification_url": "https://www.credly.com/badges/",
+      "content": "Performance-based certification demonstrating skills in Kubernetes administration, including cluster management, troubleshooting, and application deployment. This hands-on exam requires practical knowledge of Kubernetes operations.\n\nPrepared through extensive practice with Kubernetes clusters, studying CNCF curriculum, and completing multiple lab exercises. The certification validates ability to manage production Kubernetes environments and troubleshoot complex issues.\n\nDirectly applicable to modern containerized application deployment and management in cloud environments.",
+      "skills_validated": [
+        "Kubernetes cluster installation and configuration",
+        "Pod and service management",
+        "Storage and volume management",
+        "Networking and security policies",
+        "Troubleshooting and maintenance",
+        "Application lifecycle management"
+      ],
+      "preparation_time": "4 months",
+      "exam_format": "Performance-based practical exam",
+      "keywords": ["kubernetes", "container orchestration", "cka", "cloud native", "devops"],
+      "category": "devops_certifications",
+      "importance": "medium"
+    },
+    {
+      "id": "cert_003",
+      "name": "Professional Scrum Master I (PSM I)",
+      "issuing_organization": "Scrum.org",
+      "issue_date": "2023-06",
+      "expiry_date": "lifetime",
+      "credential_id": "PSM1-2023-445789",
+      "verification_url": "https://www.scrum.org/certificates/",
+      "content": "Certification demonstrating fundamental understanding of Scrum framework, team dynamics, and agile project management principles. Validates knowledge of Scrum roles, events, artifacts, and underlying principles.\n\nObtained to formalize agile methodology knowledge gained through practical experience leading development teams. The certification enhanced my ability to facilitate effective team collaboration and deliver value through iterative development.\n\nDirectly applicable to my role as technical lead, helping teams adopt agile practices and improve delivery velocity.",
+      "skills_validated": [
+        "Scrum framework and principles",
+        "Team facilitation and coaching",
+        "Sprint planning and execution",
+        "Stakeholder collaboration",
+        "Continuous improvement practices",
+        "Agile metrics and measurement"
+      ],
+      "preparation_time": "1 month",
+      "exam_score": "95%",
+      "keywords": ["scrum", "agile", "project management", "team leadership", "facilitation"],
+      "category": "project_management",
+      "importance": "medium"
+    }
+  ],
+  "online_courses": [
+    {
+      "id": "course_001",
+      "title": "Machine Learning Engineering for Production (MLOps) Specialization",
+      "provider": "Coursera (DeepLearning.AI)",
+      "completion_date": "2024-01",
+      "duration": "4 months",
+      "certificate_url": "https://coursera.org/share/certificate123",
+      "content": "Comprehensive specialization covering the full machine learning lifecycle from model development to production deployment. Focused on practical MLOps implementation including model versioning, automated testing, monitoring, and continuous deployment.\n\nCompleted hands-on projects including building ML pipelines, implementing A/B testing for ML models, and setting up monitoring systems. Gained practical experience with MLflow, Kubeflow, and TensorFlow Extended (TFX).\n\nDirectly applicable to bridging the gap between data science and engineering teams in my current role.",
+      "courses_included": [
+        "Introduction to Machine Learning in Production",
+        "Machine Learning Data Lifecycle in Production", 
+        "Machine Learning Modeling Pipelines in Production",
+        "Deploying Machine Learning Models in Production"
+      ],
+      "skills_gained": [
+        "ML pipeline design and implementation",
+        "Model versioning and experiment tracking",
+        "A/B testing for machine learning",
+        "ML model monitoring and maintenance",
+        "Data validation and testing",
+        "Continuous integration for ML"
+      ],
+      "technologies_learned": ["MLflow", "Kubeflow", "TensorFlow Extended", "Apache Airflow", "Docker", "Kubernetes"],
+      "keywords": ["mlops", "machine learning", "production ml", "model deployment", "ml pipelines"],
+      "category": "professional_development",
+      "importance": "high"
+    },
+    {
+      "id": "course_002",
+      "title": "System Design Interview Course",
+      "provider": "AlgoExpert",
+      "completion_date": "2023-09",
+      "duration": "2 months",
+      "certificate_url": "https://algoexpert.io/certificate/system-design",
+      "content": "Intensive course covering large-scale system design principles, distributed systems concepts, and architectural patterns commonly discussed in technical interviews. Focused on practical system design for high-traffic applications.\n\nCompleted 25+ system design problems including designing social media platforms, chat systems, ride-sharing applications, and content delivery networks. Learned to evaluate trade-offs between different architectural approaches.\n\nValuable for technical leadership role, providing framework for making architectural decisions and communicating system designs to stakeholders.",
+      "topics_covered": [
+        "Scalability and load balancing",
+        "Database design and data modeling",
+        "Caching strategies and content delivery",
+        "Microservices architecture patterns",
+        "Message queues and event-driven systems",
+        "Monitoring and observability",
+        "Security and authentication at scale"
+      ],
+      "practical_exercises": [
+        "Design Twitter-like social media platform",
+        "Build scalable chat system architecture",
+        "Design ride-sharing service backend",
+        "Create video streaming platform design"
+      ],
+      "keywords": ["system design", "scalability", "distributed systems", "architecture", "interview prep"],
+      "category": "technical_skills",
+      "importance": "high"
+    },
+    {
+      "id": "course_003",
+      "title": "Advanced React Patterns and Performance",
+      "provider": "Epic React (Kent C. Dodds)",
+      "completion_date": "2023-03", 
+      "duration": "6 weeks",
+      "certificate_url": "https://epicreact.dev/certificate/advanced",
+      "content": "Advanced React course covering performance optimization, advanced patterns, and best practices for large-scale React applications. Focused on practical techniques for building maintainable, performant React codebases.\n\nCompleted intensive workshops on React performance profiling, advanced hook patterns, compound components, and state management strategies. Gained deep understanding of React internals and optimization techniques.\n\nImmediately applicable to improving React applications at work, resulting in 40% performance improvement in main product dashboard.",
+      "modules_completed": [
+        "React Performance Optimization",
+        "Advanced React Hooks",
+        "Advanced React Patterns",
+        "React Suspense and Concurrent Features",
+        "Testing React Applications",
+        "React Application Architecture"
+      ],
+      "skills_gained": [
+        "React performance profiling and optimization",
+        "Advanced hook patterns and custom hooks",
+        "Compound component patterns",
+        "State management strategies",
+        "Testing strategies for complex React apps",
+        "Code splitting and lazy loading"
+      ],
+      "keywords": ["react", "performance", "advanced patterns", "hooks", "optimization"],
+      "category": "frontend_development",
+      "importance": "medium"
+    }
+  ],
+  "workshops_conferences": [
+    {
+      "id": "event_001",
+      "name": "AWS re:Invent 2024",
+      "type": "conference",
+      "location": "Las Vegas, NV",
+      "date": "2024-12",
+      "role": "attendee",
+      "content": "Attended AWS's flagship cloud computing conference featuring latest AWS services, best practices, and industry trends. Participated in hands-on workshops, technical sessions, and networking events with 50,000+ cloud professionals.\n\nKey sessions attended focused on serverless architecture, machine learning services, and infrastructure as code. Gained insights into AWS roadmap and emerging cloud technologies.\n\nNetworked with industry leaders and gained valuable perspectives on cloud adoption strategies and emerging technologies.",
+      "key_sessions": [
+        "Serverless Architecture Patterns and Best Practices",
+        "ML Ops at Scale with AWS SageMaker",
+        "Infrastructure as Code with AWS CDK",
+        "Building Resilient Applications on AWS"
+      ],
+      "networking_outcomes": [
+        "Connected with 20+ cloud architects and engineers",
+        "Discussed potential collaboration opportunities",
+        "Learned about industry challenges and solutions"
+      ],
+      "keywords": ["aws", "conference", "cloud computing", "serverless", "networking"],
+      "category": "professional_development",
+      "importance": "medium"
+    },
+    {
+      "id": "event_002",
+      "name": "React Summit 2024",
+      "type": "conference",
+      "location": "Online",
+      "date": "2024-06",
+      "role": "attendee",
+      "content": "Premier React conference featuring talks from React core team members, industry experts, and innovative companies building with React. Focused on latest React features, performance optimization, and ecosystem developments.\n\nAttended sessions on React Server Components, concurrent rendering, and advanced state management patterns. Gained insights into React's future direction and best practices for large-scale applications.\n\nValuable for staying current with React ecosystem and applying latest patterns to improve team's React development practices.",
+      "key_sessions": [
+        "React Server Components: The Future of React",
+        "Performance Optimization in Modern React Apps",
+        "State Management in 2024: Redux vs Zustand vs Context",
+        "Building Accessible React Applications"
+      ],
+      "takeaways": [
+        "Implemented React Server Components in side project",
+        "Updated team's React coding standards",
+        "Improved accessibility practices in current projects"
+      ],
+      "keywords": ["react", "javascript", "frontend", "performance", "accessibility"],
+      "category": "frontend_development",
+      "importance": "medium"
+    }
+  ],
+  "self_directed_learning": [
+    {
+      "id": "self_001",
+      "topic": "Technical Writing and Developer Relations",
+      "duration": "ongoing",
+      "content": "Self-directed learning in technical writing, content creation, and developer relations through blogging, open source contributions, and community engagement. Focus on effectively communicating complex technical concepts to diverse audiences.\n\nMaintain technical blog with 10,000+ monthly readers, covering topics in web development, system design, and engineering best practices. Regular writing has improved my ability to explain technical concepts clearly and build thought leadership.\n\nActive in developer community through open source contributions, mentoring, and speaking at local meetups. This experience has enhanced communication skills and built valuable professional network.",
+      "activities": [
+        "Technical blog writing (weekly posts)",
+        "Open source project documentation",
+        "Community forum participation (Stack Overflow, Reddit)",
+        "Speaking at local meetups and workshops",
+        "Mentoring junior developers"
+      ],
+      "metrics": [
+        "50+ published technical articles",
+        "10,000+ monthly blog readers", 
+        "500+ Stack Overflow reputation",
+        "5 meetup presentations",
+        "12+ developers mentored"
+      ],
+      "keywords": ["technical writing", "developer relations", "community", "mentoring", "communication"],
+      "category": "professional_development",
+      "importance": "medium"
+    },
+    {
+      "id": "self_002",
+      "topic": "Startup and Business Strategy",
+      "duration": "2+ years",
+      "content": "Self-directed learning in startup ecosystems, business strategy, and entrepreneurship through books, podcasts, and practical experience. Interest stems from working at early-stage startups and desire to understand business side of technology.\n\nStudied lean startup methodology, product-market fit validation, and growth strategies. Practical application through side projects and contributing to product strategy discussions at current company.\n\nGoal is to develop skills needed for future leadership roles that bridge technology and business strategy.",
+      "learning_sources": [
+        "Books: 'The Lean Startup', 'Zero to One', 'Crossing the Chasm'",
+        "Podcasts: 'Masters of Scale', 'The Tim Ferriss Show', 'Y Combinator Startup School'",
+        "Online courses: 'Startup School' by Y Combinator",
+        "Practical experience: Side project development and validation"
+      ],
+      "applications": [
+        "Applied lean methodology to side project development",
+        "Contributed to product roadmap planning at work",
+        "Mentored early-stage startup founders on technical strategy",
+        "Validated business ideas through customer interviews"
+      ],
+      "keywords": ["startup", "business strategy", "entrepreneurship", "product development", "lean startup"],
+      "category": "business_development",
+      "importance": "low"
+    }
+  ],
+  "education_summary": {
+    "formal_degree": "BS Computer Science from UC Berkeley (2019)",
+    "certifications_count": 3,
+    "online_courses_completed": 15,
+    "conferences_attended": 8,
+    "continuous_learning_approach": "Combination of formal certifications, hands-on projects, online courses, and community engagement. Focus on practical application of new skills through side projects and work implementation.",
+    "learning_philosophy": "Believe in continuous learning and staying current with technology trends. Prefer hands-on learning through building projects over theoretical study. Active in sharing knowledge through writing, mentoring, and community participation.",
+    "future_learning_goals": [
+      "Complete AWS Solutions Architect Professional certification",
+      "Deep dive into Go programming language for backend development",
+      "Study advanced system design patterns for distributed systems",
+      "Explore technical leadership and engineering management skills"
+    ]
+  }
+}
+
+// =============================================================================
+// USAGE INSTRUCTIONS
+// =============================================================================
+
+/*
+HOW TO USE THESE TEMPLATES:
+
+1. CUSTOMIZATION:
+   - Replace all placeholder information with your actual details
+   - Adjust proficiency levels and years of experience to match your background
+   - Modify technologies and frameworks to reflect your actual skill set
+   - Update project descriptions with your real projects
+
+2. FILE ORGANIZATION:
+   - Save each section as separate JSON files in your data/ directory
+   - Use consistent naming: personal_info.json, experience.json, etc.
+   - Maintain the same structure for easier processing
+
+3. CONTENT GUIDELINES:
+   - Be specific with metrics and quantifiable achievements
+   - Include context and impact for each experience or project
+   - Use keywords relevant to your target roles
+   - Balance technical depth with readability
+
+4. MAINTENANCE:
+   - Update files regularly (monthly/quarterly)
+   - Add new experiences, projects, and skills as you grow
+   - Archive outdated information rather than deleting it
+   - Keep importance levels current for better retrieval
+
+5. TESTING:
+   - Test with sample queries relevant to your career goals
+   - Ensure consistent terminology across all files
+   - Validate that important information has high importance ratings
+   - Check that keywords align with job descriptions you're targeting
+
+6. PRIVACY CONSIDERATIONS:
+   - Remove or anonymize sensitive personal information
+   - Consider using environment variables for contact details
+   - Be mindful of proprietary company information
+   - Ensure all shared project details are public or approved
+
+REMEMBER: This is YOUR professional story - make it authentic, compelling, and representative of your unique journey and capabilities!
+*/
+      "

@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "profile_name": "Priyansh Raj - Professional Portfolio",
+    "file_type": "integrated_professional_profile",
+    "last_updated": "2025-08-24",
+    "version": "1.0",
+    "sections": [
+      "basic_info",
+      "professional_summary",
+      "work_experience", 
+      "education",
+      "technical_skills",
+      "projects",
+      "career_goals",
+      "personal_interests"
+    ]
+  },
+
+  "basic_info": {
+    "name": "Priyansh Raj",
+    "current_position": "Junior Software Developer at PayGURU Technosoft Pvt. Ltd.",
+
+    "location": "Vadodara, Gujarat, India",
+    "education_status": "Master's student in Computer Science at MSU",
+    "contact": {
+      "email": "priyanshraj.dev@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/priyansh-raj/",
+      "github": "https://github.com/PriyanshRaj30"
+    },
+    "Payguru Projects / payguru experience" : [
+      "Developed and maintained VisionSphere - a comprehensive biometric device management system handling 500+ devices across multiple locations. Built real-time attendance synchronization, device health monitoring, user management, and network-based device communication using Python, PyQt5, Pandas, MySQL, and Socket Programming. Deployed at Atul Ltd with 60% reduction in IT overhead.",
+      
+      "Developed from scratch EzeeCanteen - an automated canteen management platform eliminating manual processes and preventing malpractices. Built cashless transaction system, automated meal tracking, real-time order monitoring, printer management, and automated email reporting. Technologies: Python, MySQL, SMTP, Email Integration, Biometric-API, PyQt5, Pandas. Successfully deployed at Gujarat Fluorochemicals Limited, Xylem Ltd, Atul Ltd, and Borosil Ltd.",
+      
+      "Designed and developed Vehicle Management System (VMS) - a comprehensive access control system for multiple entry types with biometric and card-based identification. Built advanced security features, streamlined access control for organizational facilities, and integrated with existing security infrastructure. Deployed at Atul Ltd using Python and database management technologies.",
+      
+      "Developed Intelligent Traffic Violation Detection Platform AKA Traffy - an AI-powered traffic monitoring solution combining computer vision and OCR technologies. Built real-time vehicle detection and classification, accurate speed measurement using tracking algorithms, license plate detection and OCR with high accuracy, automated violation alert system, and comprehensive logging with evidence capture. Technologies: Python, YOLO, OpenCV, PyTorch, OCR, NumPy, Pandas.",
+      
+      "Developed Face Recognition Attendance System - a sophisticated real-time face recognition attendance and authentication system with multi-face detection capabilities. Built dynamic face tracking across multiple camera angles, CCTV integration via RTSP, automatic biometric triggering, door access control integration, and comprehensive attendance record management. Achieved 80%+ recognition accuracy with sub-second response time using Python, YOLO, Dlib, OpenCV, PyQt5, RTSP, MySQL, and Deep Learning.",
+      
+      "Developed AI Surveillance Suite - a multi-detection system including smoke detection, violence detection, weapon detection, and posture detection for comprehensive security monitoring. Used YOLO, OpenCV, multithreading, and parallel processing for real-time surveillance applications.",
+      
+      "Built 8+ specialized computer vision modules for security and surveillance applications including real-time video processing, object detection, facial recognition systems, and automated monitoring solutions using advanced AI/ML technologies.",
+      
+      "Created end-to-end software applications with focus on UI/UX and backend infrastructure, developing professional desktop applications using PyQt5 and web-based solutions with modern frameworks.",
+      
+      "Developed robust backend infrastructures using Python and MySQL for real-time data processing, handling thousands of daily records with high performance and reliability requirements.",
+      
+      "Integrated software applications with various hardware devices including HikVision Biometric Devices, CCTV Cameras, access control systems, and surveillance equipment using RTSP protocol, device APIs, and network programming.",
+      
+      "Worked on countless small biometric device utilities and solutions including device configuration tools, data synchronization utilities, network management applications, and custom hardware integration solutions."
+      ],
+    "availability": {
+      "status": "serving_notice_period",
+      "preferred_roles": ["Junior Software Engineer", "Software Developer", "AI/ML Engineer"]
+    }
+  },
+
+  "professional_summary": {
+    "overview": "Passionate computer science student pursuing Master's degree with hands-on experience in web development, AI/ML, and computer vision. worked at payguru till august as junior software developer",
+    "unique_value_proposition": [
+      "Blends academic knowledge with practical experience in enterprise software development",
+      "Experienced in building scalable applications managing 500+ devices in real-time",
+      "Proficient across multiple technology stacks - Python, JavaScript, React, Express.js, MongoDB, Flutter",
+      "Passionate about cutting-edge AI technologies including RAG, LangChain, and computer vision",
+      "Creative problem solver who makes complex concepts simple and approachable",
+      "Strong admiration for innovators like Elon Musk and Tony Stark, channeling their drive into tech projects"
+    ],
+    "career_focus": "Building career in AI/ML industry with strong foundation in software development",
+    "personality_traits": ["Creative", "Passionate", "Confident", "Geek", "Avid reader", "Cinema enthusiast"]
+  },
+
+  "work_experience": {
+    "total_experience": "8+ months",
+    "positions": [
+      {
+        "id": "exp_001",
+        "company": "PayGURU Technosoft Pvt. Ltd.",
+        "company_description": "Technology solutions provider specializing in biometric devices, computer vision applications, and enterprise software development",
+        "position": "Junior Software Developer",
+        "level": "Junior",
+        "duration": "February 2025 - August 2025",
+        "duration_months": 6,
+        "location": "Vadodara, Gujarat, India",
+        "employment_type": "Full-time",
+        "status": "current_notice_period",
+
+   
+        "key_responsibilities": [
+        "Developed and maintained VisionSphere - a comprehensive biometric device management system handling 500+ devices across multiple locations. Built real-time attendance synchronization, device health monitoring, user management, and network-based device communication using Python, PyQt5, Pandas, MySQL, and Socket Programming. Deployed at Atul Ltd with 60% reduction in IT overhead.",
+        
+        "Developed from scratch EzeeCanteen - A comprehensive canteen management system designed to efficiently manage organizational canteens by tracking employee meal consumption, automating meal orders, and implementing cashless transactions. The system eliminates manual token distribution and reduces operational overhead while preventing malpractices.\n\n**Problem Statement:**\nTraditional canteen management involves manual processes, token/coupon distribution, identity verification issues, and potential malpractices by employees or canteen staff. Organizations needed an automated, transparent, and efficient solution.\n\n**Solution:**\nDeveloped a complete canteen management platform that automates meal tracking, billing, and distribution. The system provides real-time monitoring, automated reporting, and seamless integration with organizational infrastructure.\n\n**Technical Implementation:**\n- **Backend:** Python with robust database management for meal tracking\n- **Database:** MySQL for transaction records and user management\n- **Hardware Integration:** Printer and device management system\n- **Real-time Monitoring:** Live display system with automatic refresh\n- **Reporting:** Automated email reports and manual report generation\n- **Printer Management:** Network-based thermal printer integration\n- **Device Management:** IP-based device configuration and monitoring\n\n**Key Features:**\n- Automated meal tracking for breakfast, lunch, tea/coffee, and dinner\n- Cashless transaction system eliminating physical tokens/coupons\n- Real-time order monitoring with live updates\n- Printer and device management with network connectivity status\n- Email configuration for automated reporting\n- License activation system for software deployment\n- User-friendly interface for canteen staff and administrators\n- Comprehensive analytics and reporting dashboard\n\n**Results & Impact:**\n- Successfully deployed at major companies: Gujarat Fluorochemicals Limited, Xylem Ltd, Atul Ltd\n- Eliminated manual processes and reduced operational overhead\n- Zero redundancy or anomalies in meal distribution\n- Prevented malpractices (When puched the user is blocked till and nexy day and no token is generated after first punch) and improved transparency\n- No dedicated personnel required for token distribution\n- Streamlined canteen operations with cutting-edge technology. Successfully deployed at Gujarat Fluorochemicals Limited, Xylem Ltd, Atul Ltd, and Borosil Ltd.",
+        
+        "Designed and developed Vehicle Management System (VMS) - a comprehensive access control system for multiple entry types with biometric and card-based identification. Built advanced security features, streamlined access control for organizational facilities, and integrated with existing security infrastructure. Deployed at Atul Ltd using Python and database management technologies.",
+        
+        "Developed Intelligent Traffic Violation Detection Platform AKA speedy- an AI-powered traffic monitoring solution combining computer vision and OCR technologies. Built real-time vehicle detection and classification, accurate speed measurement using tracking algorithms, license plate detection and OCR with high accuracy, automated violation alert system, and comprehensive logging with evidence capture. Technologies: Python, YOLO, OpenCV, PyTorch, OCR, NumPy, Pandas.",
+        
+        "Developed Face Recognition Attendance System - a sophisticated real-time face recognition attendance and authentication system with multi-face detection capabilities. Built dynamic face tracking across multiple camera angles, CCTV integration via RTSP, automatic biometric triggering, door access control integration, and comprehensive attendance record management. Achieved 80%+ recognition accuracy with sub-second response time using Python, YOLO, Dlib, OpenCV, PyQt5, RTSP, MySQL, and Deep Learning.",
+        
+        "Developed AI Surveillance Suite - a multi-detection system including smoke detection, violence detection, weapon detection, and posture detection for comprehensive security monitoring. Used YOLO, OpenCV, multithreading, and parallel processing for real-time surveillance applications.",
+        
+        "Built 8+ specialized computer vision modules for security and surveillance applications including real-time video processing, object detection, facial recognition systems, and automated monitoring solutions using advanced AI/ML technologies.",
+        
+        "Created end-to-end software applications with focus on UI/UX and backend infrastructure, developing professional desktop applications using PyQt5 and web-based solutions with modern frameworks.",
+        
+        "Developed robust backend infrastructures using Python and MySQL for real-time data processing, handling thousands of daily records with high performance and reliability requirements.",
+        
+        "Integrated software applications with various hardware devices including HikVision Biometric Devices, CCTV Cameras, access control systems, and surveillance equipment using RTSP protocol, device APIs, and network programming.",
+        
+        "Worked on countless small biometric device utilities and solutions including device configuration tools, data synchronization utilities, network management applications, and custom hardware integration solutions."
+        ],
+
+        "major_projects": [
+          {
+            "name": "VisionSphere - Biometric Device Management System",
+            "description": "Comprehensive system managing 500+ devices in real-time with attendance data synchronization",
+            "deployment": "Atul Ltd",
+            "impact": "Real-time processing of thousands of daily attendance records, 60% reduction in IT overhead",
+            "Project_type": "Company Project - Developed when working as Junior Developer at PayGURU Technosoft Pvt. Ltd.",
+            "technologies": ["Python", "PyQt5", "Pandas", "MySQL", "Socket Programming", "tkinter", "PYQT5", "Network Management", "Biometric Device"],
+            "developed at":"PayGURU Technosoft Pvt. Ltd.",
+            "scale": "500+ devices",
+            "metrics": {
+              "devices_managed": "500+",
+              "daily_records": "Thousands",
+              "operational_reduction": "60% IT overhead"
+            },    
+            "importance": "high",
+            "category": "professional_projects"
+          },
+          {
+            "name": "EzeeCanteen - Canteen Management System", 
+            "description": "A comprehensive canteen management system designed to efficiently manage organizational canteens by tracking employee meal consumption, automating meal orders, and implementing cashless transactions. The system eliminates manual token distribution and reduces operational overhead while preventing malpractices.\n\n**Problem Statement:**\nTraditional canteen management involves manual processes, token/coupon distribution, identity verification issues, and potential malpractices by employees or canteen staff. Organizations needed an automated, transparent, and efficient solution.\n\n**Solution:**\nDeveloped a complete canteen management platform that automates meal tracking, billing, and distribution. The system provides real-time monitoring, automated reporting, and seamless integration with organizational infrastructure.\n\n**Technical Implementation:**\n- **Backend:** Python with robust database management for meal tracking\n- **Database:** MySQL for transaction records and user management\n- **Hardware Integration:** Printer and device management system\n- **Real-time Monitoring:** Live display system with automatic refresh\n- **Reporting:** Automated email reports and manual report generation\n- **Printer Management:** Network-based thermal printer integration\n- **Device Management:** IP-based device configuration and monitoring\n\n**Key Features:**\n- Automated meal tracking for breakfast, lunch, tea/coffee, and dinner\n- Cashless transaction system eliminating physical tokens/coupons\n- Real-time order monitoring with live updates\n- Printer and device management with network connectivity status\n- Email configuration for automated reporting\n- License activation system for software deployment\n- User-friendly interface for canteen staff and administrators\n- Comprehensive analytics and reporting dashboard\n\n**Results & Impact:**\n- Successfully deployed at major companies: Gujarat Fluorochemicals Limited, Xylem Ltd, Atul Ltd\n- Eliminated manual processes and reduced operational overhead\n- Zero redundancy or anomalies in meal distribution\n- Prevented malpractices (When puched the user is blocked till and nexy day and no token is generated after first punch) and improved transparency\n- No dedicated personnel required for token distribution\n- Streamlined canteen operations with cutting-edge technology",
+            "Project_type": "Company Project - Developed when working as Junior Developer at PayGURU Technosoft Pvt. Ltd.",            
+            "deployments": ["Gujarat Fluorochemicals Limited", "Xylem Ltd", "Atul Ltd", "Borosil Ltd"],
+            "impact": "Zero redundancy in meal distribution, eliminated need for dedicated token distribution personnel",
+            "developed at":"PayGURU Technosoft Pvt. Ltd.",
+            "importance": "high",
+            "category": "professional_projects"
+          },
+          {
+            "name": "Vehicle Management System (VMS)",
+            "description": "Comprehensive access control system for multiple entry types with biometric and card-based identification",
+            "Project_type": "Company Project - Developed when working as Junior Developer at PayGURU Technosoft Pvt. Ltd.",
+            "deployment": "Atul Ltd",
+            "impact": "Enhanced security and streamlined access control for organizational facilities",
+            "developed at":"PayGURU Technosoft Pvt. Ltd.",
+            "importance": "high",
+            "category": "professional_projects"
+
+          },
+          {
+            "name": "Intelligent Traffic Violation Detection Platform",
+            "description": "A comprehensive traffic monitoring solution that combines computer vision and OCR technologies to detect vehicles, capture license plates, measure speeds, and automate violation alerts. The system provides intelligent traffic management with detailed logging and violation tracking.\n\n**Challenge:**\nTraditional traffic monitoring requires manual observation and is prone to human error. Law enforcement agencies needed an automated system for accurate speed detection, license plate recognition, and violation documentation.\n\n**Solution:**\nDeveloped an AI-powered traffic monitoring platform that automatically detects vehicles, measures speeds, captures license plates, and generates violation alerts(if the vehicle exceeds speed limit) with comprehensive logging.\n\n**Technical Architecture:**\n- **Object Detection:** YOLO for real-time vehicle detection and classification\n- **Computer Vision:** OpenCV for video processing and speed calculation\n- **Deep Learning:** PyTorch for custom model training and optimization\n- **OCR Technology:** Advanced optical character recognition for license plate reading\n- **Data Processing:** NumPy and Pandas for efficient data manipulation\n- **Tracking Algorithm:** Custom vehicle tracking for consistent identification\n- **Alert System:** Real-time notification system for speed violations\n\n**Innovative Features:**\n- Real-time vehicle detection and classification (cars, trucks, motorcycles)\n- Accurate speed measurement using advanced tracking algorithms\n- License plate detection and OCR with high accuracy rates\n- Intelligent vehicle tracking across multiple camera frames\n- Automated violation alert system with configurable speed thresholds\n- Comprehensive logging system with vehicle IDs, timestamps, and speeds\n- Structured data export for law enforcement integration\n- Multi-lane traffic monitoring capabilities\n- Weather and lighting condition adaptability\n\n**System Capabilities:**\n- Process multiple vehicle streams simultaneously\n- Generate detailed violation reports with evidence (images, videos) and send the email to the admin/security head\n- Integration capability with existing traffic management systems\n- Real-time dashboard for traffic monitoring personnel\n- Historical data analysis for traffic pattern insights\n- Configurable violation parameters per location/zone",
+            "Project_type": "Company Project - Developed when working as Junior Developer at PayGURU Technosoft Pvt. Ltd.",
+            "developed at":"PayGURU Technosoft Pvt. Ltd.",
+            "features": [
+              "Vehicle Detection",
+              "Speed Measurement",
+              "License Plate Recognition",
+              "Violation Alerts",
+              "Data Logging",
+              "Report Generation"
+            ],    
+            "technologies": ["Python", "YOLO", "OpenCV", "PyTorch", "OCR", "NumPy", "Pandas", "Computer Vision", "Deep Learning"],
+
+            "importance": "high",
+            "category": "professional_projects"
+
+          },
+          {
+            "name": "Face Recognition Attendance System",
+            "Project_type": "Company Project - Developed when working as Junior Developer at PayGURU Technosoft Pvt. Ltd.",
+            "description": "A sophisticated real-time face recognition attendance and authentication system using  multi-face detection capabilities and dynamic tracking. The system integrates with existing CCTV infrastructure for seamless operation, revolutionising the traditional Attendance taking methods .\n\n**Problem Statement:**\nTraditional attendance systems require manual interaction and can be prone to buddy punching. Organizations needed an automated, contactless solution that could integrate with existing security infrastructure.\n\n**Solution:**\nDeveloped an AI-powered attendance system that automatically detects and recognizes faces from CCTV feeds, triggers attendance logging, and integrates with access control systems for door unlocking.\n\n**Technical Implementation:**\n- **Computer Vision:** YOLO for real-time face detection with high accuracy\n- **Face Recognition:** Dlib for robust face encoding and matching\n- **Deep Learning:** Custom neural networks for improved recognition accuracy\n- **Video Processing:** OpenCV for real-time video stream processing\n- **UI Framework:** PyQt5 for professional desktop application interface\n- **Camera Integration:** RTSP protocol for CCTV camera connectivity\n- **Database:** MySQL for storing face encodings and attendance records\n- **Hardware Integration:** Automatic biometric device triggering\n\n**Advanced Features:**\n- Multi-face detection and tracking in real-time video streams\n- Dynamic face tracking across multiple camera angles\n- Integration with existing CCTV infrastructure via RTSP\n- Automatic biometric punch-in triggering upon recognition\n- Door access control integration with automatic unlocking\n- Real-time attendance logging with timestamp accuracy\n- Comprehensive attendance record management\n- Face encoding database with efficient matching algorithms\n\n**Performance Achievements:**\n- Real-time processing at 30+ FPS with multiple face detection\n- 80%+ face recognition accuracy under various lighting conditions\n- Sub-second response time for attendance logging\n- Seamless integration with existing security infrastructure\n- Zero-touch attendance marking improving hygiene and efficiency\n- Reduced attendance fraud and improved accuracy",
+            "performance_metrics": {
+              "accuracy": "80%+",
+              "response_time": "few miniseconds"
+            },
+            "developed at":"PayGURU Technosoft Pvt. Ltd.",
+            "importance": "high",
+            "category": "professional_projects"
+          }
+        ],
+        "technologies/ frameworks / technical skills / rogramming language / tech stack / skills": ["Python", "Electron.js", "MySQL", "Java", "PyQt5", "Computer Vision", "Face Recognition", "Biometric Integration", "Real-time Processing", "Hardware Integration", "API Development"],
+        "team_size": 5,
+        "reporting_structure": "Reports to Senior Software Developer"
+      },
+      {
+        "id": "exp_002",
+        "company": "PayGURU Technosoft Pvt. Ltd.",
+        "position": "Software Engineer Intern",
+        "level": "Intern",
+        "duration": "December 2024 - February 2025",
+        "duration_months": 2,
+        "location": "Vadodara, Gujarat, India",
+        "employment_type": "Internship",
+        "status": "completed",
+        "outcome": "Promoted to Junior Software Developer based on performance",
+        "key_learning_areas": [
+          "Biometric device software development fundamentals",
+          "Computer vision applications in security systems",
+          "Hardware-software integration principles",
+          "Enterprise-level software architecture patterns",
+          "Professional software development lifecycle"
+        ],
+        "technologies": ["Python", "Basic Computer Vision", "Biometric Systems", "Version Control", "Testing Frameworks"],
+        "team_size": 8
+      }
+    ],
+    "career_progression": "Rapid progression from Software Engineer Intern to Junior Software Developer, demonstrating quick adaptation to biometric software development and computer vision applications"
+  },
+
+  "education": {
+    "formal_education": [
+      {
+        "id": "edu_001",
+        "degree": "Master of Computer Applications (MCA)",
+        "field": "Computer Science",
+        "institution": "The Maharaja Sayajirao University of Baroda (MSUB)",
+        "location": "Vadodara, Gujarat, India",
+        "duration": "July 2025 - October 2027",
+        "status": "current",
+        "focus_areas": ["Advanced algorithms", "Database systems", "Software architecture", "Machine learning", "System design"]
+      },
+      {
+        "id": "edu_002",
+        "degree": "Bachelor of Computer Applications (BCA)",
+        "field": "Computer Science", 
+        "institution": "The Maharaja Sayajirao University of Baroda (MSUB)",
+        "location": "Vadodara, Gujarat, India",
+        "duration": "2022 - 2025",
+        "status": "completed",
+        "foundation_areas": ["Programming languages", "Data structures", "Algorithms", "Database management", "Web development", "Software engineering"]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Retrieval Augmented Generation (RAG)",
+        "issuing_organization": "DeepLearning.AI",
+        "issue_date": "August 2025",
+        "skills_validated": ["RAG system architecture", "Vector database optimization", "Embedding model fine-tuning", "LLM integration", "Prompt engineering"]
+      },
+      {
+        "name": "Deep Dive into GPU Computing",
+        "issuing_organization": "C-DAC",
+        "issue_date": "October 2024",
+        "skills_validated": ["CUDA programming", "GPU architecture", "Parallel algorithms", "Performance optimization", "High-performance computing"]
+      },
+      {
+        "name": "Machine Learning with Python",
+        "issuing_organization": "freeCodeCamp",
+        "issue_date": "October 2024",
+        "skills_validated": ["ML algorithms", "Data preprocessing", "Model evaluation", "Python ML libraries", "Model deployment"]
+      },
+      {
+        "name": "Artificial Intelligence Fundamentals",
+        "issuing_organization": "IBM",
+        "issue_date": "September 2024",
+        "skills_validated": ["AI concepts", "ML basics", "NLP applications", "Computer vision", "AI ethics", "IBM Watson services"]
+      },
+      {
+        "name": "Supervised Machine Learning: Regression and Classification",
+        "issuing_organization": "DeepLearning.AI",
+        "issue_date": "July 2024",
+        "skills_validated": ["Regression algorithms", "Classification techniques", "Neural networks", "Model evaluation", "Regularization"]
+      }
+    ],
+    "specialization_areas": ["Artificial Intelligence and Machine Learning", "GPU Computing and High-Performance Computing", "Advanced AI Systems (RAG, LLMs)", "Data Science and Analytics"]
+  },
+
+  "technical_skills": {
+    "programming_languages": [
+      {
+        "name": "Python",
+        "level": "intermediate",
+        "proficiency_score": 8,
+        "years_experience": 1,
+        "specializations": ["AI/ML", "Computer Vision", "Deep Learning", "Backend Development", "Automation"],
+        "frameworks": ["PyTorch", "Flask", "FastAPI"],
+        "libraries": ["YOLO", "Dlib", "OpenCV", "scikit-learn", "Pandas", "NumPy", "TensorFlow"]
+      },
+      {
+        "name": "JavaScript",
+        "level": "advanced",
+        "proficiency_score": 8,
+        "years_experience": 2,
+        "specializations": ["Frontend Development", "Backend APIs", "Full-stack Applications"],
+        "frameworks": ["React", "Express.js", "Next.js"],
+        "libraries": ["Axios", "Lodash", "Jest"],
+        "recent_projects": ["Pokédex Platform"]
+      },
+      {
+        "name": "TypeScript",
+        "level": "beginner",
+        "proficiency_score": 4,
+        "years_experience": 1,
+        "specializations": ["VSCode Extensions"],
+        "frameworks": ["VSCode Extension API"]
+      }
+    ],
+    "frameworks_libraries": [
+      {
+        "name": "React",
+        "category": "frontend_framework",
+        "level": "intermediate",
+        "proficiency_score": 7,
+        "expertise_areas": ["Functional components", "Hooks", "State management", "UI development"]
+      },
+      {
+        "name": "Node.js/Express.js",
+        "category": "backend_framework", 
+        "level": "intermediate",
+        "proficiency_score": 7,
+        "expertise_areas": ["REST APIs", "MongoDB integration", "Middleware", "Authentication"]
+      },
+      {
+        "name": "Flutter",
+        "category": "mobile_framework",
+        "level": "beginner",
+        "proficiency_score": 5,
+        "expertise_areas": ["Basic UI development", "State management", "Firebase integration"]
+      }
+    ],
+    "databases": [
+      {
+        "name": "MySQL",
+        "level": "intermediate",
+        "proficiency_score": 7,
+        "experience": "Extensive use in enterprise applications for real-time data processing",
+        "tools": ["MySQL Workbench", "Command Line"]
+      },
+      {
+        "name": "MongoDB",
+        "level": "intermediate", 
+        "proficiency_score": 6,
+        "experience": "Full-stack applications with CRUD operations",
+        "tools": ["MongoDB Compass", "Mongoose ODM"]
+      }
+    ],
+    "specialized_technologies": [
+      {
+        "name": "Computer Vision",
+        "level": "intermediate",
+        "proficiency_score": 7,
+        "expertise_areas": ["Object Detection", "Face Recognition", "Real-time Video Processing", "Surveillance Systems"],
+        "technologies": ["YOLO", "Dlib", "OpenCV", "PyTorch", "DeepFace"],
+        "applications": ["Attendance Systems", "Traffic Monitoring", "Security Surveillance", "Biometric Integration"]
+      },
+      {
+        "name": "Biometric Systems Integration",
+        "level": "intermediate",
+        "proficiency_score": 7,
+        "expertise_areas": ["Device Management", "Hardware-Software Integration", "Real-time Data Processing"],
+        "technologies": ["HikVision Devices", "RTSP Protocol", "Device APIs", "Network Programming"]
+      }
+    ],
+    "development_tools": [
+      {
+        "name": "Git & GitHub",
+        "level": "intermediate",
+        "proficiency_score": 7,
+        "experience": "Version control, branching, collaboration, project hosting"
+      },
+      {
+        "name": "PyQt5",
+        "level": "intermediate",
+        "proficiency_score": 7,
+        "experience": "Desktop application development for enterprise solutions"
+      }
+    ],
+    "cloud_platforms": [
+      {
+        "name": "AWS",
+        "level": "beginner",
+        "proficiency_score": 4,
+        "areas_of_interest": ["Lambda", "S3", "Application Deployment"]
+      },
+      {
+        "name": "Firebase",
+        "level": "beginner",
+        "proficiency_score": 5,
+        "experience": "Mobile app backend, real-time database, authentication"
+      }
+    ],
+    "learning_development": {
+      "current_focus": ["LangChain", "Deep Learning", "GenAI", "Advanced System Design"],
+      "planned_learning": ["MLOps", "Advanced AI/ML", "Scalable System Architecture"],
+      "learning_approach": "Project-based learning with practical implementation and experimentation"
+    }
+  },
+
+  "projects": {
+    "featured_projects": [
+      {
+        "id": "proj_001",
+        "name": "EzeeCanteen - Canteen Management System",
+        "type": "professional",
+        "status": "deployed",
+        "company": "PayGURU Technosoft Pvt. Ltd.",
+        "description": "A comprehensive canteen management system designed to efficiently manage organizational canteens by tracking employee meal consumption, automating meal orders, and implementing cashless transactions. The system eliminates manual token distribution and reduces operational overhead while preventing malpractices.\n\n**Problem Statement:**\nTraditional canteen management involves manual processes, token/coupon distribution, identity verification issues, and potential malpractices by employees or canteen staff. Organizations needed an automated, transparent, and efficient solution.\n\n**Solution:**\nDeveloped a complete canteen management platform that automates meal tracking, billing, and distribution. The system provides real-time monitoring, automated reporting, and seamless integration with organizational infrastructure.\n\n**Technical Implementation:**\n- **Backend:** Python with robust database management for meal tracking\n- **Database:** MySQL for transaction records and user management\n- **Hardware Integration:** Printer and device management system\n- **Real-time Monitoring:** Live display system with automatic refresh\n- **Reporting:** Automated email reports and manual report generation\n- **Printer Management:** Network-based thermal printer integration\n- **Device Management:** IP-based device configuration and monitoring\n\n**Key Features:**\n- Automated meal tracking for breakfast, lunch, tea/coffee, and dinner\n- Cashless transaction system eliminating physical tokens/coupons\n- Real-time order monitoring with live updates\n- Printer and device management with network connectivity status\n- Email configuration for automated reporting\n- License activation system for software deployment\n- User-friendly interface for canteen staff and administrators\n- Comprehensive analytics and reporting dashboard\n\n**Results & Impact:**\n- Successfully deployed at major companies: Gujarat Fluorochemicals Limited, Xylem Ltd, Atul Ltd\n- Eliminated manual processes and reduced operational overhead\n- Zero redundancy or anomalies in meal distribution\n- Prevented malpractices (When puched the user is blocked till and nexy day and no token is generated after first punch) and improved transparency\n- No dedicated personnel required for token distribution\n- Streamlined canteen operations with cutting-edge technology",
+
+        "technologies": ["Python", "MySQL", "SMTP", "Email Integration", "Biometric-API", "PyQt5", "Pandas"],
+        "deployments": ["Gujarat Fluorochemicals Limited", "Xylem Ltd", "Atul Ltd", "Borosil Ltd"],
+        "impact": "Eliminated manual processes, prevented malpractices, streamlined operations for major enterprise clients",
+        "category": "enterprise_software"
+      },
+      {
+        "id": "proj_002", 
+        "name": "VisionSphere - Biometric Device Management System",
+        "type": "professional",
+        "status": "deployed",
+        "company": "PayGURU Technosoft Pvt. Ltd.",
+        "description": "A centralized biometric device management system was developed to monitor and control over 500 devices and access control system in real-time, streamlining attendance tracking and data synchronization across multiple locations. Built with python, Biometric API, PyQt5, MySQL, and socket programming, the system enables efficient device management, real-time monitoring, and significantly reduces IT overhead while improving data accuracy and reporting for large organizations.",
+        "key_features": [
+          "Management of 500+ devices across locations",
+          "Real-time attendance synchronization",
+          "Device health monitoring",
+          "Comprehensive user management",
+          "Attendance reporting and analytics",
+          "Network-based device communication"
+        ],
+        "technologies": ["Python", "PyQt5", "Pandas", "MySQL", "Socket Programming", "tkinter", "Network Management"],
+        "deployment": "Atul Ltd",
+        "scale": "500+ devices, thousands of daily records",
+        "impact": "60% reduction in IT overhead, centralized management, improved data accuracy",
+        "category": "enterprise_software"
+      },
+      {
+        "id": "proj_003",
+        "name": "Face Recognition Attendance System",
+        "type": "computer_vision",
+        "status": "completed",
+        "description": "A real-time AI-powered face recognition system was developed to automate attendance and authentication by integrating with existing CCTV infrastructure, enabling seamless, contactless tracking and door access control.  The system supports multi-face detection, dynamic tracking, and biometric integration, delivering high-speed performance, improved accuracy, and reduced attendance fraud.",
+        "key_features": [
+          "Multi-face detection and tracking",
+          "CCTV integration via RTSP",
+          "Automatic biometric triggering",
+          "Door access control integration",
+          "Real-time attendance logging",
+          "Face encoding database"
+        ],
+        "developed at":"PayGURU Technosoft Pvt. Ltd.",
+        "technologies": ["Python", "YOLO", "Dlib", "OpenCV", "PyQt5", "RTSP", "MySQL", "Deep Learning"],
+        "performance": "80%+ accuracy, sub-second response time, 30+ FPS processing",
+        "category": "ai_computer_vision"
+      },
+      {
+        "id": "proj_004",
+        "name": "Intelligent Traffic Violation Detection Platform",
+        "type": "computer_vision",
+        "status": "completed", 
+        "description": "A comprehensive traffic monitoring solution that combines computer vision and OCR technologies to detect vehicles, capture license plates, measure speeds, and automate violation alerts. The system provides intelligent traffic management with detailed logging and violation tracking.\n\n**Challenge:**\nTraditional traffic monitoring requires manual observation and is prone to human error. Law enforcement agencies needed an automated system for accurate speed detection, license plate recognition, and violation documentation.\n\n**Solution:**\nDeveloped an AI-powered traffic monitoring platform that automatically detects vehicles, measures speeds, captures license plates, and generates violation alerts(if the vehicle exceeds speed limit) with comprehensive logging.\n\n**Technical Architecture:**\n- **Object Detection:** YOLO for real-time vehicle detection and classification\n- **Computer Vision:** OpenCV for video processing and speed calculation\n- **Deep Learning:** PyTorch for custom model training and optimization\n- **OCR Technology:** Advanced optical character recognition for license plate reading\n- **Data Processing:** NumPy and Pandas for efficient data manipulation\n- **Tracking Algorithm:** Custom vehicle tracking for consistent identification\n- **Alert System:** Real-time notification system for speed violations\n\n**Innovative Features:**\n- Real-time vehicle detection and classification (cars, trucks, motorcycles)\n- Accurate speed measurement using advanced tracking algorithms\n- License plate detection and OCR with high accuracy rates\n- Intelligent vehicle tracking across multiple camera frames\n- Automated violation alert system with configurable speed thresholds\n- Comprehensive logging system with vehicle IDs, timestamps, and speeds\n- Structured data export for law enforcement integration\n- Multi-lane traffic monitoring capabilities\n- Weather and lighting condition adaptability\n\n**System Capabilities:**\n- Process multiple vehicle streams simultaneously\n- Generate detailed violation reports with evidence (images, videos) and send the email to the admin/security head\n- Integration capability with existing traffic management systems\n- Real-time dashboard for traffic monitoring personnel\n- Historical data analysis for traffic pattern insights\n- Configurable violation parameters per location/zone",
+        "key_features": [
+          "Real-time vehicle detection and classification",
+          "Accurate speed measurement",
+          "License plate OCR",
+          "Automated violation alerts",
+          "Comprehensive logging system",
+          "Multi-lane monitoring"
+        ],
+        "technologies": ["Python", "YOLO", "OpenCV", "PyTorch", "OCR", "NumPy", "Pandas"],
+        "applications": ["Traffic monitoring", "Speed enforcement", "Violation documentation"],
+        "category": "ai_computer_vision",
+        "developed at":"PayGURU Technosoft Pvt. Ltd."
+
+      },
+      {
+        "name": "AI Surveillance Suite",
+        "description": "Multi-detection system including smoke, violence, weapon, and posture detection",
+        "technologies": ["YOLO", "OpenCV", "Multithreading", "Parallel Processing"],
+        "category": "computer_vision",
+        "developed at":"PayGURU Technosoft Pvt. Ltd."
+
+      }
+    ],
+    "other_projects": [
+      
+      {
+        "name": "Pokédex Platform",
+        "description": "Interactive Pokémon explorer with real-time search and responsive design",
+        "technologies": ["ReactJS", "Tailwind CSS", "Pokémon API"],
+        "category": "web_development"
+      },
+      {
+        "name": "Expense Tracker Mobile App",
+        "description": "Flutter-based expense tracking with Firebase integration",
+        "technologies": ["Flutter", "Dart", "Firebase", "Cloud Firestore"],
+        "category": "mobile_development"
+      },
+      {
+        "name": "Sorting Algorithm Visualizer",
+        "description": "Educational tool for visualizing sorting algorithms",
+        "technologies": ["Python", "Pygame"],
+        "category": "educational"
+      }
+    ],
+    "project_focus_areas": [
+      "Enterprise Software Solutions",
+      "Computer Vision & AI",
+      "Real-time Systems",
+      "Web Development", 
+      "Mobile Development",
+      "Educational Tools"
+    ],
+    "total_projects": 8,
+    "computer_vision_projects": 6
+  },
+
+  "career_goals": {
+    "short_term": {
+      "timeline": "Next 1-2 years",
+      "objectives": [
+        "Strengthen expertise in software development and AI through real-world projects",
+        "Contribute to open-source projects and build strong portfolio",
+        "Gain experience in advanced AI/ML implementations",
+        "Develop proficiency in system design and scalable architectures"
+      ]
+    },
+    "medium_term": {
+      "timeline": "2-5 years",
+      "objectives": [
+        "Take on technical leadership roles in AI/ML projects",
+        "Develop expertise in system design and team building",
+        "Contribute to product strategy and technical decision-making",
+        "Build and mentor engineering teams"
+      ]
+    },
+    "long_term": {
+      "timeline": "5+ years",
+      "vision": "Build and lead world-class engineering teams at high-growth companies focusing on products with positive social impact",
+      "target_roles": ["VP of Engineering", "CTO", "Technical Lead"],
+      "focus_industries": [
+        "Developer tools and infrastructure",
+        "Educational technology", 
+        "Sustainable technology solutions",
+        "Healthcare innovation",
+        "Financial inclusion"
+      ]
+    },
+    "mission": "Leverage technical expertise to build products that solve real-world problems while fostering inclusive and innovative engineering culture"
+  },
+
+  "personal_interests": {
+    "core_interests": [
+      {
+        "name": "Reading",
+        "level": "Advanced",
+        "description": "Explores books across technology, science, philosophy, and fiction",
+        "skills_gained": ["Critical thinking", "Curiosity", "Broad perspective", "Imagination"]
+      },
+      {
+        "name": "Cinema",
+        "level": "Intermediate", 
+        "description": "Deep appreciation for storytelling, character development, and visual composition",
+        "skills_gained": ["Creativity", "Narrative understanding", "Analytical thinking"]
+      },
+      {
+        "name": "Chess",
+        "level": "Intermediate",
+        "description": "Regular mental exercise and strategic challenge",
+        "skills_gained": ["Problem-solving", "Strategic planning", "Pattern recognition", "Patience"]
+      },
+      {
+        "name": "Technology & Innovation",
+        "level": "Advanced",
+        "description": "Passionate about cutting-edge technology and innovation, inspired by Elon Musk and Tony Stark",
+        "skills_gained": ["Innovation mindset", "Creative confidence", "Vision-oriented thinking"]
+      },
+      {
+        "name": "Coffee Culture",
+        "level": "Casual",
+        "description": "Black coffee enthusiast for focus and creative inspiration during coding",
+        "skills_gained": ["Focus", "Consistency", "Mindful rituals"]
+      }
+    ],
+    "inspirations": ["Elon Musk", "Tony Stark", "Innovation leaders", "Tech visionaries"],
+    "lifestyle": "Balances technical depth with personal interests, described as both geek and nerd with creative confidence"
+  }
+}
