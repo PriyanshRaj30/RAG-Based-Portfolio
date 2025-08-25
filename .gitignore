@@ -3,4 +3,4 @@ venv/
 .env
 .env.*.local
 /backup
-/vectore_store
+/vector_store
