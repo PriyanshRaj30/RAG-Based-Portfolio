@@ -57,7 +57,7 @@ function addMessage(text, isUser = false) {
     if (isUser) {
         message.innerHTML = `<span class="message-prefix">[USER]</span> ${text}`;
     } else {
-        message.innerHTML = `<span class="message-prefix">[AI]</span> <span class="typing">${text}</span>`;
+        message.innerHTML = `<span class="message-prefix">[AI]</span> <span class="typing">Ans:${text}</span>`;
     }
     
     chatContainer.appendChild(message);
@@ -144,7 +144,7 @@ function terminalStartup() {
                                 <span class="message-prefix">[SYSTEM]</span> Welcome to my portfolio interface...<br>
                                 <span class="message-prefix">[AI]</span> Hello! I'm an interactive assistant that knows everything about this developer.<br>
                                 <span class="message-prefix">[AI]</span> Ask me anything about skills, projects, experience, or just say hi!<br>
-                                <span class="message-prefix">[AI]</span> Try: "What technologies do you work with?" or "Tell me about your projects"
+                                <span class="message-prefix">[AI]</span> Try: "What technologies do you work with?" or "Tell me about your projects from template"
                             </div>
                         `;
                     }, 1000);

@@ -120,8 +120,8 @@ def groq_answer(prompt: str, context: str) -> str:
         "Respond with clarity, confidence, and structure. Be comprehensive: list all relevant skills, tools, or experiences explicitly. "
         "Use bullet points, numbered lists, or clear sections to improve readability. "
         "Inject subtle wit or clever remarks *only* when appropriate — never at the cost of clarity or professionalism. "
-        "dont answer in md format, use emojis"
-        "If a question cannot be answered using the context, say: 'I don’t have that information.'"
+        "Use emojis"
+        "If a question cannot be answered using the context, say: 'I don't have that information.'"
     )
 
     user = f"Question:\n{prompt}\n\nContext:\n{context}\n\nAnswer using only the context."

@@ -24,6 +24,7 @@ function createParticles() {
     }
 }
 
+
 // Chat System Functions
 async function sendMessageToBackend(message) {
     try {
@@ -57,7 +58,10 @@ function addMessage(text, isUser = false) {
     if (isUser) {
         message.innerHTML = `<span class="message-prefix">[USER]</span> ${text}`;
     } else {
-        message.innerHTML = `<span class="message-prefix">[AI]</span> <span class="typing">${text}</span>`;
+        // Convert markdown to HTML before displaying
+        const htmlContent = marked.parse(text);
+        // message.innerHTML = `<span class="message-prefix">[AI]</span> <div class="markdown-content">${htmlContent}</div>`;
+        message.innerHTML = `<span class="message-prefix">[AI]</span> <span class="markdown-content">${htmlContent}</span>`;
     }
     
     chatContainer.appendChild(message);
