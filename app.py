@@ -28,7 +28,7 @@ class Config:
     DEBUG = os.environ.get('FLASK_DEBUG', 'False').lower() == 'true'
     HOST = os.environ.get('FLASK_HOST', '0.0.0.0')
     PORT = int(os.environ.get('FLASK_PORT', 8000))
-
+ 
 app.config.from_object(Config)
 
 # In-memory storage for chat history (replace with database in production)

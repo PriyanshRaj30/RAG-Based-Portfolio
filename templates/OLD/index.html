@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio | Ask Me Anything</title>
+    <meta name="description" content="Interactive developer portfolio with AI-like chat interface">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css"> 
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="particles" id="particles"></div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="container">
+            <div class="chat-section">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="terminal-btn"></div>
+                            <div class="terminal-btn"></div>
+                            <div class="terminal-btn"></div>
+                        </div>
+                        <div class="terminal-title">ASK_ME_ANYTHING.exe</div>
+                    </div>
+                    <div class="chat-container" id="chat-container">
+                        <div class="scanlines"></div>
+                        <div class="message ai">
+                            <span class="message-prefix">[SYSTEM]</span> Welcome to my portfolio interface...<br>
+                            <span class="message-prefix">[AI]</span> Hello! I'm an interactive assistant that knows everything about this developer.<br>
+                            <span class="message-prefix">[AI]</span> Ask me anything about skills, projects, experience, or just say hi!<br>
+                            <span class="message-prefix">[AI]</span> Try: "What technologies do you work with?" or "Tell me about your projects from html"
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <span class="input-prefix">user@portfolio:~$</span>
+                        <input type="text" id="chat-input" placeholder="Type your question..." autocomplete="off">
+                        <span class="cursor"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-section">
+                <h1 class="hero-title glitch">Priyansh Raj</h1>
+                <p class="hero-subtitle">Crafting extraordinary digital experiences</p>
+                <a href="#projects" class="cta-button">Explore My Work</a>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Projects</h2>
+
+                <!-- PROJECTS -->
+                <div class="projects-grid">
+                    <!-- PROJECT 1 -->
+                    <div class="project-card">
+                        <h3 class="project-title">VisionSphere - Biometric Device Management System</h3>
+                        <p class="project-description">
+                            Vision Sphere is an enterprise-grade biometric device and user management system designed for seamless access control, attendance tracking, 
+                            and enrollment management across multiple offices and geographies. 
+                        </br>
+                        </br>
+                        • Provides real-time monitoring
+                        </br>
+                        • Device Management - Add, edit, delete, configure devices; bulk offline setup.
+                        </br>
+                        • Real-time Status - Monitor online/offline devices with drill-down dashboard.
+                        </br>
+                        • Intuitive dashboards and live feedback on punches
+                        </br>
+                        • ~60% reduction in IT overhead
+                        </br>
+                        • Stronger HR compliance.
+                        </br>
+                        • Reporting - Generates auto-organized reports.
+                        </p>
+                        </br>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyAt5</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Socket Programming</span>
+                            <span class="tech-tag">Biometric API</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+
+                    <!-- PROJECT 2 -->
+                    <div class="project-card">
+                        <h3 class="project-title">Intelligent Traffic Violation Detection Platform</h3>
+                        <p class="project-description">
+                            An AI-powered traffic surveillance system that enables authorities to monitor roads in real time, detect vehicles, read license plates, measure speed, and automatically issue violation alerts with complete logging for enforcement and record-keeping. </br></br> The system also triggers instant security alerts whenever a vehicle exceeds the speed limit.
+                        </br>
+                        </br>
+
+                        • Ingests live video streams via RTSP protocol from CCTV cameras. </br>
+                        • Real-time multi-lane vehicle detection & classification </br>
+                        • High-accuracy license plate OCR</br>
+                        • Instant Security Alerts: Notifies authorities when vehicles exceed speed limits.</br>
+                        • Evidence Capture: Logs video/image proof for every detected violation.</br>
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pytorch</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+
+                    <!-- PROJECT 3 -->
+                    <div class="project-card">
+                        <h3 class="project-title">EzeeCanteen - Canteen Management System</h3>
+                        <p class="project-description">
+                            A deployed enterprise-grade solution for automating organizational canteen operations. 
+                            The system tracks employee meal consumption, enables cashless transactions, integrates with biometric devices, 
+                            and generates automated reports.                        
+                        </br>
+                        </br>
+
+                        • It eliminates manual token distribution, reduces operational overhead, and prevents malpractices.  </br>
+                        • Printer and device management with network integration </br>
+                        • Blocking mechanism to prevent malpractices & duplicate entries</br>
+                        • Licensing management module for secure deployment</br>
+                        • Automated & manual reporting (via email)</br>
+                        • Comprehensive analytics and dashboard</br>
+                        • No dedicated personnel required for distribution</br> </br> 
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pytorch</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+
+                    <!-- PROJECT 4 -->
+                    <div class="project-card">
+                        <h3 class="project-title">AttendAI Vision - CCTV Beyond Surveillance: Real-Time Attendance Tracking</h3>
+                        <p class="project-description">
+                            A real-time AI-powered attendance and authentication platform using multi-face detection, 
+                            dynamic tracking, and seamless CCTV integration. Designed to eliminate manual errors and buddy punching, 
+                            while providing a hygienic, zero-touch solution for enterprises.                        
+                        </br>
+                        </br>
+                        
+                        • AI system detects and recognizes faces from CCTV feeds in real time </br>
+                        • Automated attendance logging with timestamp precision </br>
+                        • Automatic punch-in and door unlocking (Access Control Integration) </br></br>
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">DLIP</span>
+                            <span class="tech-tag">BotSort</span>
+                            <span class="tech-tag">face_recognition</span>
+                            <span class="tech-tag">RTSP</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+
+                    <!-- PROJECT 5 -->
+                    <div class="project-card">
+                        <h3 class="project-title">Expense Tracker Mobile App</h3>
+                        <p class="project-description">
+                            A cross-platform mobile application built with Flutter and Dart, integrated with Firebase for real-time data sync, authentication, 
+                            and cloud storage. 
+                            </br>The app enables users to manage income and expenses, categorize spending, view visual reports, 
+                            and access summaries                        
+                        </br>
+                        </br>
+                                
+                        • Addressed a personal need for expense tracking </br>
+                        • Developed to learn Flutter and Dart through a practical project </br>
+                        • Track expenses & income with category-based organization </br>
+                        • Firebase real-time operations & Firestore </br>
+                        • Monthly/yearly summaries with filtering & search </br></br>
+
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart CSS</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        </p>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+
+                    <!-- PROJECT 6 -->
+                    <div class="project-card">
+                        <h3 class="project-title">Sorting Algorithm Visualizer</h3>
+                        <p class="project-description">
+                            An interactive educational tool built with Python and Pygame to visualize 
+                            step-by-step execution of popular sorting algorithms, making algorithm 
+                            concepts easier to understand through real-time animations.
+                        </br>
+                        </br>
+                    
+                        • Bridge the gap between theory and practical understanding of sorting algorithms </br>
+                        • Makes complex algorithm mechanics accessible through visual learning </br>
+                        • Step-by-step graphical representation of sorting algorithms </br>
+                        • Choose from multiple implemented algorithms: Bubble Sort, Quick Sort, Merge Sort, Insertion Sort, and Selection Sort. </br>
+                        • Step-by-step execution mode for manual control. </br>
+                        • Ability to reset and rerun visualizations with different data </br>
+
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pygame</span>
+                            <span class="tech-tag">sort_algorithm</span>
+                        </div>
+                        </p>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+
+                    <!-- PROJECT 7 -->
+                    <div class="project-card">
+                        <h3 class="project-title">Pokédex - Pokémon Explorer</h3>
+                        <p class="project-description">
+                            A responsive and interactive web app powered by the Pokémon API, featuring real-time search, 
+                            detailed Pokémon stats, and a modern UI built with React and Tailwind CSS.
+                        </br>
+                        
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Pokemon API</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <ul class="skill-list">
+                            <li>PyQT5</li>
+                            <li>Tkinter</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <ul class="skill-list">
+                            <li>Node.js & Express.js</li>
+                            <li>Flask & FastAPI</li>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>Firebase</li>
+                            <li>Vector databases (Weaviate, Pinecone)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>AI/ML & Computer Vision</h3>
+                        <ul class="skill-list">
+                            <li>Computer Vision</li>
+                            <li>PyTorch & TensorFlow</li>
+                            <li>Hugging Face - Model Fine-tuning</li>
+                            <li>RAG (Retrieval-Augmented Generation)</li>
+                            <li>NumPy, Pandas, scikit-learn</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-content">
+                <div class="contact-container">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 40px;">
+                        Ready to build something extraordinary together?
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank">Connect with me</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/yourusername" target="_blank">View my code</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+
+</body>
+</html>

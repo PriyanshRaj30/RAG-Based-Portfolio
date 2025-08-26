@@ -190,4 +190,4 @@ def retrival_main(question):    # Load the pre-built store
 
 
 if __name__ == "__main__":
-    retrival_main("Full name of Priyansh")
+    retrival_main("mention all the projects developed by priyansh")

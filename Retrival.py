@@ -98,7 +98,7 @@ class FaissStore:
 def retrieve(store: FaissStore, encoder: SentenceTransformer, query: str, k: int = 60) -> List[Dict[str, Any]]:
     q_vec = embed_texts(encoder, [query])
     hits = store.search(q_vec, k=k)
-    RELEVANCE_THRESHOLD = 0.70  # Lowered slightly
+    RELEVANCE_THRESHOLD = 0.50  # Lowered slightly
     hits = [h for h in hits if h["_score"] >= RELEVANCE_THRESHOLD]
     return hits
 
@@ -112,16 +112,18 @@ def groq_answer(prompt: str, context: str) -> str:
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {GROQ_API_KEY}",
-    }
+    }  
 
     system = (
-        "You are an intelligent and witty assistant — like Jarvis from Iron Man — answering questions about Priyansh Raj's professional profile. "
-        "Use ONLY the provided context as your factual base. Aggregate and connect information across multiple context chunks when needed. "
-        "Respond with clarity, confidence, and structure. Be comprehensive: list all relevant skills, tools, or experiences explicitly. "
-        "Use bullet points, numbered lists, or clear sections to improve readability. "
-        "Inject subtle wit or clever remarks *only* when appropriate — never at the cost of clarity or professionalism. "
-        "Use emojis"
-        "If a question cannot be answered using the context, say: 'I don't have that information.'"
+        "You are an intelligent assistant answering questions about Priyansh Raj's professional profile. "
+        "CRITICAL: Answer ONLY what is specifically asked. Do not volunteer additional information unless directly requested. "
+        "Use ONLY the provided context as your factual base. "
+        "Be concise and precise - if someone asks about skills, list only relevant skills. If they ask about experience, mention only relevant experience. "
+        "Use bullet points or clear formatting when listing multiple items, but keep responses focused and brief. "
+        "Add subtle professional wit when appropriate, but prioritize brevity and relevance. "
+        "Use emojis sparingly and only when they enhance the response. "
+        "If a question cannot be answered using the context, say: 'I don't have that information.' "
+        "Remember: Less is more. Answer the question, nothing extra."
     )
 
     user = f"Question:\n{prompt}\n\nContext:\n{context}\n\nAnswer using only the context."
@@ -153,7 +155,7 @@ def groq_answer(prompt: str, context: str) -> str:
 # -----------------------------
 # Question Answering Function
 # -----------------------------
-def answer_question(query: str, store: FaissStore, encoder: SentenceTransformer, k: int = 10, relevance_threshold: float = 0.60) -> str:
+def answer_question(query: str, store: FaissStore, encoder: SentenceTransformer, k: int = 50, relevance_threshold: float = 0.50) -> str:
     hits = retrieve(store, encoder, query, k=k)
     hits = [h for h in hits if h["_score"] >= relevance_threshold]
     
@@ -184,7 +186,7 @@ def retrival_main(question, store, encoder):    # Load the pre-built store
     q = question
     print("\n" + "="*80)
     print("Q:", q)
-    answer = answer_question(q, store, encoder, k=10, relevance_threshold=0.60)
+    answer = answer_question(q, store, encoder, k=50, relevance_threshold=0.50)
     print("\nAnswer:")
     print(answer)
     print("\n" + "="*80)
@@ -196,5 +198,5 @@ if __name__ == "__main__":
 
     store, encoder = faiss_loader(index_path, meta_path)
 
-    retrival_main("Full name of Priyansh", store, encoder)
-    retrival_main("Descrip Priyansh in one word", store, encoder)
+    # retrival_main("Full name of Priyansh", store, encoder)
+    retrival_main("tell me about yourself", store, encoder)
