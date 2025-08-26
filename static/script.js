@@ -130,8 +130,9 @@ const CONFIG = {
       if (window.pageYOffset > 750) {
         nav.style.background = 'rgba(255, 255, 255, 0.95)';
         links.forEach(link => link.style.color = 'rgba(0, 68, 255, 0.92)');
-    } else {
+      } else {
         nav.style.background = 'rgba(0, 0, 0, 0.8)';
+        links.forEach(link => link.style.color = "#aeaeb2");
       }
     },
   

@@ -227,7 +227,7 @@ p {
 
 .hero-subtitle {
   font-size: 1.4rem;
-  color: var(--color-gray-600);
+  color: var(--color-gray-500);
   margin-bottom: var(--spacing-10);
   line-height: 1.5;
   max-width: 500px;
