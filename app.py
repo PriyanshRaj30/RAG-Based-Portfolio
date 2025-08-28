@@ -73,7 +73,7 @@ class EnhancedChatbotHandler:
             self._update_session_activity(session_id)
             
             # Get response from RAG system
-            response = 'self.rag_system'.chat(message, session_id)
+            response = self.rag_system.chat(message, session_id)
             
             # Get conversation summary for metadata
             conv_summary = self.rag_system.get_conversation_summary(session_id)
