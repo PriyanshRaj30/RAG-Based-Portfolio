@@ -1,11 +1,20 @@
 {
   "ids": [
     "basic_info__chunk_01",
+    "basic_info__chunk_02",
+    "basic_info__chunk_03",
+    "basic_info__chunk_04",
     "prof_overview__chunk_01",
     "prof_overview__chunk_02",
     "unique_value_prop__chunk_01",
+    "unique_value_prop__chunk_02",
+    "unique_value_prop__chunk_03",
+    "unique_value_prop__chunk_04",
+    "unique_value_prop__chunk_05",
+    "unique_value_prop__chunk_06",
     "career_focus__chunk_01",
     "work_exp_summary__chunk_01",
+    "work_exp_summary__chunk_02",
     "exp_001__chunk_01",
     "exp_001__chunk_02",
     "exp_001__chunk_03",
@@ -44,9 +53,9 @@
     "edu_001__chunk_01",
     "edu_001__chunk_02",
     "edu_001__chunk_03",
-    "edu_001__chunk_04",
     "edu_002__chunk_01",
     "edu_002__chunk_02",
+    "edu_002__chunk_03",
     "cert_0__chunk_01",
     "cert_1__chunk_01",
     "cert_2__chunk_01",
@@ -66,8 +75,6 @@
     "lang_2__chunk_02",
     "framework_0__chunk_01",
     "framework_0__chunk_02",
-    "framework_0__chunk_03",
-    "framework_0__chunk_04",
     "framework_1__chunk_01",
     "framework_1__chunk_02",
     "framework_1__chunk_03",
@@ -88,10 +95,19 @@
     "proj_001__chunk_06",
     "proj_001__chunk_07",
     "proj_002__chunk_01",
+    "proj_002__chunk_02",
+    "proj_002__chunk_03",
     "proj_003__chunk_01",
     "proj_003__chunk_02",
     "proj_003__chunk_03",
     "proj_003__chunk_04",
+    "proj_003__chunk_05",
+    "proj_003__chunk_06",
+    "proj_003__chunk_07",
+    "proj_003__chunk_08",
+    "proj_003__chunk_09",
+    "proj_003__chunk_10",
+    "proj_003__chunk_11",
     "proj_004__chunk_01",
     "proj_004__chunk_02",
     "proj_004__chunk_03",
@@ -111,10 +127,14 @@
     "featured_proj_4__chunk_08",
     "other_proj_0__chunk_01",
     "other_proj_0__chunk_02",
+    "other_proj_0__chunk_03",
+    "other_proj_0__chunk_04",
     "other_proj_1__chunk_01",
     "other_proj_1__chunk_02",
     "other_proj_2__chunk_01",
     "other_proj_2__chunk_02",
+    "other_proj_2__chunk_03",
+    "other_proj_2__chunk_04",
     "goals_short_term__chunk_01",
     "goals_short_term__chunk_02",
     "goals_short_term__chunk_03",
@@ -124,6 +144,10 @@
     "goals_medium_term__chunk_03",
     "goals_medium_term__chunk_04",
     "goals_long_term__chunk_01",
+    "goals_long_term__chunk_02",
+    "goals_long_term__chunk_03",
+    "goals_long_term__chunk_04",
+    "goals_long_term__chunk_05",
     "career_mission__chunk_01",
     "interest_0__chunk_01",
     "interest_0__chunk_02",
@@ -136,14 +160,46 @@
     "interest_4__chunk_01",
     "interest_4__chunk_02",
     "inspirations__chunk_01",
-    "lifestyle__chunk_01",
-    "lifestyle__chunk_02"
+    "lifestyle__chunk_01"
   ],
   "metadatas": [
     {
       "chunk_id": "basic_info__chunk_01",
       "parent_id": "basic_info",
-      "text": "Name: Priyansh Raj\nCurrent Position: Junior Software Developer at PayGURU Technosoft Pvt. Ltd.\nLocation: Vadodara, Gujarat, India\n\nEducation Status: Master's student in Computer Science at MSU\n\nContact: {\n  \"email\": \"priyanshraj.dev@gmail.com\",\n  \"linkedin\": \"https://www.linkedin.com/in/priyansh-raj/\",\n  \"github\": \"https://github.com/PriyanshRaj30\"\n}\n\nAvailability: {\n  \"status\": \"serving_notice_period\",\n  \"preferred_roles\": [\n    \"Junior Software Engineer\",\n    \"Software Developer\",\n    \"AI/ML Engineer\"\n  ]\n}",
+      "text": "Name: Priyansh Raj\nCurrent Position: Master of Computer Science's Student. I was junior Software Developer at PayGURU Technosoft Pvt. Ltd. till August 2025",
+      "tags": [
+        "basic",
+        "contact",
+        "personal"
+      ],
+      "source_path": "basic_info"
+    },
+    {
+      "chunk_id": "basic_info__chunk_02",
+      "parent_id": "basic_info",
+      "text": "Location: Vadodara, Gujarat, India\nEducation Status: Master's student in Computer Science at MSU",
+      "tags": [
+        "basic",
+        "contact",
+        "personal"
+      ],
+      "source_path": "basic_info"
+    },
+    {
+      "chunk_id": "basic_info__chunk_03",
+      "parent_id": "basic_info",
+      "text": "{\"email\": \"priyanshraj.dev@gmail.com\",\"linkedin\": \"https://www.linkedin.com/in/priyansh-raj/\",\"github\": \"https://github.com/PriyanshRaj30\"}",
+      "tags": [
+        "basic",
+        "contact",
+        "personal"
+      ],
+      "source_path": "basic_info"
+    },
+    {
+      "chunk_id": "basic_info__chunk_04",
+      "parent_id": "basic_info",
+      "text": "{\"status\": \"serving_notice_period\",\"preferred_roles\": [\"Junior Software Engineer\",\"Software Developer\",\"AI/ML Engineer\"]}",
       "tags": [
         "basic",
         "contact",
@@ -154,7 +210,7 @@
     {
       "chunk_id": "prof_overview__chunk_01",
       "parent_id": "prof_overview",
-      "text": "Passionate computer science student pursuing Master's degree with hands-on experience in web development, AI/ML, and computer vision.",
+      "text": "I'm currently 21 years old from Vadodara,Gujarat. I'm computer science student pursuing Master's degree with hands-on experience in web development, AI/ML, and computer vision.",
       "tags": [
         "summary",
         "overview"
@@ -174,7 +230,57 @@
     {
       "chunk_id": "unique_value_prop__chunk_01",
       "parent_id": "unique_value_prop",
-      "text": "Blends academic knowledge with practical experience in enterprise software development\nExperienced in building scalable applications managing 500+ devices in real-time\nProficient across multiple technology stacks - Python, JavaScript, React, Express.js, MongoDB, Flutter\nPassionate about cutting-edge AI technologies including RAG, LangChain, and computer vision\nCreative problem solver who makes complex concepts simple and approachable\nStrong admiration for innovators like Elon Musk and Tony Stark, channeling their drive into tech projects",
+      "text": "Blends academic knowledge with practical experience in enterprise software development",
+      "tags": [
+        "uvp",
+        "strengths"
+      ],
+      "source_path": "professional_summary.unique_value_proposition"
+    },
+    {
+      "chunk_id": "unique_value_prop__chunk_02",
+      "parent_id": "unique_value_prop",
+      "text": "Experienced in building scalable applications managing 500+ devices in real-time",
+      "tags": [
+        "uvp",
+        "strengths"
+      ],
+      "source_path": "professional_summary.unique_value_proposition"
+    },
+    {
+      "chunk_id": "unique_value_prop__chunk_03",
+      "parent_id": "unique_value_prop",
+      "text": "Proficient across multiple technology stacks - Python, JavaScript, React, Express.js, MongoDB, Flutter",
+      "tags": [
+        "uvp",
+        "strengths"
+      ],
+      "source_path": "professional_summary.unique_value_proposition"
+    },
+    {
+      "chunk_id": "unique_value_prop__chunk_04",
+      "parent_id": "unique_value_prop",
+      "text": "Passionate about cutting-edge AI technologies including RAG, LangChain, and computer vision",
+      "tags": [
+        "uvp",
+        "strengths"
+      ],
+      "source_path": "professional_summary.unique_value_proposition"
+    },
+    {
+      "chunk_id": "unique_value_prop__chunk_05",
+      "parent_id": "unique_value_prop",
+      "text": "Creative problem solver who makes complex concepts simple and approachable",
+      "tags": [
+        "uvp",
+        "strengths"
+      ],
+      "source_path": "professional_summary.unique_value_proposition"
+    },
+    {
+      "chunk_id": "unique_value_prop__chunk_06",
+      "parent_id": "unique_value_prop",
+      "text": "Strong admiration for innovators like Elon Musk and Tony Stark, channeling their drive into tech projects",
       "tags": [
         "uvp",
         "strengths"
@@ -194,7 +300,17 @@
     {
       "chunk_id": "work_exp_summary__chunk_01",
       "parent_id": "work_exp_summary",
-      "text": "Total Experience: 8+ months\nCareer Progression: Rapid progression from Software Engineer Intern to Junior Software Developer, demonstrating quick adaptation to biometric software development and computer vision applications",
+      "text": "Total Experience: 8+ months",
+      "tags": [
+        "experience",
+        "summary"
+      ],
+      "source_path": "work_experience.summary"
+    },
+    {
+      "chunk_id": "work_exp_summary__chunk_02",
+      "parent_id": "work_exp_summary",
+      "text": "Career Progression: Rapid progression from Software Engineer Intern to Junior Software Developer, demonstrating quick adaptation to biometric software development and computer vision applications",
       "tags": [
         "experience",
         "summary"
@@ -490,7 +606,7 @@
     {
       "chunk_id": "exp_001_proj_3__chunk_04",
       "parent_id": "exp_001_proj_3",
-      "text": "**Technical Architecture:** - **Object Detection:** YOLO for real-time vehicle detection and classification - **Computer Vision:** OpenCV for video processing and speed calculation - **Deep Learning:** PyTorch for custom model training and optimization - **OCR Technology:** Advanced optical character recognition for license plate reading - **Data Processing:** NumPy and Pandas for efficient data manipulation - **Tracking Algorithm:** Custom vehicle tracking for consistent identification - **Alert System:** Real-time notification system for speed violations",
+      "text": "**Technical Architecture:** Object Detection: YOLO for real-time vehicle detection and classification Computer Vision: OpenCV for video processing and speed calculation Deep Learning: PyTorch for custom model training and optimization OCR Technology: Advanced optical character recognition for license plate reading Data Processing: NumPy and Pandas for efficient data manipulation Tracking Algorithm: Custom vehicle tracking for consistent identification Alert System: Real-time notification system for speed violations",
       "tags": [
         "project",
         "work",
@@ -501,7 +617,7 @@
     {
       "chunk_id": "exp_001_proj_3__chunk_05",
       "parent_id": "exp_001_proj_3",
-      "text": "**Innovative Features:** - Real-time vehicle detection and classification (cars, trucks, motorcycles) - Accurate speed measurement using advanced tracking algorithms - License plate detection and OCR with high accuracy rates - Intelligent vehicle tracking across multiple camera frames - Automated violation alert system with configurable speed thresholds - Comprehensive logging system with vehicle IDs, timestamps, and speeds - Structured data export for law enforcement integration - Multi-lane traffic monitoring capabilities - Weather and lighting condition adaptability",
+      "text": "**Innovative Features:** Real-time vehicle detection and classification (cars, trucks, motorcycles) Accurate speed measurement using advanced tracking algorithms License plate detection and OCR with high accuracy rates Intelligent vehicle tracking across multiple camera frames Automated violation alert system with configurable speed thresholds Comprehensive logging system with vehicle IDs, timestamps, and speeds Structured data export for law enforcement integration Multi-lane traffic monitoring capabilities Weather and lighting condition adaptability",
       "tags": [
         "project",
         "work",
@@ -512,7 +628,7 @@
     {
       "chunk_id": "exp_001_proj_3__chunk_06",
       "parent_id": "exp_001_proj_3",
-      "text": "**System Capabilities:** - Process multiple vehicle streams simultaneously - Generate detailed violation reports with evidence (images, videos) and send the email to the admin/security head - Integration capability with existing traffic management systems - Real-time dashboard for traffic monitoring personnel - Historical data analysis for traffic pattern insights - Configurable violation parameters per location/zone",
+      "text": "**System Capabilities:** Process multiple vehicle streams simultaneously Generate detailed violation reports with evidence (images, videos) and send the email to the admin/security head Integration capability with existing traffic management systems Real-time dashboard for traffic monitoring personnel Historical data analysis for traffic pattern insights Configurable violation parameters per location/zone",
       "tags": [
         "project",
         "work",
@@ -600,7 +716,7 @@
     {
       "chunk_id": "edu_001__chunk_02",
       "parent_id": "edu_001",
-      "text": "Institution: The Maharaja Sayajirao University of Baroda (MSUB)",
+      "text": "Institution: The Maharaja Sayajirao University of Baroda (MSUB) Duration: July 2025 - October 2027",
       "tags": [
         "education",
         "formal",
@@ -611,18 +727,7 @@
     {
       "chunk_id": "edu_001__chunk_03",
       "parent_id": "edu_001",
-      "text": "Duration: July 2025 - October 2027 Status: current",
-      "tags": [
-        "education",
-        "formal",
-        "current"
-      ],
-      "source_path": "education.formal_education[0]"
-    },
-    {
-      "chunk_id": "edu_001__chunk_04",
-      "parent_id": "edu_001",
-      "text": "Focus Areas: Advanced algorithms, Database systems, Software architecture, Machine learning, System design",
+      "text": "Status: current Focus Areas: Advanced algorithms, Database systems, Software architecture, Machine learning, System design",
       "tags": [
         "education",
         "formal",
@@ -633,7 +738,7 @@
     {
       "chunk_id": "edu_002__chunk_01",
       "parent_id": "edu_002",
-      "text": "Degree: Bachelor of Computer Applications (BCA) Field: Computer Science Institution: The Maharaja Sayajirao University of Baroda (MSUB) Duration: 2022 - 2025",
+      "text": "Degree: Bachelor of Computer Applications (BCA) Field: Computer Science",
       "tags": [
         "education",
         "formal",
@@ -643,6 +748,17 @@
     },
     {
       "chunk_id": "edu_002__chunk_02",
+      "parent_id": "edu_002",
+      "text": "Institution: The Maharaja Sayajirao University of Baroda (MSUB) Duration: 2022 - 2025",
+      "tags": [
+        "education",
+        "formal",
+        "completed"
+      ],
+      "source_path": "education.formal_education[1]"
+    },
+    {
+      "chunk_id": "edu_002__chunk_03",
       "parent_id": "edu_002",
       "text": "Status: completed Focus Areas: Programming languages, Data structures, Algorithms, Database management, Web development, Software engineering",
       "tags": [
@@ -833,7 +949,7 @@
     {
       "chunk_id": "framework_0__chunk_01",
       "parent_id": "framework_0",
-      "text": "Framework: React, Category: frontend_framework",
+      "text": "Framework: React\nCategory: frontend_framework\nLevel: intermediate (Score: 7/10)",
       "tags": [
         "skills",
         "framework",
@@ -844,29 +960,7 @@
     {
       "chunk_id": "framework_0__chunk_02",
       "parent_id": "framework_0",
-      "text": "Level: intermediate (Score: 7/10)",
-      "tags": [
-        "skills",
-        "framework",
-        "frontend_framework"
-      ],
-      "source_path": "technical_skills.frameworks_libraries[0]"
-    },
-    {
-      "chunk_id": "framework_0__chunk_03",
-      "parent_id": "framework_0",
-      "text": "Experience: years",
-      "tags": [
-        "skills",
-        "framework",
-        "frontend_framework"
-      ],
-      "source_path": "technical_skills.frameworks_libraries[0]"
-    },
-    {
-      "chunk_id": "framework_0__chunk_04",
-      "parent_id": "framework_0",
-      "text": "Expertise Areas: Functional components, Hooks, State management, UI development",
+      "text": "Experience: years\nExpertise Areas: Functional components, Hooks, State management, UI development",
       "tags": [
         "skills",
         "framework",
@@ -1009,7 +1103,7 @@
     {
       "chunk_id": "proj_001__chunk_01",
       "parent_id": "proj_001",
-      "text": "Project: EzeeCanteen - Canteen Management System, Type: professional, Status: deployed, Company: PayGURU Technosoft Pvt. Ltd., Description: A comprehensive canteen management system designed to efficiently manage organizational canteens by tracking employee meal consumption, automating meal orders, and implementing cashless transactions. The system eliminates manual token distribution and reduces operational overhead while preventing malpractices.",
+      "text": "Project: EzeeCanteen - Canteen Management System\nType: professional\nStatus: deployed\nCompany: PayGURU Technosoft Pvt. Ltd.\nDescription: A comprehensive canteen management system designed to efficiently manage organizational canteens by tracking employee meal consumption, automating meal orders, and implementing cashless transactions. The system eliminates manual token distribution and reduces operational overhead while preventing malpractices.",
       "tags": [
         "project",
         "enterprise_software",
@@ -1020,7 +1114,7 @@
     {
       "chunk_id": "proj_001__chunk_02",
       "parent_id": "proj_001",
-      "text": "Problem Statement: Traditional canteen management involves manual processes, token/coupon distribution, identity verification issues, and potential malpractices by employees or canteen staff. Organizations needed an automated, transparent, and efficient solution.",
+      "text": "**Problem Statement:**\nTraditional canteen management involves manual processes, token/coupon distribution, identity verification issues, and potential malpractices by employees or canteen staff. Organizations needed an automated, transparent, and efficient solution.",
       "tags": [
         "project",
         "enterprise_software",
@@ -1031,7 +1125,7 @@
     {
       "chunk_id": "proj_001__chunk_03",
       "parent_id": "proj_001",
-      "text": "Solution: Developed a complete canteen management platform that automates meal tracking, billing, and distribution. The system provides real-time monitoring, automated reporting, and seamless integration with organizational infrastructure.",
+      "text": "**Solution:**\nDeveloped a complete canteen management platform that automates meal tracking, billing, and distribution. The system provides real-time monitoring, automated reporting, and seamless integration with organizational infrastructure.",
       "tags": [
         "project",
         "enterprise_software",
@@ -1042,7 +1136,7 @@
     {
       "chunk_id": "proj_001__chunk_04",
       "parent_id": "proj_001",
-      "text": "Technical Implementation: - Backend: Python with robust database management for meal tracking - Database: MySQL for transaction records and user management - Hardware Integration: Printer and device management system - Real-time Monitoring: Live display system with automatic refresh - Reporting: Automated email reports and manual report generation - Printer Management: Network-based thermal printer integration - Device Management: IP-based device configuration and monitoring",
+      "text": "**Technical Implementation:**\n- **Backend:** Python with robust database management for meal tracking\n- **Database:** MySQL for transaction records and user management\n- **Hardware Integration:** Printer and device management system\n- **Real-time Monitoring:** Live display system with automatic refresh\n- **Reporting:** Automated email reports and manual report generation\n- **Printer Management:** Network-based thermal printer integration\n- **Device Management:** IP-based device configuration and monitoring",
       "tags": [
         "project",
         "enterprise_software",
@@ -1053,7 +1147,7 @@
     {
       "chunk_id": "proj_001__chunk_05",
       "parent_id": "proj_001",
-      "text": "Key Features: - Automated meal tracking for breakfast, lunch, tea/coffee, and dinner - Cashless transaction system eliminating physical tokens/coupons - Real-time order monitoring with live updates - Printer and device management with network connectivity status - Email configuration for automated reporting - License activation system for software deployment - User-friendly interface for canteen staff and administrators - Comprehensive analytics and reporting dashboard",
+      "text": "**Key Features:**\n- Automated meal tracking for breakfast, lunch, tea/coffee, and dinner\n- Cashless transaction system eliminating physical tokens/coupons\n- Real-time order monitoring with live updates\n- Printer and device management with network connectivity status\n- Email configuration for automated reporting\n- License activation system for software deployment\n- User-friendly interface for canteen staff and administrators\n- Comprehensive analytics and reporting dashboard",
       "tags": [
         "project",
         "enterprise_software",
@@ -1064,7 +1158,7 @@
     {
       "chunk_id": "proj_001__chunk_06",
       "parent_id": "proj_001",
-      "text": "Results & Impact: - Successfully deployed at major companies: Gujarat Fluorochemicals Limited, Xylem Ltd, Atul Ltd - Eliminated manual processes and reduced operational overhead - Zero redundancy or anomalies in meal distribution - Prevented malpractices (When puched the user is blocked till and nexy day and no token is generated after first punch) and improved transparency - No dedicated personnel required for token distribution - Streamlined canteen operations with cutting-edge technology",
+      "text": "**Results & Impact:**\n- Successfully deployed at major companies: Gujarat Fluorochemicals Limited, Xylem Ltd, Atul Ltd\n- Eliminated manual processes and reduced operational overhead\n- Zero redundancy or anomalies in meal distribution\n- Prevented malpractices (When puched the user is blocked till and nexy day and no token is generated after first punch) and improved transparency\n- No dedicated personnel required for token distribution\n- Streamlined canteen operations with cutting-edge technology",
       "tags": [
         "project",
         "enterprise_software",
@@ -1075,7 +1169,7 @@
     {
       "chunk_id": "proj_001__chunk_07",
       "parent_id": "proj_001",
-      "text": "Key Features: Technologies: Python, MySQL, SMTP, Email Integration, Biometric-API, PyQt5, Pandas Impact: Eliminated manual processes, prevented malpractices, streamlined operations for major enterprise clients",
+      "text": "Key Features:\n\nTechnologies: Python, MySQL, SMTP, Email Integration, Biometric-API, PyQt5, Pandas\nImpact: Eliminated manual processes, prevented malpractices, streamlined operations for major enterprise clients",
       "tags": [
         "project",
         "enterprise_software",
@@ -1086,7 +1180,29 @@
     {
       "chunk_id": "proj_002__chunk_01",
       "parent_id": "proj_002",
-      "text": "Project: VisionSphere - Biometric Device Management System\nType: professional\nStatus: deployed\nCompany: PayGURU Technosoft Pvt. Ltd.\nDescription: A centralized biometric device management system was developed to monitor and control over 500 devices and access control system in real-time, streamlining attendance tracking and data synchronization across multiple locations. Built with python, Biometric API, PyQt5, MySQL, and socket programming, the system enables efficient device management, real-time monitoring, and significantly reduces IT overhead while improving data accuracy and reporting for large organizations.\n\nKey Features:\n• Management of 500+ devices across locations\n• Real-time attendance synchronization\n• Device health monitoring\n• Comprehensive user management\n• Attendance reporting and analytics\n• Network-based device communication\n\nTechnologies: Python, PyQt5, Pandas, MySQL, Socket Programming, tkinter, Network Management\n\nImpact: 60% reduction in IT overhead, centralized management, improved data accuracy",
+      "text": "Project: VisionSphere - Biometric Device Management System. Type: professional. Status: deployed. Company: PayGURU Technosoft Pvt. Ltd. Description: A centralized biometric device management system was developed to monitor and control over 500 devices and access control system in real-time, streamlining attendance tracking and data synchronization across multiple locations. Built with python, Biometric API, PyQt5, MySQL, and socket programming, the system enables efficient device management, real-time monitoring, and significantly reduces IT overhead while improving data accuracy and reporting for large organizations.",
+      "tags": [
+        "project",
+        "enterprise_software",
+        "professional"
+      ],
+      "source_path": "projects.featured_projects[1]"
+    },
+    {
+      "chunk_id": "proj_002__chunk_02",
+      "parent_id": "proj_002",
+      "text": "Key Features: • Management of 500+ devices across locations • Real-time attendance synchronization • Device health monitoring • Comprehensive user management • Attendance reporting and analytics • Network-based device communication",
+      "tags": [
+        "project",
+        "enterprise_software",
+        "professional"
+      ],
+      "source_path": "projects.featured_projects[1]"
+    },
+    {
+      "chunk_id": "proj_002__chunk_03",
+      "parent_id": "proj_002",
+      "text": "Technologies: Python, PyQt5, Pandas, MySQL, Socket Programming, tkinter, Network Management. Impact: 60% reduction in IT overhead, centralized management, improved data accuracy",
       "tags": [
         "project",
         "enterprise_software",
@@ -1097,7 +1213,7 @@
     {
       "chunk_id": "proj_003__chunk_01",
       "parent_id": "proj_003",
-      "text": "Project: Face Recognition Attendance System\nType: computer_vision\nStatus: completed\nCompany: PayGURU Technosoft Pvt. Ltd.\nDescription: A real-time AI-powered face recognition system was developed to automate attendance and authentication by integrating with existing CCTV infrastructure, enabling seamless, contactless tracking and door access control.  The system supports multi-face detection, dynamic tracking, and biometric integration, delivering high-speed performance, improved accuracy, and reduced attendance fraud.",
+      "text": "Project: Face Recognition Attendance System, Type: computer_vision, Status: completed, Company: PayGURU Technosoft Pvt. Ltd.",
       "tags": [
         "project",
         "ai_computer_vision",
@@ -1108,7 +1224,7 @@
     {
       "chunk_id": "proj_003__chunk_02",
       "parent_id": "proj_003",
-      "text": "Key Features:\n• Multi-face detection and tracking\n• CCTV integration via RTSP\n• Automatic biometric triggering\n• Door access control integration\n• Real-time attendance logging\n• Face encoding database",
+      "text": "A real-time AI-powered face recognition system was developed to automate attendance and authentication by integrating with existing CCTV infrastructure, enabling seamless, contactless tracking and door access control.  The system supports multi-face detection, dynamic tracking, and biometric integration, delivering high-speed performance, improved accuracy, and reduced attendance fraud.",
       "tags": [
         "project",
         "ai_computer_vision",
@@ -1119,7 +1235,7 @@
     {
       "chunk_id": "proj_003__chunk_03",
       "parent_id": "proj_003",
-      "text": "Technologies: Python, YOLO, Dlib, OpenCV, PyQt5, RTSP, MySQL, Deep Learning",
+      "text": "Key Features:",
       "tags": [
         "project",
         "ai_computer_vision",
@@ -1129,6 +1245,83 @@
     },
     {
       "chunk_id": "proj_003__chunk_04",
+      "parent_id": "proj_003",
+      "text": "• Multi-face detection and tracking",
+      "tags": [
+        "project",
+        "ai_computer_vision",
+        "computer_vision"
+      ],
+      "source_path": "projects.featured_projects[2]"
+    },
+    {
+      "chunk_id": "proj_003__chunk_05",
+      "parent_id": "proj_003",
+      "text": "• CCTV integration via RTSP",
+      "tags": [
+        "project",
+        "ai_computer_vision",
+        "computer_vision"
+      ],
+      "source_path": "projects.featured_projects[2]"
+    },
+    {
+      "chunk_id": "proj_003__chunk_06",
+      "parent_id": "proj_003",
+      "text": "• Automatic biometric triggering",
+      "tags": [
+        "project",
+        "ai_computer_vision",
+        "computer_vision"
+      ],
+      "source_path": "projects.featured_projects[2]"
+    },
+    {
+      "chunk_id": "proj_003__chunk_07",
+      "parent_id": "proj_003",
+      "text": "• Door access control integration",
+      "tags": [
+        "project",
+        "ai_computer_vision",
+        "computer_vision"
+      ],
+      "source_path": "projects.featured_projects[2]"
+    },
+    {
+      "chunk_id": "proj_003__chunk_08",
+      "parent_id": "proj_003",
+      "text": "• Real-time attendance logging",
+      "tags": [
+        "project",
+        "ai_computer_vision",
+        "computer_vision"
+      ],
+      "source_path": "projects.featured_projects[2]"
+    },
+    {
+      "chunk_id": "proj_003__chunk_09",
+      "parent_id": "proj_003",
+      "text": "• Face encoding database",
+      "tags": [
+        "project",
+        "ai_computer_vision",
+        "computer_vision"
+      ],
+      "source_path": "projects.featured_projects[2]"
+    },
+    {
+      "chunk_id": "proj_003__chunk_10",
+      "parent_id": "proj_003",
+      "text": "Technologies: Python, YOLO, Dlib, OpenCV, PyQt5, RTSP, MySQL, Deep Learning",
+      "tags": [
+        "project",
+        "ai_computer_vision",
+        "computer_vision"
+      ],
+      "source_path": "projects.featured_projects[2]"
+    },
+    {
+      "chunk_id": "proj_003__chunk_11",
       "parent_id": "proj_003",
       "text": "Impact:",
       "tags": [
@@ -1141,7 +1334,7 @@
     {
       "chunk_id": "proj_004__chunk_01",
       "parent_id": "proj_004",
-      "text": "Project: Intelligent Traffic Violation Detection Platform, Type: computer_vision, Status: completed, Company: PayGURU Technosoft Pvt. Ltd., Description: A comprehensive traffic monitoring solution that combines computer vision and OCR technologies to detect vehicles, capture license plates, measure speeds, and automate violation alerts. The system provides intelligent traffic management with detailed logging and violation tracking.",
+      "text": "Project: Intelligent Traffic Violation Detection Platform Type: computer_vision Status: completed Company: PayGURU Technosoft Pvt. Ltd. Description: A comprehensive traffic monitoring solution that combines computer vision and OCR technologies to detect vehicles, capture license plates, measure speeds, and automate violation alerts. The system provides intelligent traffic management with detailed logging and violation tracking.",
       "tags": [
         "project",
         "ai_computer_vision",
@@ -1328,60 +1521,100 @@
     {
       "chunk_id": "other_proj_0__chunk_01",
       "parent_id": "other_proj_0",
-      "text": "Project: Pokédex Platform\nDescription: Interactive Pokémon explorer with real-time search and responsive design\nTechnologies: ReactJS, Tailwind CSS, Pokémon API",
+      "text": "Project: Pokédex - Interactive Pokémon Explorer",
       "tags": [
         "project",
-        "web_development"
+        "personal_projects"
       ],
       "source_path": "projects.other_projects[0]"
     },
     {
       "chunk_id": "other_proj_0__chunk_02",
       "parent_id": "other_proj_0",
-      "text": "Category: web_development",
+      "text": "Description:",
       "tags": [
         "project",
-        "web_development"
+        "personal_projects"
+      ],
+      "source_path": "projects.other_projects[0]"
+    },
+    {
+      "chunk_id": "other_proj_0__chunk_03",
+      "parent_id": "other_proj_0",
+      "text": "Technologies: ReactJS, Tailwind CSS, Pokémon API, JavaScript ES6+, HTML5, CSS3",
+      "tags": [
+        "project",
+        "personal_projects"
+      ],
+      "source_path": "projects.other_projects[0]"
+    },
+    {
+      "chunk_id": "other_proj_0__chunk_04",
+      "parent_id": "other_proj_0",
+      "text": "Category: personal_projects",
+      "tags": [
+        "project",
+        "personal_projects"
       ],
       "source_path": "projects.other_projects[0]"
     },
     {
       "chunk_id": "other_proj_1__chunk_01",
       "parent_id": "other_proj_1",
-      "text": "Project: Expense Tracker Mobile App\nDescription: Flutter-based expense tracking with Firebase integration\nTechnologies: Flutter, Dart, Firebase, Cloud Firestore",
+      "text": "Project: Expense Tracker Mobile App\nDescription: \nTechnologies: Flutter, Dart, Firebase, Cloud Firestore, Firebase Auth, Mobile Development",
       "tags": [
         "project",
-        "mobile_development"
+        "mobile_projects"
       ],
       "source_path": "projects.other_projects[1]"
     },
     {
       "chunk_id": "other_proj_1__chunk_02",
       "parent_id": "other_proj_1",
-      "text": "Category: mobile_development",
+      "text": "Category: mobile_projects",
       "tags": [
         "project",
-        "mobile_development"
+        "mobile_projects"
       ],
       "source_path": "projects.other_projects[1]"
     },
     {
       "chunk_id": "other_proj_2__chunk_01",
       "parent_id": "other_proj_2",
-      "text": "Project: Sorting Algorithm Visualizer\nDescription: Educational tool for visualizing sorting algorithms\nTechnologies: Python, Pygame",
+      "text": "Project: Sorting Algorithm Visualizer",
       "tags": [
         "project",
-        "educational"
+        "educational_projects"
       ],
       "source_path": "projects.other_projects[2]"
     },
     {
       "chunk_id": "other_proj_2__chunk_02",
       "parent_id": "other_proj_2",
-      "text": "Category: educational",
+      "text": "Description:",
       "tags": [
         "project",
-        "educational"
+        "educational_projects"
+      ],
+      "source_path": "projects.other_projects[2]"
+    },
+    {
+      "chunk_id": "other_proj_2__chunk_03",
+      "parent_id": "other_proj_2",
+      "text": "Technologies: Python, Pygame, Algorithm Visualization, Graphics Programming",
+      "tags": [
+        "project",
+        "educational_projects"
+      ],
+      "source_path": "projects.other_projects[2]"
+    },
+    {
+      "chunk_id": "other_proj_2__chunk_04",
+      "parent_id": "other_proj_2",
+      "text": "Category: educational_projects",
+      "tags": [
+        "project",
+        "educational_projects"
       ],
       "source_path": "projects.other_projects[2]"
     },
@@ -1432,7 +1665,7 @@
     {
       "chunk_id": "goals_medium_term__chunk_01",
       "parent_id": "goals_medium_term",
-      "text": "Timeline: 2-5 years\nObjectives: Take on technical leadership roles in AI/ML projects; Develop expertise in system design and team building; Contribute to product strategy and technical decision-making; Build and mentor engineering teams",
+      "text": "Timeline: 2-5 years, Objectives: Take on technical leadership roles in AI/ML projects; Develop expertise in system design and team building; Contribute to product strategy and technical decision-making; Build and mentor engineering teams",
       "tags": [
         "career",
         "goals",
@@ -1476,7 +1709,51 @@
     {
       "chunk_id": "goals_long_term__chunk_01",
       "parent_id": "goals_long_term",
-      "text": "Timeline: 5+ years\nObjectives: \nVision: Build and lead world-class engineering teams at high-growth companies focusing on products with positive social impact\nTarget Roles: VP of Engineering, CTO, Technical Lead\nFocus Industries: Developer tools and infrastructure, Educational technology, Sustainable technology solutions, Healthcare innovation, Financial inclusion",
+      "text": "Timeline: 5+ years",
+      "tags": [
+        "career",
+        "goals",
+        "long_term"
+      ],
+      "source_path": "career_goals.long_term"
+    },
+    {
+      "chunk_id": "goals_long_term__chunk_02",
+      "parent_id": "goals_long_term",
+      "text": "Objectives:",
+      "tags": [
+        "career",
+        "goals",
+        "long_term"
+      ],
+      "source_path": "career_goals.long_term"
+    },
+    {
+      "chunk_id": "goals_long_term__chunk_03",
+      "parent_id": "goals_long_term",
+      "text": "Vision: Build and lead world-class engineering teams at high-growth companies focusing on products with positive social impact",
+      "tags": [
+        "career",
+        "goals",
+        "long_term"
+      ],
+      "source_path": "career_goals.long_term"
+    },
+    {
+      "chunk_id": "goals_long_term__chunk_04",
+      "parent_id": "goals_long_term",
+      "text": "Target Roles: VP of Engineering, CTO, Technical Lead",
+      "tags": [
+        "career",
+        "goals",
+        "long_term"
+      ],
+      "source_path": "career_goals.long_term"
+    },
+    {
+      "chunk_id": "goals_long_term__chunk_05",
+      "parent_id": "goals_long_term",
+      "text": "Focus Industries: Developer tools and infrastructure, Educational technology, Sustainable technology solutions, Healthcare innovation, Financial inclusion",
       "tags": [
         "career",
         "goals",
@@ -1618,17 +1895,7 @@
     {
       "chunk_id": "lifestyle__chunk_01",
       "parent_id": "lifestyle",
-      "text": "Balances technical depth with personal interests, described as both geek and nerd",
-      "tags": [
-        "personal",
-        "lifestyle"
-      ],
-      "source_path": "personal_interests.lifestyle"
-    },
-    {
-      "chunk_id": "lifestyle__chunk_02",
-      "parent_id": "lifestyle",
-      "text": "with creative confidence",
+      "text": "Balances technical depth with personal interests, described as both geek and nerd with creative confidence",
       "tags": [
         "personal",
         "lifestyle"

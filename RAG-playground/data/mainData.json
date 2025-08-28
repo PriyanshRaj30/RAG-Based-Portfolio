@@ -18,7 +18,7 @@
 
   "basic_info": {
     "name": "Priyansh Raj",
-    "current_position": "Junior Software Developer at PayGURU Technosoft Pvt. Ltd.",
+    "current_position": "Master of Computer Science's Student. I was junior Software Developer at PayGURU Technosoft Pvt. Ltd. till August 2025",
 
     "location": "Vadodara, Gujarat, India",
     "education_status": "Master's student in Computer Science at MSU",
@@ -57,7 +57,7 @@
   },
 
   "professional_summary": {
-    "overview": "Passionate computer science student pursuing Master's degree with hands-on experience in web development, AI/ML, and computer vision. worked at payguru till august as junior software developer",
+    "overview": "I'm currently 21 years old from Vadodara,Gujarat. I'm computer science student pursuing Master's degree with hands-on experience in web development, AI/ML, and computer vision. worked at payguru till august as junior software developer",
     "unique_value_proposition": [
       "Blends academic knowledge with practical experience in enterprise software development",
       "Experienced in building scalable applications managing 500+ devices in real-time",
@@ -476,22 +476,40 @@
     "other_projects": [
       
       {
-        "name": "Pokédex Platform",
-        "description": "Interactive Pokémon explorer with real-time search and responsive design",
-        "technologies": ["ReactJS", "Tailwind CSS", "Pokémon API"],
-        "category": "web_development"
+        "name": "Pokédex - Interactive Pokémon Explorer",
+        "type": "personal",
+        "status": "completed",
+        "content": "A responsive and interactive Pokédex platform that provides comprehensive Pokémon information using the Pokémon API. The application features modern design, real-time search capabilities, and detailed Pokémon statistics display.\n\n**Project Goals:**\n- Master React fundamentals and modern JavaScript concepts",
+        "technologies": ["ReactJS", "Tailwind CSS", "Pokémon API", "JavaScript ES6+", "HTML5", "CSS3"],
+        "live_demo": "#",
+        "github_url": "#",
+        "keywords": ["react", "tailwind css", "api integration", "responsive design", "frontend", "pokemon"],
+        "category": "personal_projects",
+        "importance": "low"
       },
       {
         "name": "Expense Tracker Mobile App",
-        "description": "Flutter-based expense tracking with Firebase integration",
-        "technologies": ["Flutter", "Dart", "Firebase", "Cloud Firestore"],
-        "category": "mobile_development"
+        "type": "mobile",
+        "status": "completed",
+        "featured": false,
+        "content": "A comprehensive mobile expense tracking application built with Flutter that allows users to efficiently manage income and expenses. The app features Firebase integration for real-time data synchronization and cloud storage.\n\n**Project Motivation:**\nBuilt this app to learn mobile development with Flutter while solving a personal need for expense tracking. The project served as a practical introduction to mobile app development, Firebase integration, and cross-platform development.\n\n**Technical Implementation:**\n- **Framework:** Flutter for cross-platform mobile development\n- **Language:** Dart for application logic and UI development\n- **Backend:** Firebase for real-time database and authentication\n- **State Management:** Flutter's built-in setState for simple state handling\n- **Database:** Cloud Firestore for expense data storage\n- **Authentication:** Firebase Auth for user management\n\n**App Features:**\n- Comprehensive expense and income tracking\n- Category-based expense organization\n- Real-time data synchronization across devices\n- Visual expense reports and analytics\n- Monthly and yearly expense summaries\n- Search and filter functionality\n- Data backup and restore capabilities\n- User-friendly mobile interface\n- Cross-platform compatibility (iOS and Android)\n\n**Learning Achievements:**\n- Gained proficiency in Flutter framework and Dart language\n- Learned mobile app development best practices\n- Mastered Firebase integration for mobile applications\n- Understanding of mobile UI/UX design principles\n- Experience with app state management\n- Knowledge of mobile app deployment processes\n\n**Technical Skills Developed:**\n- Flutter widget system and custom UI components\n- Firebase real-time database operations\n- Mobile app navigation and routing\n- Cross-platform development considerations\n- Mobile app performance optimization",
+        "technologies": ["Flutter", "Dart", "Firebase", "Cloud Firestore", "Firebase Auth", "Mobile Development"],
+        "platforms": ["iOS", "Android"],
+        "keywords": ["flutter", "dart", "firebase", "mobile app", "expense tracking", "cross-platform"],
+        "category": "mobile_projects",
+        "importance": "medium"
       },
       {
         "name": "Sorting Algorithm Visualizer",
-        "description": "Educational tool for visualizing sorting algorithms",
-        "technologies": ["Python", "Pygame"],
-        "category": "educational"
+        "type": "educational", 
+        "status": "completed",
+        "featured": false,
+        "content": "An interactive educational tool that provides step-by-step visualization of popular sorting algorithms. Built with Python and Pygame to help students and developers understand algorithm mechanics through visual representation.\n\n**Educational Purpose:**\nCreated this visualizer to bridge the gap between theoretical algorithm knowledge and practical understanding. The tool makes complex sorting algorithms accessible through visual learning.\n\n**Technical Implementation:**\n- **Framework:** Pygame for graphics rendering and animations\n- **Language:** Python for algorithm implementation and visualization logic\n- **Graphics:** Custom drawing routines for array visualization\n- **Animation:** Smooth transitions showing algorithm steps\n- **Interactivity:** User controls for algorithm selection and speed adjustment\n\n**Implemented Algorithms:**\n- **Bubble Sort:** Visual representation of adjacent element swapping\n- **Quick Sort:** Partition visualization with pivot selection\n- **Merge Sort:** Divide-and-conquer visualization with merging process\n- **Insertion Sort:** Step-by-step insertion demonstration\n- **Selection Sort:** Minimum element selection visualization\n\n**Key Features:**\n- Real-time visualization of sorting process\n- Adjustable animation speed for different learning paces\n- Color-coded elements to highlight comparisons and swaps\n- Algorithm comparison capabilities\n- Step-by-step execution with pause/resume functionality\n- Performance metrics display (comparisons, swaps, time complexity)\n- Educational information panel for each algorithm\n\n**Learning Value:**\n- Helps visualize abstract algorithmic concepts\n- Demonstrates time complexity differences between algorithms\n- Shows algorithm behavior on different data patterns\n- Provides hands-on experience with algorithm analysis\n- Useful for computer science education and interview preparation",
+        "technologies": ["Python", "Pygame", "Algorithm Visualization", "Graphics Programming"],
+        "algorithms": ["Bubble Sort", "Quick Sort", "Merge Sort", "Insertion Sort", "Selection Sort"],
+        "keywords": ["python", "pygame", "algorithms", "visualization", "educational", "sorting"],
+        "category": "educational_projects",
+        "importance": "low"
       }
     ],
     "project_focus_areas": [

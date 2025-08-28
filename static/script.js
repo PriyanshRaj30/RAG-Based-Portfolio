@@ -1,4 +1,4 @@
-// Apple-Inspired Portfolio JavaScript
+// Apple-Inspired Portfolio JavaScript with Enhanced Email Integration
 
 // Configuration
 const CONFIG = {
@@ -16,7 +16,8 @@ const state = {
   currentSection: 'home',
   animatedElements: new Set(),
   chatHistory: [],
-  scrollPosition: 0
+  scrollPosition: 0,
+  username: null
 };
 
 // DOM elements
@@ -31,7 +32,6 @@ const elements = {
 
 // Utility functions
 const utils = {
-  // Debounce function for performance optimization
   debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -44,7 +44,6 @@ const utils = {
     };
   },
 
-  // Throttle function for scroll events
   throttle(func, limit) {
     let inThrottle;
     return function() {
@@ -58,17 +57,14 @@ const utils = {
     };
   },
 
-  // Smooth easing function
   easeOutQuart(t) {
     return 1 - (--t) * t * t * t;
   },
 
-  // Generate unique ID
   generateId() {
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
   },
 
-  // Format timestamp
   formatTime(date) {
     return new Intl.DateTimeFormat('en-US', {
       hour: '2-digit',
@@ -77,12 +73,221 @@ const utils = {
   }
 };
 
+// Notification system
+const notifications = {
+  show(message, type = 'info', duration = 3000) {
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.textContent = message;
+    
+    // Style the notification
+    Object.assign(notification.style, {
+      position: 'fixed',
+      top: '20px',
+      right: '20px',
+      padding: '12px 20px',
+      borderRadius: '8px',
+      color: 'white',
+      fontWeight: '500',
+      zIndex: '10000',
+      boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+      transition: 'all 0.3s ease',
+      backgroundColor: type === 'success' ? '#10B981' : type === 'error' ? '#EF4444' : '#3B82F6',
+      opacity: '0',
+      transform: 'translateX(100%)'
+    });
+    
+    document.body.appendChild(notification);
+    
+    // Animate in
+    setTimeout(() => {
+      notification.style.opacity = '1';
+      notification.style.transform = 'translateX(0)';
+    }, 10);
+    
+    // Remove after duration
+    setTimeout(() => {
+      notification.style.opacity = '0';
+      notification.style.transform = 'translateX(100%)';
+      setTimeout(() => {
+        if (notification.parentNode) {
+          notification.parentNode.removeChild(notification);
+        }
+      }, 300);
+    }, duration);
+  },
+
+  success(message) {
+    this.show(message, 'success');
+  },
+
+  error(message) {
+    this.show(message, 'error');
+  },
+
+  info(message) {
+    this.show(message, 'info');
+  }
+};
+
+// Username management
+const userManager = {
+  getUsername() {
+    if (!state.username) {
+      state.username = sessionStorage.getItem('chat_username') || null;
+    }
+    return state.username || 'Anonymous User';
+  },
+
+  setUsername(username) {
+    if (username && username.trim()) {
+      const cleanUsername = username.trim();
+      state.username = cleanUsername;
+      sessionStorage.setItem('chat_username', cleanUsername);
+      console.log('Username set:', cleanUsername);
+      return true;
+    }
+    return false;
+  },
+
+  hasUsername() {
+    return this.getUsername() !== 'Anonymous User';
+  },
+
+  clearUsername() {
+    state.username = null;
+    sessionStorage.removeItem('chat_username');
+  },
+
+  promptForUsername() {
+    const username = prompt("Please enter your name (optional):", "");
+    if (username !== null && username.trim()) {
+      if (this.setUsername(username)) {
+        notifications.success(`Nice to meet you, ${username.trim()}!`);
+        return username.trim();
+      }
+    }
+    return null;
+  },
+
+  detectUsernameInMessage(message) {
+    const namePatterns = [
+      /my name is ([a-zA-Z]{2,20})/i,
+      /i'm ([a-zA-Z]{2,20})/i,
+      /i am ([a-zA-Z]{2,20})/i,
+      /call me ([a-zA-Z]{2,20})/i,
+      /it's ([a-zA-Z]{2,20})/i,
+      /this is ([a-zA-Z]{2,20})/i
+    ];
+
+    // Check if message is a simple single name response
+    const singleWordMatch = message.trim().match(/^([a-zA-Z]{2,20})$/);
+    if (singleWordMatch) {
+      const word = singleWordMatch[1].toLowerCase();
+      const commonWords = ['hello', 'hi', 'hey', 'yes', 'no', 'ok', 'sure', 'thanks', 'thank', 'please'];
+      if (!commonWords.includes(word)) {
+        return singleWordMatch[1];
+      }
+    }
+
+    for (const pattern of namePatterns) {
+      const match = message.match(pattern);
+      if (match && match[1]) {
+        const detectedName = match[1];
+        const commonWords = ['hello', 'hi', 'hey', 'yes', 'no', 'ok', 'sure', 'fine', 'good', 'bad'];
+        if (!commonWords.includes(detectedName.toLowerCase())) {
+          return detectedName;
+        }
+      }
+    }
+    return null;
+  }
+};
+
+// Email functionality
+const emailManager = {
+  async sendChatHistory(customEmail = null, customUsername = null) {
+    try {
+      let username = customUsername || userManager.getUsername();
+      let email = customEmail || "priyanshraj3020@gmail.com";
+      
+      // If no username and not provided, prompt for it
+      if (username === 'Anonymous User' && !customUsername) {
+        const promptedUsername = userManager.promptForUsername();
+        if (promptedUsername) {
+          username = promptedUsername;
+        }
+      }
+      
+      const sessionId = chat.getSessionId();
+      
+      // Check if there's any chat history
+      if (state.chatHistory.length === 0) {
+        notifications.error('No chat history to send.');
+        return false;
+      }
+      
+      notifications.info('Sending chat history...');
+      
+      const response = await fetch("/api/chat/email_histories", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          session_id: sessionId,
+          username: username,
+          to_email: email
+        }),
+        keepalive: true
+      });
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        notifications.success(`Chat history sent successfully to ${result.details.recipient}`);
+        console.log(`Chat history emailed to ${result.details.recipient} for user: ${result.details.username}`);
+        return true;
+      } else {
+        notifications.error(`Failed to send email: ${result.error || 'Unknown error'}`);
+        console.error("Failed to email chat history:", result);
+        return false;
+      }
+      
+    } catch (error) {
+      console.error("Error sending chat history:", error);
+      notifications.error('Error sending chat history. Please check your connection.');
+      return false;
+    }
+  },
+
+  async sendOnPageUnload() {
+    // Check if there's any meaningful chat history to send
+    if (state.chatHistory.length <= 1) return; // Don't send if only welcome message
+    
+    const sessionId = chat.getSessionId();
+    const username = userManager.getUsername();
+    
+    try {
+      await fetch("/api/chat/email_histories", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          session_id: sessionId,
+          username: username,
+          to_email: "priyanshraj3020@gmail.com"
+        }),
+        keepalive: true
+      });
+    } catch (error) {
+      console.error("Failed to send chat history on page unload:", error);
+    }
+  }
+};
+
 // Navigation functionality
 const navigation = {
   init() {
     elements.navLinks = document.querySelectorAll('.nav-link');
     elements.sections = document.querySelectorAll('.section, .hero-section');
-    
     this.bindEvents();
     this.updateActiveLink();
   },
@@ -91,7 +296,6 @@ const navigation = {
     elements.navLinks.forEach(link => {
       link.addEventListener('click', this.handleNavClick.bind(this));
     });
-
     window.addEventListener('scroll', utils.throttle(this.handleScroll.bind(this), 16));
   },
 
@@ -99,21 +303,14 @@ const navigation = {
     event.preventDefault();
     const href = event.target.getAttribute('href');
     const targetSection = document.querySelector(href);
-    
-    if (targetSection) {
-      this.scrollToSection(targetSection);
-    }
+    if (targetSection) this.scrollToSection(targetSection);
   },
 
   scrollToSection(section) {
     const headerOffset = 80;
     const elementPosition = section.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
+    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
   },
 
   handleScroll() {
@@ -126,32 +323,28 @@ const navigation = {
   updateNavBackground() {
     const nav = document.querySelector('.nav');
     const links = document.querySelectorAll('.nav-link');
-    const navlogo = document.querySelector('#nav-logo')
-
+    const navlogo = document.querySelector('#nav-logo');
     if (window.pageYOffset > 750) {
       nav.style.background = 'rgba(255, 255, 255, 0.95)';
       links.forEach(link => link.style.color = 'rgba(0, 68, 255, 0.92)');
-      navlogo.style.color = 'rgb(4, 33, 194)'
+      navlogo.style.color = 'rgb(4, 33, 194)';
     } else {
       nav.style.background = 'rgba(0, 0, 0, 0.8)';
       links.forEach(link => link.style.color = "#aeaeb2");
-      navlogo.style.color = 'rgb(76, 121, 212)'
+      navlogo.style.color = 'rgb(76, 121, 212)';
     }
   },
 
   updateActiveLink() {
     let current = 'home';
-    
     elements.sections.forEach(section => {
       const sectionTop = section.getBoundingClientRect().top;
       if (sectionTop <= 100 && sectionTop > -section.offsetHeight + 100) {
         current = section.getAttribute('id');
       }
     });
-
     if (current !== state.currentSection) {
       state.currentSection = current;
-      
       elements.navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
@@ -163,16 +356,12 @@ const navigation = {
 
   triggerScrollAnimations() {
     const animatableElements = document.querySelectorAll('.project-card, .skill-category, .contact-card');
-    
     animatableElements.forEach(element => {
       const elementId = element.dataset.animateId || utils.generateId();
       element.dataset.animateId = elementId;
-      
       if (state.animatedElements.has(elementId)) return;
-      
       const rect = element.getBoundingClientRect();
       const isVisible = rect.top <= window.innerHeight * 0.8 && rect.bottom >= 0;
-      
       if (isVisible) {
         element.classList.add('animate-on-scroll', 'animated');
         state.animatedElements.add(elementId);
@@ -183,13 +372,15 @@ const navigation = {
 
 // Chat functionality
 const chat = {
+  waitingForName: false,
+
   init() {
     elements.chatInput = document.getElementById('chat-input');
     elements.chatMessages = document.getElementById('chat-messages');
     elements.sendButton = document.getElementById('send-button');
-    
     this.bindEvents();
     this.showWelcomeMessage();
+    this.addEmailButton();
   },
 
   bindEvents() {
@@ -208,8 +399,6 @@ const chat = {
   handleInputChange(event) {
     const hasText = event.target.value.trim().length > 0;
     elements.sendButton.disabled = !hasText || state.isTyping;
-    
-    // Auto-resize input (if needed for textarea)
     if (event.target.tagName === 'TEXTAREA') {
       event.target.style.height = 'auto';
       event.target.style.height = event.target.scrollHeight + 'px';
@@ -223,54 +412,69 @@ const chat = {
   async sendMessage() {
     const message = elements.chatInput.value.trim();
     if (!message || state.isTyping) return;
-
-    // Add user message
+  
     this.addMessage(message, 'user');
     elements.chatInput.value = '';
     elements.sendButton.disabled = true;
-
-    // Show typing indicator
+  
+    // Check for username detection
+    this.handleUsernameDetection(message);
+  
+    // 🚨 NEW CONDITION: If last assistant message was asking for name, skip backend
+    const lastAssistantMsg = [...elements.chatMessages.querySelectorAll('.message.assistant')]
+      .pop()?.innerText.trim();
+  
+    if (lastAssistantMsg &&
+        lastAssistantMsg.includes("By the way, what should I call you? (This will help personalize our conversation)")) {
+      // Don’t call backend, just wait for username handling
+      return;
+    }
+  
+    // Continue with typing indicator + backend call
     const typingId = this.showTypingIndicator();
     state.isTyping = true;
-
+  
     try {
-      // Send to backend
       const response = await this.sendToBackend(message);
-      
-      // Remove typing indicator
       this.removeTypingIndicator(typingId);
-      
-      // Add AI response with typing animation
       await this.addMessageWithTyping(response, 'assistant');
-      
     } catch (error) {
       console.error('Chat error:', error);
       this.removeTypingIndicator(typingId);
-      this.addMessage('I apologize, but I\'m having trouble processing your request. Please try again.', 'assistant');
+      this.addMessage("I apologize, but I'm having trouble processing your request. Please try again.", 'assistant');
     } finally {
       state.isTyping = false;
       this.handleInputChange({ target: elements.chatInput });
       elements.chatInput.focus();
     }
   },
+  
+  handleUsernameDetection(message) {
+    if (!userManager.hasUsername() || this.waitingForName) {
+      const detectedName = userManager.detectUsernameInMessage(message);
+      if (detectedName) {
+        if (userManager.setUsername(detectedName)) {
+          this.waitingForName = false;
+          setTimeout(() => {
+            this.addMessage(`Nice to meet you, ${detectedName}! Feel free to ask me anything about Priyansh's background.`, 'assistant');
+          }, 1000);
+        }
+      }
+    }
+  },
 
   async sendToBackend(message) {
     const response = await fetch(CONFIG.API_ENDPOINT, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         message: message,
         timestamp: new Date().toISOString(),
-        session_id: this.getSessionId()
+        session_id: this.getSessionId(),
+        username: userManager.getUsername()
       })
     });
-
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     return data.response;
   },
@@ -288,15 +492,12 @@ const chat = {
     const messageElement = this.createMessageElement(content, sender);
     elements.chatMessages.appendChild(messageElement);
     this.scrollToBottom();
-    
-    // Store in history
     state.chatHistory.push({
       id: utils.generateId(),
       content,
       sender,
       timestamp: new Date()
     });
-    
     return messageElement;
   },
 
@@ -305,14 +506,12 @@ const chat = {
     const contentElement = messageElement.querySelector('.message-content p');
     elements.chatMessages.appendChild(messageElement);
     
-    // Parse markdown if it's from assistant
     let processedContent = content;
     if (sender === 'assistant' && typeof marked !== 'undefined') {
       processedContent = marked.parse(content);
       contentElement.innerHTML = '';
     }
     
-    // Typing animation
     if (sender === 'assistant') {
       await this.typeText(contentElement, processedContent, sender === 'assistant');
     } else {
@@ -320,8 +519,6 @@ const chat = {
     }
     
     this.scrollToBottom();
-    
-    // Store in history
     state.chatHistory.push({
       id: utils.generateId(),
       content,
@@ -332,13 +529,10 @@ const chat = {
 
   async typeText(element, text, isHTML = false) {
     if (isHTML) {
-      // For HTML content, show it all at once with a slight delay
       await new Promise(resolve => setTimeout(resolve, 300));
       element.innerHTML = text;
       return;
     }
-    
-    // Character by character typing for plain text
     element.textContent = '';
     for (let i = 0; i < text.length; i++) {
       element.textContent += text[i];
@@ -350,16 +544,12 @@ const chat = {
   createMessageElement(content, sender) {
     const messageDiv = document.createElement('div');
     messageDiv.className = `message ${sender}`;
-    
     const contentDiv = document.createElement('div');
     contentDiv.className = 'message-content';
-    
     const paragraph = document.createElement('p');
     paragraph.textContent = content;
-    
     contentDiv.appendChild(paragraph);
     messageDiv.appendChild(contentDiv);
-    
     return messageDiv;
   },
 
@@ -368,7 +558,6 @@ const chat = {
     const typingElement = document.createElement('div');
     typingElement.className = 'message assistant typing-indicator';
     typingElement.dataset.typingId = typingId;
-    
     typingElement.innerHTML = `
       <div class="message-content">
         <div class="typing-dots">
@@ -378,18 +567,14 @@ const chat = {
         </div>
       </div>
     `;
-    
     elements.chatMessages.appendChild(typingElement);
     this.scrollToBottom();
-    
     return typingId;
   },
 
   removeTypingIndicator(typingId) {
     const typingElement = elements.chatMessages.querySelector(`[data-typing-id="${typingId}"]`);
-    if (typingElement) {
-      typingElement.remove();
-    }
+    if (typingElement) typingElement.remove();
   },
 
   scrollToBottom() {
@@ -400,10 +585,59 @@ const chat = {
 
   showWelcomeMessage() {
     setTimeout(() => {
-      this.addMessage(
-          'Hello! I\'m Priyansh\,\n feel free to ask me about anything you\'d like to know about me.'
-      );
+      this.addMessage("Hello! I'm Priyansh's AI assistant. Feel free to ask me anything about his skills, projects, or experience!", 'assistant');
+      
+      // Ask for name if not known
+      setTimeout(() => {
+        if (!userManager.hasUsername()) {
+          this.waitingForName = true;
+          this.addMessage("By the way, what should I call you? (This will help personalize our conversation)", 'assistant');
+        } else {
+          this.addMessage(`Welcome back, ${userManager.getUsername()}!`, 'assistant');
+        }
+      }, 2000);
     }, 1000);
+  },
+
+  addEmailButton() {
+    const chatContainer = document.querySelector('.chat-container');
+    if (chatContainer && !document.querySelector('.email-history-btn')) {
+      const emailButton = document.createElement('button');
+      emailButton.textContent = '📧 Email History';
+      emailButton.className = 'email-history-btn';
+      emailButton.onclick = () => emailManager.sendChatHistory();
+      emailButton.title = 'Send chat history to email';
+      
+      Object.assign(emailButton.style, {
+        position: 'absolute',
+        top: '10px',
+        right: '10px',
+        padding: '8px 12px',
+        background: '#007AFF',
+        color: 'white',
+        border: 'none',
+        borderRadius: '6px',
+        cursor: 'pointer',
+        fontSize: '12px',
+        fontWeight: '500',
+        boxShadow: '0 2px 8px rgba(0,122,255,0.2)',
+        transition: 'all 0.2s ease',
+        zIndex: '100'
+      });
+      
+      emailButton.addEventListener('mouseover', () => {
+        emailButton.style.background = '#0056CC';
+        emailButton.style.transform = 'translateY(-1px)';
+      });
+      
+      emailButton.addEventListener('mouseout', () => {
+        emailButton.style.background = '#007AFF';
+        emailButton.style.transform = 'translateY(0)';
+      });
+      
+      chatContainer.style.position = 'relative';
+      chatContainer.appendChild(emailButton);
+    }
   }
 };
 
@@ -416,7 +650,6 @@ const performance = {
   },
 
   optimizeImages() {
-    // Lazy load images when they come into viewport
     const images = document.querySelectorAll('img[data-src]');
     const imageObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -428,16 +661,13 @@ const performance = {
         }
       });
     });
-
     images.forEach(img => imageObserver.observe(img));
   },
 
   preloadCriticalResources() {
-    // Preload critical fonts
     const fontLinks = [
       'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'
     ];
-
     fontLinks.forEach(href => {
       const link = document.createElement('link');
       link.rel = 'preload';
@@ -467,53 +697,38 @@ const accessibility = {
   },
 
   setupKeyboardNavigation() {
-    // Enhanced keyboard navigation for chat
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') {
-        elements.chatInput.blur();
-      }
-      
-      // Quick navigation shortcuts
+      if (event.key === 'Escape') elements.chatInput.blur();
       if (event.altKey) {
         switch (event.key) {
           case '1':
-            navigation.scrollToSection(document.querySelector('#home'));
-            break;
+            navigation.scrollToSection(document.querySelector('#home')); break;
           case '2':
-            navigation.scrollToSection(document.querySelector('#projects'));
-            break;
+            navigation.scrollToSection(document.querySelector('#projects')); break;
           case '3':
-            navigation.scrollToSection(document.querySelector('#skills'));
-            break;
+            navigation.scrollToSection(document.querySelector('#skills')); break;
           case '4':
-            navigation.scrollToSection(document.querySelector('#contact'));
-            break;
+            navigation.scrollToSection(document.querySelector('#contact')); break;
         }
       }
     });
   },
 
   setupFocusManagement() {
-    // Improve focus visibility
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Tab') {
-        document.body.classList.add('keyboard-navigation');
-      }
+      if (event.key === 'Tab') document.body.classList.add('keyboard-navigation');
     });
-
     document.addEventListener('mousedown', () => {
       document.body.classList.remove('keyboard-navigation');
     });
   },
 
   setupReducedMotion() {
-    // Respect user's motion preferences
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    
     if (prefersReducedMotion.matches) {
       document.documentElement.style.setProperty('--transition-base', 'none');
       document.documentElement.style.setProperty('--transition-smooth', 'none');
-      CONFIG.TYPING_SPEED = 10; // Faster typing if reduced motion is preferred
+      CONFIG.TYPING_SPEED = 10;
     }
   }
 };
@@ -536,55 +751,90 @@ const errorHandler = {
   },
 
   logError(type, error) {
-    // In a production environment, you would send this to your logging service
     const errorLog = {
       type,
       message: error.message || error,
       stack: error.stack,
       timestamp: new Date().toISOString(),
       userAgent: navigator.userAgent,
-      url: window.location.href
+      url: window.location.href,
+      username: userManager.getUsername()
     };
-    
     console.log('Error logged:', errorLog);
   }
 };
 
+// Page unload event handler
+window.addEventListener("beforeunload", async (event) => {
+  await emailManager.sendOnPageUnload();
+});
+
+// Visibility change handler (for mobile/tab switching)
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === 'hidden') {
+    emailManager.sendOnPageUnload();
+  }
+});
+
 // Main initialization
 document.addEventListener('DOMContentLoaded', () => {
   try {
-    // Initialize core functionality
+    // Initialize all modules
     navigation.init();
     chat.init();
     performance.init();
     accessibility.init();
     errorHandler.init();
     
-    // Add smooth loading animation
+    // Mark page as loaded
     document.body.classList.add('loaded');
     
-    // Focus chat input after a delay
+    // Focus chat input after everything is loaded
     setTimeout(() => {
-      if (elements.chatInput) {
-        elements.chatInput.focus();
-      }
+      if (elements.chatInput) elements.chatInput.focus();
     }, 2000);
     
     console.log('Portfolio initialized successfully');
+    console.log('Current user:', userManager.getUsername());
     
   } catch (error) {
     console.error('Initialization error:', error);
     errorHandler.logError('Initialization Error', error);
+    notifications.error('Failed to initialize portfolio. Please refresh the page.');
   }
 });
 
-// Export for potential external use
+// Public API - Export functions for external access
 window.PortfolioApp = {
+  // Core modules
   navigation,
   chat,
   performance,
   accessibility,
   utils,
+  
+  // State and config
   state,
-  CONFIG
+  CONFIG,
+  
+  // User management
+  userManager,
+  
+  // Email functionality
+  emailManager,
+  
+  // Notifications
+  notifications,
+  
+  // Public methods
+  sendChatHistory: () => emailManager.sendChatHistory(),
+  setUsername: (name) => userManager.setUsername(name),
+  getUsername: () => userManager.getUsername(),
+  showNotification: (message, type) => notifications.show(message, type),
+  
+  // Dev/debug methods
+  clearUsername: () => userManager.clearUsername(),
+  getChatHistory: () => state.chatHistory,
+  getSessionId: () => chat.getSessionId()
 };
+

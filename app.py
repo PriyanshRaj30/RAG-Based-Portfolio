@@ -27,6 +27,8 @@ class Config:
     HOST = os.environ.get('FLASK_HOST', '0.0.0.0')
     PORT = int(os.environ.get('FLASK_PORT', 8000))
     
+    #Email
+
     # Session management
     SESSION_TIMEOUT_HOURS = int(os.environ.get('SESSION_TIMEOUT_HOURS', 24))
     MAX_CONCURRENT_SESSIONS = int(os.environ.get('MAX_CONCURRENT_SESSIONS', 1000))
@@ -46,6 +48,9 @@ class EnhancedChatbotHandler:
             meta_path = "vector_store/faiss_meta.json"
             self.rag_system = EnhancedRAGSystem(index_path, meta_path)
             logger.info("Enhanced RAG system initialized successfully")
+
+            self.EMAIL_FROM = os.getenv("EMAIL_FROM")
+            self.EMAIL_PASS = os.getenv("EMAIL_PASS")
         except Exception as e:
             logger.error(f"Failed to initialize RAG system: {str(e)}")
             self.rag_system = None
@@ -57,7 +62,43 @@ class EnhancedChatbotHandler:
         # Start cleanup thread
         self.cleanup_thread = threading.Thread(target=self._cleanup_expired_sessions, daemon=True)
         self.cleanup_thread.start()
-    
+        
+    def email_history(self, to_email: str, session_id: Optional[str] = None) -> bool:
+        try:
+            # Collect history
+            with self.session_lock:
+                if session_id:
+                    sessions = {session_id: self.session_data.get(session_id, {})}
+                else:
+                    sessions = self.session_data
+
+            body = ""
+            for sid, data in sessions.items():
+                history = data.get('history', [])
+                body += f"\n--- Conversation: {sid} ---\n"
+                for turn in history:
+                    body += f"[{turn['timestamp']}]\nUser: {turn['user']}\nAssistant: {turn['assistant']}\n\n"
+
+            if not body.strip():
+                body = "No conversation history found."
+
+            # Prepare email
+            msg = MIMEMultipart()
+            msg['From'] = self.EMAIL_FROM
+            msg['To'] = to_email
+            msg['Subject'] = f"Chatbot History - {session_id or 'All Sessions'}"
+            msg.attach(MIMEText(body, 'plain'))
+
+            # Send via SMTP
+            with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+                server.login(f'{self.EMAIL_FROM}', f'{self.EMAIL_PASS}')
+                server.send_message(msg)
+
+            return True
+        except Exception as e:
+            logger.error(f"Failed to send email: {str(e)}")
+            return False
+
     def process_message(self, message: str, session_id: str, user_context: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """Process a message and return enhanced response with metadata"""
         
@@ -74,6 +115,17 @@ class EnhancedChatbotHandler:
             
             # Get response from RAG system
             response = self.rag_system.chat(message, session_id)
+            
+            # Store the conversation turn in history
+            with self.session_lock:
+                session = self.session_data[session_id]
+                if 'history' not in session:
+                    session['history'] = []
+                session['history'].append({
+                    'timestamp': datetime.now().isoformat(),
+                    'user': message,
+                    'assistant': response
+                })
             
             # Get conversation summary for metadata
             conv_summary = self.rag_system.get_conversation_summary(session_id)
@@ -109,8 +161,9 @@ class EnhancedChatbotHandler:
             
             with self.session_lock:
                 if session_id in self.session_data:
-                    # Keep session data but mark as reset
+                    # Keep session data but mark as reset and clear history
                     self.session_data[session_id]['reset_at'] = datetime.now()
+                    self.session_data[session_id]['history'] = []
             
             logger.info(f"Reset conversation for session: {session_id}")
             return True
@@ -330,6 +383,32 @@ def reset_conversation():
             'error': 'Internal server error',
             'success': False
         }), 500
+
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import smtplib
+
+
+@app.route('/api/chat/email_histories', methods=['POST'])
+def email_histories():
+    # try:
+    #     data = request.get_json() or {}
+    #     session_id = data.get('session_id')
+    #     to_email = os.getenv("EMAIL_TO")
+    #     if not to_email:
+    #         return jsonify({'error': 'Recipient email not provided'}), 400
+
+    #     success = chatbot.email_history(to_email, session_id)
+    #     return jsonify({'success': success})
+    # except Exception as e:
+    #     logger.error(f"Error emailing histories: {str(e)}")
+    #     return jsonify({'error': 'Internal server error'}), 500
+    pass
+
+
+
+
+
 
 @app.route('/api/chat/stats/<session_id>', methods=['GET'])
 def get_session_stats(session_id: str):
