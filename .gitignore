@@ -1,5 +1,6 @@
 # Python
 __pycache__/
+__pycache__1/
 *.py[cod]
 *.pyo
 *.pyd
@@ -22,6 +23,7 @@ venv/
 
 # IDEs and editors
 .vscode/
+.vscode1/
 *.swp
 *.swo
 
