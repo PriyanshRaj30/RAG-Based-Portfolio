@@ -1,9 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
 env/
 venv/
+.venv/
+
+# Environment variables
 .env
 .env.*.local
-/backup
-/vector_store
-/vector_store2
-/RAG-platground
-/RAG-platground2
+
+# Backup and storage
+/backup/
+/vector_store/
+/vector_store2/
+/RAG-playground/
+/RAG-playground2/
+
+# IDEs and editors
+.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Project-specific
+requirements.md
