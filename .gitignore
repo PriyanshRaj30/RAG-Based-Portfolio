@@ -4,3 +4,6 @@ venv/
 .env.*.local
 /backup
 /vector_store
+/vector_store2
+/RAG-platground
+/RAG-platground2
