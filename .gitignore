@@ -4,7 +4,7 @@ __pycache__1/
 *.py[cod]
 *.pyo
 *.pyd
-
+test.py
 # Virtual environments
 env/
 venv/
