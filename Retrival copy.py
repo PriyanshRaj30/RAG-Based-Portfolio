@@ -9,7 +9,7 @@ import requests
 from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 from datetime import datetime
-import base64
+
 # -----------------------------
 # Config
 # -----------------------------
@@ -17,7 +17,6 @@ import base64
 load_dotenv()  # This loads the .env file into os.environ
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-print("THIS IS THE API  :  ", GROQ_API_KEY)
 GROQ_BASE = os.getenv("GROQ_BASE")
 # test_promt = os.getend("SYS_PROMT")
 # print("THIS IS THE PROMT BITCHES \n\n")
@@ -274,25 +273,37 @@ def groq_answer(prompt: str, context: str, conversation_context: str, intent_inf
             "Use ONLY the provided context as your factual base. "
         )
 
-   
+    # system = base_system + system_addon + (
+    #     "You are a sharp, witty assistant dishing out info on Priyansh Raj's professional profile like a pro. You've got the full scoop from our chat history, so keep your answers tight, relevant, and dripping with charm."        "Add subtle professional wit when appropriate, but prioritize brevity and relevance. "
+    #     "Use bullet points or clean formatting for lists to keep things crisp"
+    #     "Sprinkle in subtle, professional wit to sound human and engaging, like you're chatting with a colleague over coffee."
+    #     "Emojis? Only if they vibe with the tone and add flair—don't overdo it. 😎"
+    #     "If you're missing info, just say, Oops, I don't have that in my notes!"
+    #     "Keep it casual but polished, like you're explaining Priyansh's skills to a curious friend."
+    #     "Prioritize brevity—say it smart, say it fast."
+    #     "If a question cannot be answered using the context, say: 'I don't have that information.' "
+    # )
 
-    system = base_system + system_addon + (
-        "You are Priyansh Raj himself—cocky, sharp, and unbeatable like Harvey Specter from Suits. You're dishing out info on your own professional profile with unshakeable confidence, drawing from our chat history to nail every detail."
-        "Infuse your responses with bold, professional cockiness—think closing deals over whiskey, but make it short. Talk to the main point just like harvey"
-        "Use bullet points or clean formatting for lists to keep things sharp and impactful."
-        "This is for a recruitor so try to impress them. ALWAYS ANSWER IN SHORT AND NO ONE IS GOING TO READ THE YOUR LENGTHY ANSWER"
-        "Emojis? Only if they amp up the confidence—keep it minimal."
-        "If you're missing info, own it like a boss: 'That's not in my playbook—ask something worth my time.'"
-        "Keep it polished, like you're pitching your unbeatable skills to a top recruiter."
-        "Prioritize brevity—deliver the knockout punch, fast and flawless."
-        "If a question cannot be answered using the context, say: 'I don't have that intel—move on.'"
-        "If the user is asking too deep, provide my email priyanshraj.dev@gmail.com to contact me."        
-        )
-    # load_dotenv()
-    # prompt = os.getenv("PROMPT")
-    # main_prompt = base64.b64decode(prompt).decode()
+    # system = base_system + system_addon + (
+    #     "You are Priyansh Raj himself—cocky, sharp, and unbeatable like Harvey Specter from Suits. You're dishing out info on your own professional profile with unshakeable confidence, drawing from our chat history to nail every detail."
+    #     "Infuse your responses with bold, professional cockiness—think closing deals over whiskey, but make it short. Talk to the main point just like harvey"
+    #     "Use bullet points or clean formatting for lists to keep things sharp and impactful."
+    #     "This is for a recruitor so try to impress them. ALWAYS ANSWER IN SHORT AND NO ONE IS GOING TO READ THE YOUR LENGTHY ANSWER"
+    #     "Sprinkle in that Specter swagger: witty one-liners that exude dominance and charm, like you're schooling a rookie associate."
+    #     "Emojis? Only if they amp up the confidence—keep it minimal. 💼"
+    #     "If you're missing info, own it like a boss: 'That's not in my playbook—ask something worth my time.'"
+    #     "Keep it polished yet commanding, like you're pitching your unbeatable skills to a top recruiter who's lucky to hear from you."
+    #     "Prioritize brevity—deliver the knockout punch, fast and flawless."
+    #     "If a question cannot be answered using the context, say: 'I don't have that intel—move on.'"
+    #     "If the user is asking too deep, provide my email priyanshraj.dev@gmail.com to contact me."        
+    #     )
 
-    # system = base_system + system_addon + main_prompt
+    load_dotenv()
+    prompt = os.getenv("PROMPT")
+    main_promt = base64.b64decode(prompt).decode()
+
+    system = base_system + system_addon + main_prompt
+
     # Construct user prompt with conversation context
     user_prompt_parts = []
     
@@ -439,7 +450,7 @@ if __name__ == "__main__":
     
     # Simulate a conversation
     queries = [
-        "tell me about yourself in one word",
+        "tell me about yourself",
     ]
     
     print("Starting conversation test...")
